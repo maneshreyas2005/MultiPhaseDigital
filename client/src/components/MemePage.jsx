@@ -51,16 +51,16 @@ const MemePage = () => {
                 <div className="relative z-10 flex flex-col items-center">
                     <h1
                         ref={headingRef}
-                        className={`text-white text-5xl md:text-6xl font-bold tracking-wide mb-2 mt-[22px] ${isHeadingVisible ? 'animate-word-reveal' : ''
+                        className={`text-white text-3xl md:text-6xl font-bold tracking-wide mb-2 mt-[22px] ${isHeadingVisible ? 'animate-word-reveal' : ''
                             }`}
                         style={{ fontFamily: 'Constantine' }}
                     >
-                        <span className=" sm:text-3xl xl:text-5xl ml-[36px]">MEME PAGE</span> <br /> <span className="text-1xl sm:text-2xl md:text-3xl lg:text-5xl md:ml-[36px]">MARKETING</span>
+                        <span className=" sm:text-3xl md:text-4xl lg:text-5xl ml-[36px]">MEME PAGE</span> <br /> <span className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl ml-[35px] md:ml-[36px]">MARKETING</span>
                     </h1>
                     <img
                         src={vector6}
                         alt="Decorative line"
-                        className="sm:w-[230px] md:w-[250px] lg:w-[350px] mb-8 md:ml-[29px]"
+                        className="w-[190px] md:w-[250px] lg:w-[350px] mb-8 md:ml-[29px]"
                     />
                 </div>
                 {/* Phone Images Grid */}
