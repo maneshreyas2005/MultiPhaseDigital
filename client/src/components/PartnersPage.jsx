@@ -125,7 +125,7 @@
 // // export default PartnersPage;
 
 import React, { useRef, useState, useEffect } from 'react';
-import vector6 from '../assets/vector6.png';
+import vector6 from '../assets/Vector6.png';
 import CountUp from 'react-countup';
 import Pandav from '../assets/Pandav.png';
 

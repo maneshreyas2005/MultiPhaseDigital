@@ -86,7 +86,7 @@
 // export default OurServicesPage;
 
 import React from 'react';
-import vector6 from '../assets/vector6.png';
+import vector6 from '../assets/Vector6.png';
 import useInView from './UseInView'; // <-- path to hook
 
 const OurServicesPage = () => {

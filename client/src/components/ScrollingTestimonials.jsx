@@ -155,7 +155,7 @@
 //                                 className="absolute inset-0 bg-cover bg-center opacity-60 "
 //                                 style={{ backgroundImage: `url(${whiteGridBackGround})` }}
 //                             />
-                
+
 //                 {/* <div className="relative z-10 flex flex-col items-center">
 //                     <h1
 //                         className={`flex flex-col items-center text-white text-5xl md:text-6xl font-bold   '
@@ -221,7 +221,7 @@
 // export default ScrollingTestimonials;
 import React, { useState } from 'react';
 import { Star } from 'lucide-react';
-import vector6 from '../assets/vector6.png';
+import vector6 from '../assets/Vector6.png';
 import whiteGridBackGround from '../assets/whiteGridBackGround.png';
 
 const testimonials = [

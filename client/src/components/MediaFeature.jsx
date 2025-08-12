@@ -7,7 +7,7 @@ import NewsIndia from '../assets/NewsChannels/NewsIndiaa.png';
 import TimesNow from '../assets/NewsChannels/TimesNow.png';
 import CNBCnewsTV from '../assets/NewsChannels/CNBCnewsTV.png';
 import AAjTak from '../assets/NewsChannels/AAjTak.png';
-import vector6 from '../assets/vector6.png';
+import vector6 from '../assets/Vector6.png';
 
 const MediaFeature = () => {
     const headingRef = useRef(null);

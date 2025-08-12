@@ -1,6 +1,6 @@
 
 import React from 'react';
-import vector6 from '../assets/vector6.png';
+import vector6 from '../assets/Vector6.png';
 import Aeroplane from '../assets/Airplane.png';
 import Aeroplane1 from '../assets/Aeroplane2.png';
 import AirMagazine from '../assets/AirMagazine.png';

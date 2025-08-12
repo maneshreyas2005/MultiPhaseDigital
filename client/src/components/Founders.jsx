@@ -216,7 +216,7 @@
 
 // export default Founders;
 import React from 'react';
-import vector6 from '../assets/vector6.png';
+import vector6 from '../assets/Vector6.png';
 import Founder1 from '../assets/Founder1.png';
 import Founder2 from '../assets/Founder2.png';
 import useInView from './UseInView';

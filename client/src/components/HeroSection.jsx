@@ -87,9 +87,6 @@
 
 // export default HeroSection;
 
-
-import React from 'react';
-import BackGroundVideo from '../assets/BackGroundVideo.webm';
 import ZeeMusic from '../assets/ZeeMusicCo 1.png';
 import JioStudios from '../assets/JioStudios.png';
 import OneLogo from '../assets/OneLogo.png';
@@ -102,7 +99,7 @@ import MensCricket from '../assets/MensCricketWorldCup.png';
 import IPL from '../assets/IPL.png';
 import StarSports from '../assets/StarSports.png';
 import RigiLogo from '../assets/RigiLogo.png';
-import vector4 from '../assets/vector4.png';
+import vector4 from '../assets/Vector4.png';
 
 const HeroSection = () => {
     const logos = [
