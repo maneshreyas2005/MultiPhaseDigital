@@ -1,10 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
 import whiteGridBackGround from '../assets/whiteGridBackground.png';
 import Blur from '../assets/Blur.jpg';
-import OnePlus10t from '../assets/OnePlusPhones/FilmyGyan.png';
-import OnePlus10t1 from '../assets/OnePlusPhones/OnePlus10T2.png';
-import OnePlus10t2 from '../assets/OnePlusPhones/RVCJInsta.png';
-import OnePlus10t3 from '../assets/OnePlusPhones/InstantBollywood.png';
+import OnePlus10t from '../assets/OneplusPhones/FilmyGyan.png';
+import OnePlus10t1 from '../assets/OneplusPhones/OnePlus10T2.png';
+import OnePlus10t2 from '../assets/OneplusPhones/RVCJInsta.png';
+import OnePlus10t3 from '../assets/OneplusPhones/InstantBollywood.png';
 import vector6 from '../assets/Vector6.png';
 
 const MemePage = () => {
