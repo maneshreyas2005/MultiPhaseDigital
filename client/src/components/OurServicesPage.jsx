@@ -150,7 +150,7 @@ const OurServicesPage = () => {
                 style={{ maxWidth: 'clamp(800px, 90vw, 1400px)' }}
             >
                 <div
-                    className="grid grid-cols-4 w-full"
+                    className="grid grid-cols-3 md:grid-cols-4 w-full"
                     style={{
                         fontFamily: 'Constantine',
                         gap: 'clamp(2rem, 4vw, 4rem) clamp(1.5rem, 3vw, 3rem)'
