@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import CountUp from 'react-countup';
-import whiteGridBackGround from '../assets/whiteGridBackGround.png';
+import whiteGridBackGround from '../assets/whiteGridBackground.png';
 import Pandavasss from '../assets/Pandavasss.png';
 
 const ServicePage = () => {

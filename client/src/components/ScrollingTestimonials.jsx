@@ -222,7 +222,7 @@
 import React, { useState } from 'react';
 import { Star } from 'lucide-react';
 import vector6 from '../assets/Vector6.png';
-import whiteGridBackGround from '../assets/whiteGridBackGround.png';
+import whiteGridBackGround from '../assets/whiteGridBackground.png';
 
 const testimonials = [
     {

@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import whiteGridBackGround from '../assets/whiteGridBackGround.png';
+import whiteGridBackGround from '../assets/whiteGridBackground.png';
 import Blur from '../assets/Blur.jpg';
 import OnePlus10t from '../assets/OnePlusPhones/FilmyGyan.png';
 import OnePlus10t1 from '../assets/OnePlusPhones/OnePlus10T2.png';
