@@ -87,7 +87,7 @@
 
 // export default HeroSection;
 
-import ZeeMusic from '../assets/ZeeMusicCo 1.png';
+import ZeeMusic from '../assets/ZeeMusicCom1.png';
 import JioStudios from '../assets/JioStudios.png';
 import OneLogo from '../assets/OneLogo.png';
 import MobilePremierLeague from '../assets/Mobile Premier League_logo 2.png';

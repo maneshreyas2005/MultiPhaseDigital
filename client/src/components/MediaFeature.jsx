@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Blur from '../assets/Blur.jpg';
-import ZeeNews from '../assets/NewsChannels/ZeeNews.png';
+import ZeeNews from '../assets/NewsChannels/ZEEnews.png';
 import ABP from '../assets/NewsChannels/ABP.png';
 import IndiaNews from '../assets/NewsChannels/IndiaNews.png';
 import NewsIndia from '../assets/NewsChannels/NewsIndiaa.png';

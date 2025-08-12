@@ -2,7 +2,7 @@
 import React from 'react';
 import vector6 from '../assets/Vector6.png';
 import Aeroplane from '../assets/Airplane.png';
-import Aeroplane1 from '../assets/Aeroplane2.png';
+import Aeroplane1 from '../assets/aeroplane2.png';
 import AirMagazine from '../assets/AirMagazine.png';
 import Indigo from '../assets/Indigoandmore.png';
 import useInView from './UseInView';
@@ -66,10 +66,10 @@ const AirLineMagazines = () => {
                         className={`${inView ? "animate-slide-in-left" : "opacity-0"}`}
                         style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
                     >
-                        <img 
-                            src={Aeroplane1} 
-                            alt="" 
-                            className="w-[300px] sm:w-[400px] md:w-[500px] grayscale ml-[-30px]" 
+                        <img
+                            src={Aeroplane1}
+                            alt=""
+                            className="w-[300px] sm:w-[400px] md:w-[500px] grayscale ml-[-30px]"
                         />
                     </div>
 
@@ -94,7 +94,7 @@ const AirLineMagazines = () => {
                             <span className="text-white" style={{ fontFamily: 'Constantine' }}>
                                 REACH
                             </span>
-                        </h2>   
+                        </h2>
                     </div>
 
                     {/* Air Magazine */}
@@ -102,10 +102,10 @@ const AirLineMagazines = () => {
                         className={`${inView ? "animate-slide-up" : "opacity-0"}`}
                         style={{ animationDelay: '1.1s', animationFillMode: 'both' }}
                     >
-                        <img 
-                            src={AirMagazine} 
-                            alt="" 
-                            className="w-[120px] sm:w-[150px] md:w-[200px]" 
+                        <img
+                            src={AirMagazine}
+                            alt=""
+                            className="w-[120px] sm:w-[150px] md:w-[200px]"
                         />
                     </div>
                 </div>
@@ -139,7 +139,7 @@ const AirLineMagazines = () => {
                             <span className="text-white" style={{ fontFamily: 'Constantine' }}>
                                 REACH
                             </span>
-                        </h2>   
+                        </h2>
                     </div>
 
                     <div
@@ -160,9 +160,9 @@ const AirLineMagazines = () => {
                     ${inView ? "animate-slide-up" : "opacity-0"}`}
                 style={{ animationDelay: '1.3s', animationFillMode: 'both' }}
             >
-                <img 
-                    src={Indigo} 
-                    alt="" 
+                <img
+                    src={Indigo}
+                    alt=""
                     className="max-w-full h-auto object-contain"
                 />
             </div>
