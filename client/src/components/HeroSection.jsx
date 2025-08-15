@@ -125,7 +125,7 @@ const HeroSection = () => {
                 autoPlay
                 muted
                 playsInline
-                className={`absolute inset-0 w-full  object-cover max-[770px]:mt-[50px] max-[640px]:mt-[90px] max-[426px]:mt-[120px] max-[376px]:mt-[150px] `}
+                className={`absolute inset-0 w-full  object-cover max-[770px]:mt-[50px] max-[640px]:mt-[90px] max-[426px]:mt-[100px] max-[376px]:mt-[120px] `}
             >
                 <source src={BackGroundVideo} type="video/mp4" />
             </video>
