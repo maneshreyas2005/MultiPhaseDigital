@@ -92,8 +92,8 @@ const Navbar = () => {
                         <span></span>
                     </div>
 
-                    <a href="https://themesberg.com/product/tailwind-css/landing-page"
-                        className="text-white hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
+                    <a 
+                        className="text-white  xl:w-[110px] hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
                         style={{
                             background: 'linear-gradient(270deg, #1B192E 0%, #9116E7 39.7%, #FF738B 100%)'
                         }}>Contact Us</a>

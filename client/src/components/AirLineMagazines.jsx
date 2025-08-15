@@ -111,16 +111,16 @@ const AirLineMagazines = () => {
                 </div>
 
                 {/* Desktop Layout - Original overlapped design */}
-                <div className="hidden lg:flex lg:items-center lg:w-full lg:min-h-screen mt-[30px]">
+                <div className="hidden lg:flex lg:items-center lg:w-full lg:min-h-screen mt-[70px]">
                     <div
                         className={`${inView ? "animate-slide-in-left" : "opacity-0"} z-[1]`}
                         style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
                     >
-                        <img src={Aeroplane} alt="" className="w-[890px] xl:w-[1184.83px] grayscale mt-[-200px] ml-[-30px]" />
+                        <img src={Aeroplane} alt="" className="w-[890px] lg:w-[960px] xl:w-[1184.83px] grayscale mt-[-200px] ml-[-30px]" />
                     </div>
 
                     <div
-                        className={`ml-[-360px] xl:ml-[-470px] mt-[-600px] xl:mt-[-760px] z-[0] ${inView ? "animate-slide-up" : "opacity-0"}`}
+                        className={`ml-[-360px] xl:ml-[-470px] mt-[-620px] xl:mt-[-760px] z-[0] ${inView ? "animate-slide-up" : "opacity-0"}`}
                         style={{ animationDelay: '0.8s', animationFillMode: 'both' }}
                     >
                         <h1
@@ -146,7 +146,7 @@ const AirLineMagazines = () => {
                         className={`${inView ? "animate-slide-up" : "opacity-0"}`}
                         style={{ animationDelay: '1.1s', animationFillMode: 'both' }}
                     >
-                        <img src={AirMagazine} alt="" className="w-[200px] xl:w-[280px] mt-[-340px] ml-[90px]" />
+                        <img src={AirMagazine} alt="" className="w-[200px] xl:w-[280px] lg:mt-[-340px] xl:mt-[-410px] ml-[90px]" />
                     </div>
                 </div>
             </div>
@@ -155,7 +155,7 @@ const AirLineMagazines = () => {
             <div
                 className={`flex items-center justify-center w-full max-w-[350px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1209px] 
                     h-[50px] sm:h-[60px] md:h-[70px] lg:h-[85px] xl:h-[120px] 
-                    mt-4 sm:mt-6 lg:mt-[-320px] mb-6 sm:mb-[30px] 
+                    mt-4 sm:mt-6 lg:mt-[-310px] xl:mt-[-410px] mb-6 sm:mb-[30px] 
                     bg-white rounded-2xl sm:rounded-[2rem] overflow-hidden px-4
                     ${inView ? "animate-slide-up" : "opacity-0"}`}
                 style={{ animationDelay: '1.3s', animationFillMode: 'both' }}

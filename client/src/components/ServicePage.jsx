@@ -76,7 +76,8 @@ const ServicePage = () => {
             {/* Stats */}
             <div
                 ref={statsRef}
-                className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-[80px] mt-6 sm:mt-8 lg:mt-10 justify-center items-center bg-black px-2 sm:px-4 py-4 sm:py-6 overflow-hidden mb-4 sm:mb-6 lg:mb-8"
+                className={`flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-[80px] mt-6 sm:mt-8 lg:mt-10 justify-center items-center bg-black px-2 sm:px-4 py-4 sm:py-6 overflow-hidden mb-4 sm:mb-6 lg:mb-8
+                    `}
             >
                 {[
                     { value: 6, label: 'Years Of\nExperience' },
@@ -85,10 +86,11 @@ const ServicePage = () => {
                 ].map((stat, i) => (
                     <div
                         key={i}
-                        className={`group relative inline-block rounded-[2rem] p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 ${isStatsVisible ? 'animate-slide-in' : 'opacity-0'}`}
+                        className={`group relative inline-block rounded-[2rem] p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 ${isStatsVisible ? 'animate-slide-in' : 'opacity-0'}
+                        `}
                         style={{ animationDelay: `${i * 0.2}s` }}
                     >
-                        <div className="rounded-[2rem] bg-black w-[140px] xs:w-[160px] sm:w-[180px] md:w-[220px] lg:w-[250px] xl:w-[280px] 2xl:w-[300px] aspect-square flex flex-col justify-center items-center text-white text-center overflow-hidden">
+                        <div className="rounded-[2rem] bg-black w-[140px] xs:w-[160px] sm:w-[180px] md:w-[200px]  lg:w-[250px] xl:w-[280px] 2xl:w-[300px] aspect-square flex flex-col justify-center items-center text-white text-center overflow-hidden">
                             <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
                                 {isStatsVisible ? <CountUp end={stat.value} duration={2} separator={stat.separator} suffix={stat.suffix} /> : '0'}
                             </h2>
@@ -103,13 +105,13 @@ const ServicePage = () => {
             {/* Image */}
             <div
                 ref={imagesRef}
-                className={`relative z-1 mt-[-20px] xs:mt-[-30px] sm:mt-[-40px] md:mt-[-60px] lg:mt-[-95px] 
+                className={`relative w-full z-1 mt-[-20px] xs:mt-[-30px] sm:mt-[-40px] md:mt-[-60px] lg:mt-[-105px] 
         ${isImagesVisible ? 'animate-slide-up' : 'opacity-0'}`}
             >
                 <img
                     src={Pandavasss}
                     alt=""
-                    className="w-full max-w-full h-auto mx-auto px-2 sm:px-0"
+                    className="w-full h-auto mx-auto sm:px-0"
                 />
             </div>
 

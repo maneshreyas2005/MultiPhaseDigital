@@ -151,7 +151,7 @@ const MediaFeature = () => {
                 >
                     <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#1B192E] via-[#9116E7] to-[#FF738B] p-[2px]">
                         <div className="h-full w-full rounded-full bg-black flex items-center justify-center">
-                            <span className="text-gray-200">+20 NEWS CHANNELS</span>
+                            <span className="text-gray-200 ">+20 NEWS CHANNELS</span>
                         </div>
                     </div>
                 </button>

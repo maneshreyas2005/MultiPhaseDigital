@@ -209,7 +209,7 @@ const PartnersPage = () => {
                 ref={statsRef}
                 className="
           flex flex-col md:flex-row justify-center items-center bg-black overflow-hidden z-[0]
-          gap-4 sm:gap-6 md:gap-[200px] lg:gap-[680px]
+          gap-4 sm:gap-6 md:gap-[200px] lg:gap-[590px] xl:gap-[640px]
           mt-6 sm:mt-8 md:mt-[50px]
         "
             >
@@ -222,6 +222,8 @@ const PartnersPage = () => {
             [@media(min-width:1304px)]:w-[280.91px] [@media(min-width:1304px)]:h-[280.91px]
             [@media(min-width:1164px)]:w-[240px] [@media(min-width:1164px)]:h-[240px]
            [@media(min-width:1190px)]:w-[260px] [@media(min-width:1190px)]:h-[260px]
+            [@media(max-width:1023px)]:w-[260px] [@media(max-width:1023px)]:h-[260px]
+            [@media(max-width:650px)]:w-[220px] [@media(max-width:650px)]:h-[220px]
             w-[200px] h-[200px]
           `}
                     style={{ animationDelay: '0.4s' }}
@@ -230,7 +232,7 @@ const PartnersPage = () => {
                         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
                             {isStatsVisible ? <CountUp end={7} duration={3} suffix="K+" /> : '0'}
                         </h2>
-                        <p className="text-lg sm:text-xl md:text-2xl mt-2">PR works<br />Completed</p>
+                        <p className="text-lg sm:text-xl md:text-1xl mt-2">PR works<br />Completed</p>
                     </div>
                 </div>
 
@@ -243,6 +245,9 @@ const PartnersPage = () => {
             [@media(min-width:1304px)]:w-[280.91px] [@media(min-width:1304px)]:h-[280.91px]
            [@media(min-width:1190px)]:w-[260px] [@media(min-width:1190px)]:h-[260px]
             [@media(min-width:1090px)]:w-[240px] [@media(min-width:1090px)]:h-[240px]
+            [@media(max-width:1023px)]:w-[260px] [@media(max-width:1023px)]:h-[260px]
+            [@media(max-width:650px)]:w-[220px] [@media(max-width:650px)]:h-[220px]
+            
             w-[200px] h-[200px]
           `}
                     style={{ animationDelay: '0.2s' }}
@@ -251,7 +256,7 @@ const PartnersPage = () => {
                         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
                             {isStatsVisible ? <CountUp end={800} duration={2} suffix="+" /> : '0'}
                         </h2>
-                        <p className="text-lg sm:text-xl md:text-2xl mt-2">Customers<br />Worldwide</p>
+                        <p className="text-lg sm:text-xl md:text-1xl mt-2">Customers<br />Worldwide</p>
                     </div>
                 </div>
             </div>
@@ -259,7 +264,7 @@ const PartnersPage = () => {
             {/* Partner Image */}
             <div
                 ref={imagesRef}
-                className={`group relative inline-block rounded-3xl  p-[2px] sm:p-[3.58px] z-[1] transform transition-transform duration-500 hover:scale-105 ${isImagesVisible ? 'animate-slide-up' : 'opacity-0'
+                className={`group relative inline-block rounded-3xl md:ml-[30px]  p-[2px] sm:p-[3.58px] z-[1] transform transition-transform duration-500 hover:scale-105 ${isImagesVisible ? 'animate-slide-up' : 'opacity-0'
                     }`}
                 style={{ animationDelay: '0.2s' }}
             >
@@ -269,7 +274,9 @@ const PartnersPage = () => {
                     className="
             [@media(min-width:1304px)]:w-[1279.5px]
            [@media(min-width:1190px)]:w-[1187px]
-            [@media(min-width:1024px)]:w-[900px]
+            [@media(min-width:1024px)]:w-[940px]
+            [@media(max-width:1023px)]:w-[990px]
+            [@media(max-width:500px)]:ml-[17px]
             w-[90%]
             h-auto
             [@media(min-width:1304px)]:mt-[-370px]

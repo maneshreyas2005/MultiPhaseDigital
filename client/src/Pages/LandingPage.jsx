@@ -17,15 +17,8 @@ import ScrollingTestimonials from '../components/ScrollingTestimonials'
 const LandingPage = () => {
     return (
         <div className='relative w-full  bg-black overflow-hidden'>
-            <video
-                autoPlay
-                muted
-                playsInline
-                className="absolute inset-0 w-full object-cover "
-            >
-                <source src={BackGroundVideo} type="video/mp4" />
-            </video>
-            <Navbar />
+            
+            
             <HeroSection />
             {/* <LogoScroller className=''/> */}
             <ServicePage/>

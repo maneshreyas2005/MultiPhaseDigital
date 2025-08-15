@@ -100,6 +100,8 @@ import IPL from '../assets/IPL.png';
 import StarSports from '../assets/StarSports.png';
 import RigiLogo from '../assets/RigiLogo.png';
 import vector4 from '../assets/Vector4.png';
+import BackGroundVideo from '../assets/BackGroundVideo.webm';
+import Navbar from './Navbar';
 
 const HeroSection = () => {
     const logos = [
@@ -119,6 +121,15 @@ const HeroSection = () => {
 
     return (
         <div className="min-h-screen flex flex-col">
+            <video
+                autoPlay
+                muted
+                playsInline
+                className={`absolute inset-0 w-full  object-cover max-[770px]:mt-[50px] max-[640px]:mt-[90px] max-[426px]:mt-[120px] max-[376px]:mt-[150px] `}
+            >
+                <source src={BackGroundVideo} type="video/mp4" />
+            </video>
+            <Navbar />
             {/* Hero Content Section */}
             <div className="relative flex flex-col items-center justify-center text-white px-4 sm:px-6 lg:px-8 text-center flex-1">
                 {/* Top Subtitle */}
@@ -131,13 +142,13 @@ const HeroSection = () => {
                 {/* Main Title */}
                 <div className="flex flex-col mt-3 sm:mt-8 md:mt-10 lg:mt-12 space-y-1 sm:space-y-4">
                     <h1
-                        className="font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl leading-tight"
+                        className="font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-7xl leading-tight"
                         style={{ fontFamily: "'Libertinus Serif', serif", fontWeight: 400 }}
                     >
                         ASIA'S LEADING
                     </h1>
                     <h2
-                        className="font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl leading-tight"
+                        className="font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl 2xl:text-8xl leading-tight"
                         style={{ fontFamily: "'Libertinus Serif', serif", fontWeight: 400 }}
                     >
                         PR COMPANY
