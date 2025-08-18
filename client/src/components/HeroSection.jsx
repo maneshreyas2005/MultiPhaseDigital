@@ -136,7 +136,7 @@ const HeroSection = () => {
                 autoPlay
                 muted
                 playsInline
-                className={`absolute inset-0 w-full object-cover opacity-0 animate-fadeIn  max-[640px]:mt-[90px] max-[426px]:mt-10 max-[376px]:mt-[120px] `}
+                className={`absolute inset-0 w-full object-cover opacity-0 animate-fadeIn  max-[640px]:mt-[90px] max-[426px]:mt-10 max-[376px]:mt-[40px] `}
             >
                 <source src={BackGroundVideo1} type="video/mp4" />
             </video>
@@ -153,13 +153,13 @@ const HeroSection = () => {
                 {/* Main Title */}
                 <div className="flex flex-col  sm:space-y-4">
                     <h1
-                        className="font-bold text-4xl sm:text-6xl md:text-6xl lg:text-[5.2rem] xl:text-9xl 2xl:text-[11rem] "
+                        className="font-bold text-3xl sm:text-4xl md:text-6xl lg:text-[5.2rem] xl:text-9xl 2xl:text-[11rem] "
                         style={{ fontFamily: 'Constantine', fontWeight: 570 }}
                     >
                         ASIA'S LEADING
                     </h1>
                     <h2
-                        className="font-bold mt-[-2rem] lg:mt-[-2rem] xl:mt-[-2rem] text-2xl sm:text-[4.3rem] md:text-[4.3rem] lg:text-[6rem] xl:text-[9rem] 2xl:text-[12rem]"
+                        className="font-bold md:mt-[-2rem] lg:mt-[-2rem] xl:mt-[-2rem] text-3xl sm:text-[4rem] md:text-[4.3rem] lg:text-[6rem] xl:text-[9rem] 2xl:text-[12rem]"
                         style={{ fontFamily: 'Constantine', fontWeight: 570 }}
                     >
                         PR COMPANY

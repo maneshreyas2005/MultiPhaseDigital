@@ -297,8 +297,8 @@ const TestimonialCard = ({ testimonial }) => {
             <div className="absolute -top-2 -left-2 text-6xl text-blue-500/20 font-serif">"</div>
             <div className="absolute -bottom-4 -right-2 text-6xl text-blue-500/20 font-serif rotate-180">"</div>
 
-            <div className="relative z-10 w-[301.04px] h-[253.7px] rounded-[4rem]">
-                <p className="text-gray-300 mt-[40px] text-xl leading-relaxed mb-6 group-hover:text-white transition-colors duration-300">
+            <div className="relative z-10 w-[201.04px] h-[253.7px] rounded-[4rem]">
+                <p className="text-gray-300 mt-[2rem]  text-sm leading-relaxed mb-6 group-hover:text-white transition-colors duration-300">
                     {testimonial.text}
                 </p>
 
@@ -400,7 +400,7 @@ const ScrollingTestimonials = () => {
                     />
                 </div>
 
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 h-screen">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 h-screen">
                     <ScrollingColumn
                         testimonials={leftColumn}
                         direction="up"

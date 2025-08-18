@@ -93,7 +93,7 @@ const ServicePage = () => {
                 {[
                     { value: 6, label: 'Years Of\nExperience' },
                     { value: 5658, label: 'Customers\nWorldwide', separator: ',' },
-                    { value: 12000, label: 'PR works\nCompleted', suffix: '+' }
+                    { value: 12, label: 'PR works\nCompleted', suffix: 'K+' }
                 ].map((stat, i) => (
                     <div
                         key={i}
