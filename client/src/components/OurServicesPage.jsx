@@ -152,7 +152,6 @@ const OurServicesPage = () => {
                 <div
                     className="grid grid-cols-3 md:grid-cols-4 w-full"
                     style={{
-                        fontFamily: 'Constantine',
                         gap: 'clamp(2rem, 4vw, 4rem) clamp(1.5rem, 3vw, 3rem)'
                     }}
                 >
@@ -172,6 +171,7 @@ const OurServicesPage = () => {
                                         ${sectionInView ? "animate-slide-up" : "opacity-0"}
                                     `}
                                     style={{
+                                        fontFamily: 'Constantine',
                                         fontSize: 'clamp(3rem, 6vw, 5rem)',
                                         animationDelay: `${index * 0.1}s`,
                                         animationFillMode: "both"
@@ -182,7 +182,7 @@ const OurServicesPage = () => {
 
                                 {/* Title */}
                                 <h3
-                                    className={`font-bold leading-tight transition-all duration-300 sm:mt-[-10px] md:mt-[-20px] lg:mt-[-30px]   
+                                    className={`font-lg  leading-tight transition-all duration-300 sm:mt-[-10px] md:mt-[-30px] lg:mt-[-38px]   
                                         ${service.highlighted
                                             ? 'bg-gradient-to-r from-[#FF738B] via-[#9116E7] to-[#1B192E] bg-clip-text text-transparent'
                                             : 'text-gray-600 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent'
@@ -190,7 +190,7 @@ const OurServicesPage = () => {
                                         ${sectionInView ? "animate-slide-up" : "opacity-0"}
                                     `}
                                     style={{
-                                        fontSize: 'clamp(1rem, 1.8vw, 1.5rem)',
+                                        fontSize: 'clamp(1.5rem, 2.4vw, 2rem)',
                                         animationDelay: `${index * 0.1 + 0.05}s`,
                                         animationFillMode: "both"
                                     }}
