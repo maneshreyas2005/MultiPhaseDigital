@@ -293,20 +293,20 @@ const testimonials = [
 
 const TestimonialCard = ({ testimonial }) => {
     return (
-        <div className="relative bg-green backdrop-blur-sm rounded-2xl p-6 mb-6 border border-gray-700/30 shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-blue-500/20 hover:bg-gradient-to-br hover:from-gray-800/90 hover:to-gray-700/70 group">
+        <div className="relative bg-green backdrop-blur-sm rounded-[2rem] p-6 mb-6 border border-gray-700/30 shadow-2xl transition-all duration-300 hover:scale-95 hover:rounded-[3rem] hover:shadow-blue-500/20 hover:bg-gradient-to-br hover:from-gray-800/90 hover:to-gray-700/70 group ">
             <div className="absolute -top-2 -left-2 text-6xl text-blue-500/20 font-serif">"</div>
             <div className="absolute -bottom-4 -right-2 text-6xl text-blue-500/20 font-serif rotate-180">"</div>
 
-            <div className="relative z-10">
-                <p className="text-gray-300 text-sm leading-relaxed mb-6 group-hover:text-white transition-colors duration-300">
+            <div className="relative z-10 w-[301.04px] h-[253.7px] rounded-[4rem]">
+                <p className="text-gray-300 mt-[40px] text-xl leading-relaxed mb-6 group-hover:text-white transition-colors duration-300">
                     {testimonial.text}
                 </p>
 
-                <div className="flex items-center gap-3">
+                <div className="flex justify-center items-center gap-3">
                     <img
                         src={testimonial.avatar}
                         alt={testimonial.name}
-                        className="w-12 h-12 rounded-full object-cover ring-2 ring-blue-500/30 group-hover:ring-blue-400/50 transition-all duration-300"
+                        className="w-20 h-20 rounded-full object-cover ring-2 ring-blue-500/30 group-hover:ring-blue-400/50 transition-all duration-300"
                     />
                     <div className="flex-1">
                         <h4 className="text-white font-semibold text-sm group-hover:text-blue-100 transition-colors duration-300">
@@ -323,7 +323,7 @@ const TestimonialCard = ({ testimonial }) => {
                         <Star
                             key={i}
                             size={14}
-                            className="fill-yellow-400 text-yellow-400 group-hover:scale-110 transition-transform duration-300"
+                            className="fill-yellow-400 text-yellow-400 group-hover:scale-95  transition-transform duration-300"
                         />
                     ))}
                 </div>
@@ -370,20 +370,25 @@ const ScrollingTestimonials = () => {
     const rightColumn = testimonials.slice(4, 8);
 
     return (
-        <div className="relative min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 py-20 px-8">
+        <div className="relative min-h-screen bg-[#000000] py-20 px-30"
+        style={{}}>
             <div className="max-w-7xl mx-auto">
                 <div
-                    className="absolute inset-0 bg-cover bg-center opacity-60 "
-                    style={{ backgroundImage: `url(${whiteGridBackGround})` }}
+                    className="absolute inset-0 bg-cover bg-center opacity-60"
+                    style={{
+                        backgroundImage: `url(${whiteGridBackGround})`,
+                        mixBlendMode: "screen", // keeps white visible, removes black
+                        opacity: 0.1,
+                    }}
                 />
 
                 <div className="relative z-10 flex flex-col gap-[10px] items-center">
                     <h1
-                        className="flex flex-col items-center text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold"
+                        className="flex flex-col items-center text-white text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl font-bold"
                         style={{ fontFamily: 'Constantine' }}
                     >
                         <span className="text-center xl:mt-[-50px]">CLIENT REVIEWS</span>
-                        <span className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mt-2 sm:mt-1 md:mt-[10px] lg:mt-[20px] lg:ml-[36px] xl:mt-[10px]">
+                        <span className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl mt-2 sm:mt-1 md:mt-[10px] lg:mt-[20px] lg:ml-[36px] xl:mt-[10px]">
                             WE WORKED HARD TO SATISFY OUR CLIENTS
                         </span>
                     </h1>
@@ -395,7 +400,7 @@ const ScrollingTestimonials = () => {
                     />
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-8 h-screen">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 h-screen">
                     <ScrollingColumn
                         testimonials={leftColumn}
                         direction="up"

@@ -18,7 +18,7 @@ const AirLineMagazines = () => {
             {/* Heading */}
             <div className="w-full max-w-[556px] text-center mb-8 sm:mb-12 px-4">
                 <h1
-                    className={`text-white/40 text-xl sm:text-2xl md:text-3xl font-semibold tracking-wide 
+                    className={`text-white/40 text-xl sm:text-3xl md:text-4xl font-semibold tracking-wide 
                         ${inView ? "animate-slide-up" : "opacity-0"}`}
                     style={{
                         fontFamily: 'Constantine',
@@ -32,7 +32,7 @@ const AirLineMagazines = () => {
                 </h1>
 
                 <h2
-                    className={`text-white/40 text-xl sm:text-2xl md:text-2xl font-semibold tracking-wide mt-2 
+                    className={`text-white/40 text-xl sm:text-2xl md:text-3xl font-semibold tracking-wide mt-2 
                         ${inView ? "animate-slide-up" : "opacity-0"}`}
                     style={{
                         fontFamily: 'Constantine',
@@ -63,7 +63,7 @@ const AirLineMagazines = () => {
                 <div className="lg:hidden flex flex-col items-center space-y-6 sm:space-y-8">
                     {/* Airplane */}
                     <div
-                        className={`${inView ? "animate-slide-in-left" : "opacity-0"}`}
+                        className={`${inView ? "animate-slide-up" : "opacity-0"}`}
                         style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
                     >
                         <img
@@ -113,14 +113,14 @@ const AirLineMagazines = () => {
                 {/* Desktop Layout - Original overlapped design */}
                 <div className="hidden lg:flex lg:items-center lg:w-full lg:min-h-screen mt-[70px]">
                     <div
-                        className={`${inView ? "animate-slide-in-left" : "opacity-0"} z-[1]`}
+                        className={`${inView ? "animate-slide-up" : "opacity-0"} z-[1]`}
                         style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
                     >
                         <img src={Aeroplane} alt="" className="w-[890px] lg:w-[960px] xl:w-[1184.83px] grayscale mt-[-200px] ml-[-30px]" />
                     </div>
 
                     <div
-                        className={`ml-[-360px] xl:ml-[-470px] mt-[-620px] xl:mt-[-760px] z-[0] ${inView ? "animate-slide-up" : "opacity-0"}`}
+                        className={`ml-[-360px] xl:ml-[-470px] md:mt-[-30rem] xl:mt-[-35rem]  z-[0] ${inView ? "animate-slide-up" : "opacity-0"}`}
                         style={{ animationDelay: '0.8s', animationFillMode: 'both' }}
                     >
                         <h1
@@ -146,26 +146,12 @@ const AirLineMagazines = () => {
                         className={`${inView ? "animate-slide-up" : "opacity-0"}`}
                         style={{ animationDelay: '1.1s', animationFillMode: 'both' }}
                     >
-                        <img src={AirMagazine} alt="" className="w-[200px] xl:w-[280px] lg:mt-[-340px] xl:mt-[-410px] ml-[90px]" />
+                        <img src={AirMagazine} alt="" className="w-[200px] xl:w-[280px] md:mt-[-20rem] xl:mt-[-28rem] ml-[90px]" />
                     </div>
                 </div>
             </div>
 
-            {/* Indigo section */}
-            <div
-                className={`flex items-center justify-center w-full max-w-[350px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1209px] 
-                    h-[50px] sm:h-[60px] md:h-[70px] lg:h-[85px] xl:h-[120px] 
-                    mt-4 sm:mt-6 lg:mt-[-310px] xl:mt-[-410px] mb-6 sm:mb-[30px] 
-                    bg-white rounded-2xl sm:rounded-[2rem] overflow-hidden px-4
-                    ${inView ? "animate-slide-up" : "opacity-0"}`}
-                style={{ animationDelay: '1.3s', animationFillMode: 'both' }}
-            >
-                <img
-                    src={Indigo}
-                    alt=""
-                    className="max-w-full h-auto object-contain"
-                />
-            </div>
+            
         </div>
     );
 };

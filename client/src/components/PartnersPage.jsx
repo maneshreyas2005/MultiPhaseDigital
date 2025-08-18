@@ -210,7 +210,7 @@ const PartnersPage = () => {
                 className="
           flex flex-col md:flex-row justify-center items-center bg-black overflow-hidden z-[0]
           gap-4 sm:gap-6 md:gap-[200px] lg:gap-[590px] xl:gap-[640px]
-          mt-6 sm:mt-8 md:mt-[50px]
+          
         "
             >
                 {/* Box 1 */}
@@ -226,13 +226,13 @@ const PartnersPage = () => {
             [@media(max-width:650px)]:w-[220px] [@media(max-width:650px)]:h-[220px]
             w-[200px] h-[200px]
           `}
-                    style={{ animationDelay: '0.4s' }}
+                    style={{ animationDelay: '0.4s'  }}
                 >
                     <div className="rounded-3xl bg-black flex flex-col justify-center items-center text-white text-center w-full h-full">
-                        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold" style={{ fontFamily: 'Constantine' }}>
                             {isStatsVisible ? <CountUp end={7} duration={3} suffix="K+" /> : '0'}
                         </h2>
-                        <p className="text-lg sm:text-xl md:text-1xl mt-2">PR works<br />Completed</p>
+                        <p className="font-light text-lg sm:text-xl md:text-1xl mt-2">PR Works<br />Completed</p>
                     </div>
                 </div>
 
@@ -253,10 +253,10 @@ const PartnersPage = () => {
                     style={{ animationDelay: '0.2s' }}
                 >
                     <div className="rounded-3xl bg-black flex flex-col justify-center items-center text-white text-center w-full h-full">
-                        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold" style={{ fontFamily: 'Constantine' }}>
                             {isStatsVisible ? <CountUp end={800} duration={2} suffix="+" /> : '0'}
                         </h2>
-                        <p className="text-lg sm:text-xl md:text-1xl mt-2">Customers<br />Worldwide</p>
+                        <p className="font-light text-lg sm:text-xl md:text-1xl mt-2">Customers<br />Worldwide</p>
                     </div>
                 </div>
             </div>
@@ -275,7 +275,7 @@ const PartnersPage = () => {
             [@media(min-width:1304px)]:w-[1279.5px]
            [@media(min-width:1190px)]:w-[1187px]
             [@media(min-width:1024px)]:w-[940px]
-            [@media(max-width:1023px)]:w-[990px]
+            [@media(max-width:1023px)]:w-[990px] mt-[-10rem]
             [@media(max-width:500px)]:ml-[17px]
             w-[90%]
             h-auto

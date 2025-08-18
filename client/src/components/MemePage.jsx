@@ -41,7 +41,11 @@ const MemePage = () => {
         <div className="relative w-full bg-black flex items-center justify-center overflow-hidden">
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-60"
-                style={{ backgroundImage: `url(${whiteGridBackGround})` }} // Fixed the template literal syntax
+                style={{
+                    backgroundImage: `url(${whiteGridBackGround})`,
+                    mixBlendMode: "screen", // keeps white visible, removes black
+                    opacity: 0.1,
+                }}
             />
             {/* Vignette Effect */}
             <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_30%,rgba(0,0,0,0.7)_100%)]"></div>

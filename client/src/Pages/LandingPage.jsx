@@ -13,6 +13,8 @@ import PartnersPage from '../components/PartnersPage'
 import FaqsPage from '../components/FaqsPage'
 import Founders from '../components/Founders'
 import ScrollingTestimonials from '../components/ScrollingTestimonials'
+import ServicePageImage from '../components/ServicePageImage'
+import HorizontalLine from '../components/HorizontalLine'
 
 const LandingPage = () => {
     return (
@@ -22,6 +24,7 @@ const LandingPage = () => {
             <HeroSection />
             {/* <LogoScroller className=''/> */}
             <ServicePage/>
+            <ServicePageImage />
             <MediaFeature />
             <MemePage/>
             <OurServicesPage/>
@@ -30,6 +33,7 @@ const LandingPage = () => {
             <PartnersPage />
             <Founders/>
             <FaqsPage/>
+            <HorizontalLine/>
             <Footer />
             
         </div>

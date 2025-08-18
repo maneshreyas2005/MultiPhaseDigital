@@ -92,7 +92,8 @@ import Logo from '../assets/Logo.svg';
 
 export default function MultiphaseFooter() {
     return (
-        <footer className="bg-black text-white py-12 px-6">
+        <footer className="w-full bg-black text-white py-12 px-6">
+            
             <div className="max-w-6xl mx-auto text-center">
 
                 {/* Logo */}
@@ -100,16 +101,16 @@ export default function MultiphaseFooter() {
                     <img
                         src={Logo}
                         alt="Company Logo"
-                        className="w-48 sm:w-56 md:w-[283px] h-auto"
+                        className="w-48 sm:w-56 md:w-[230px] h-auto"
                     />
                 </div>
 
                 {/* Main Heading */}
                 <div className="mb-12 px-2">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold leading-snug md:leading-tight mb-2">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight mb-2">
                         Drop us a line or two, we are open for
                     </h2>
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold leading-snug md:leading-tight">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight">
                         creative minds and collaborations!
                     </h2>
                 </div>

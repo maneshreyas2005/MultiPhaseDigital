@@ -255,23 +255,31 @@ const Founders = () => {
             </div>
 
             {/* Desktop Layout (≥1024px) */}
-            <div className="hidden lg:flex relative justify-center items-center gap-6 lg:gap-8 xl:gap-12 mt-[-48px] bg-black px-4 sm:px-6 lg:px-8 overflow-hidden z-[0]">
-                <div className={`flex items-center gap-4 lg:gap-6 ${isInView ? 'animate-slide-in-right' : ''}`}>
-                    <img src={Founder1} alt="Anubhav Dubey" className="w-[280px] lg:w-[350px] xl:w-[400px] h-auto rounded-lg object-contain" />
-                    <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center whitespace-normal">
+            <div className="hidden lg:flex flex-col relative justify-center items-center  mt-[-4rem] bg-black px-4 sm:px-6 lg:px-8 overflow-hidden z-[0]">
+                <div className='flex mt-[-3rem] gap-4 lg:gap-6 absolute'>
+                    <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal">
                         ANUBHAV DUBEY
                         <br />
                         MENTOR
                     </span>
-                </div>
-                <div className={`flex items-center xl:gap-6 ${isInView ? 'animate-slide-in-left' : ''}`}>
+
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center md:ml-[20px] whitespace-normal">
                         MEHUL PUROHIT
                         <br />
                         FOUNDER & CEO
                     </span>
-                    <img src={Founder2} alt="Mehul Purohit" className="w-[320px] lg:w-[370px] xl:w-[420px] h-auto rounded-lg object-contain" />
                 </div>
+                <div className='flex gap-6 lg:gap-[14rem] xl:gap-[22rem] relative'>
+                    <div className={`flex items-center gap-4 lg:gap-6 ${isInView ? 'animate-slide-in-right' : ''}`}>
+                        <img src={Founder1} alt="Anubhav Dubey" className="w-[280px] lg:w-[340px] xl:w-[400px] h-auto rounded-lg object-contain" />
+
+                    </div>
+                    <div className={`flex items-center xl:gap-6 ${isInView ? 'animate-slide-in-left' : ''}`}>
+
+                        <img src={Founder2} alt="Mehul Purohit" className="w-[320px] lg:w-[400px] xl:w-[460px] h-auto rounded-lg object-contain" />
+                    </div>
+                </div>
+                
             </div>
 
             {/* Tablet & Mobile Layout (<1024px) */}
