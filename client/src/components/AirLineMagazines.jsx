@@ -3,6 +3,7 @@ import React from 'react';
 import vector6 from '../assets/Vector6.png';
 import Aeroplane from '../assets/Airplane.png';
 import Aeroplane1 from '../assets/aeroplane2.png';
+import Airplane3 from '../assets/Airplane3.png';
 import AirMagazine from '../assets/AirMagazine.png';
 import Indigo from '../assets/Indigoandmore.png';
 import useInView from './UseInView';
@@ -116,11 +117,11 @@ const AirLineMagazines = () => {
                         className={`${inView ? "animate-slide-up" : "opacity-0"} z-[1]`}
                         style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
                     >
-                        <img src={Aeroplane} alt="" className="w-[890px] lg:w-[960px] xl:w-[1184.83px] grayscale mt-[-200px] ml-[-30px]" />
+                        <img src={Airplane3} alt="" className="w-[890px] lg:w-[960px] xl:w-[1184.83px] grayscale mt-[-146px] ml-[-30px] " />
                     </div>
 
                     <div
-                        className={`ml-[-360px] xl:ml-[-470px] md:mt-[-30rem] xl:mt-[-35rem]  z-[0] ${inView ? "animate-slide-up" : "opacity-0"}`}
+                        className={`ml-[-360px] md:ml-[-320px] xl:ml-[-24rem] md:mt-[-33rem] xl:mt-[-38rem]  z-[0] ${inView ? "animate-slide-up" : "opacity-0"}`}
                         style={{ animationDelay: '0.8s', animationFillMode: 'both' }}
                     >
                         <h1
@@ -133,7 +134,7 @@ const AirLineMagazines = () => {
                         </h1>
                         <h2 className="text-white/40 text-5xl xl:text-6xl font-semibold tracking-wide">
                             <span className="text-white" style={{ fontFamily: 'Constantine' }}>
-                                2.5 CR
+                                3.5 CR
                             </span>
                             <br />
                             <span className="text-white" style={{ fontFamily: 'Constantine' }}>
@@ -146,7 +147,7 @@ const AirLineMagazines = () => {
                         className={`${inView ? "animate-slide-up" : "opacity-0"}`}
                         style={{ animationDelay: '1.1s', animationFillMode: 'both' }}
                     >
-                        <img src={AirMagazine} alt="" className="w-[200px] xl:w-[280px] md:mt-[-20rem] xl:mt-[-28rem] ml-[90px]" />
+                        <img src={AirMagazine} alt="" className="w-[200px] xl:w-[280px] md:mt-[-20rem] xl:mt-[-28rem] ml-[60px]" />
                     </div>
                 </div>
             </div>

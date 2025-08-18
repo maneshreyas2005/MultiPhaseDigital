@@ -197,7 +197,7 @@ const PartnersPage = () => {
                     className="w-[200px] sm:w-[240px]  xl:w-[339px] [@media(min-width:1190px)]:w-[310px] mt-4 sm:mt-5 md:mt-[20px] mx-auto xl:ml-[8rem] sm:ml-[10rem] mb-4 sm:mb-5 md:mb-[20px]"
                 />
                 <span
-                    className={`font-light text-xl sm:text-2xl md:text-[32px] leading-tight sm:leading-[100%] text-white/80 tracking-normal capitalize w-full max-w-[448px] h-auto md:h-[76px] mx-auto ${isHeadingVisible ? 'animate-fade-slide-up' : ''
+                    className={`font-light text-xl  sm:text-2xl md:text-[32px] leading-tight sm:leading-[100%] text-white/80 tracking-normal capitalize w-full max-w-[448px] h-auto md:h-[76px] mx-auto ${isHeadingVisible ? 'animate-fade-slide-up' : ''
                         }`}
                 >
                     We Favour Increasing The <br /> Visibility Of The Brands

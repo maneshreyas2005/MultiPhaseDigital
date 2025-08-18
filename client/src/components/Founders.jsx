@@ -256,7 +256,7 @@ const Founders = () => {
 
             {/* Desktop Layout (≥1024px) */}
             <div className="hidden lg:flex flex-col relative justify-center items-center  mt-[-4rem] bg-black px-4 sm:px-6 lg:px-8 overflow-hidden z-[0]">
-                <div className='flex mt-[-3rem] gap-4 lg:gap-6 absolute'>
+                <div className='flex mt-[-3rem] gap-6 lg:gap-10 absolute'>
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal">
                         ANUBHAV DUBEY
                         <br />

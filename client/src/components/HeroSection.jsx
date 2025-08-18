@@ -153,13 +153,13 @@ const HeroSection = () => {
                 {/* Main Title */}
                 <div className="flex flex-col  sm:space-y-4">
                     <h1
-                        className="font-bold text-3xl sm:text-4xl md:text-6xl lg:text-[5.2rem] xl:text-9xl 2xl:text-[11rem] "
+                        className="font-bold text-3xl sm:text-4xl md:text-6xl lg:text-[5.2rem] xl:text-9xl "
                         style={{ fontFamily: 'Constantine', fontWeight: 570 }}
                     >
                         ASIA'S LEADING
                     </h1>
                     <h2
-                        className="font-bold md:mt-[-2rem] lg:mt-[-2rem] xl:mt-[-2rem] text-3xl sm:text-[4rem] md:text-[4.3rem] lg:text-[6rem] xl:text-[9rem] 2xl:text-[12rem]"
+                        className="font-bold md:mt-[-2rem] lg:mt-[-2rem] xl:mt-[-2rem] text-3xl sm:text-[4rem] md:text-[4.3rem] lg:text-[6rem] xl:text-[9rem]"
                         style={{ fontFamily: 'Constantine', fontWeight: 570 }}
                     >
                         PR COMPANY
@@ -167,7 +167,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Bottom Subtitle */}
-                <div className="mt-4 sm:mt-12 md:mt-18 lg:mt-20 xl:mt-40 2xl:mt-80">
+                <div className="mt-4 sm:mt-12 md:mt-18 lg:mt-20 xl:mt-40">
                     <p className="font-light text-xs sm:text-sm md:text-base lg:text-lg text-white/60 capitalize tracking-wide px-2">
                         Worked with
                     </p>
