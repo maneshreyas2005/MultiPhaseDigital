@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Constantine';
-  src: url('./assets/constantine/Constantine.ttf') format('truetype');
+  src: url('../public/constantine/Constantine.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
