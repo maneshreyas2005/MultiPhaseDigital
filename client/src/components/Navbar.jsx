@@ -183,8 +183,8 @@ const Navbar = () => {
                 </div>
 
                 <div className={`items-center justify-between w-full lg:flex lg:w-auto lg:order-1 ${isMobileMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu-2">
-                    <div className='rounded-full px-6 2xl:px-8' style={{ backgroundColor: '#050505' }}>
-                        <div className='flex bg-gray-800 rounded-full px-4 mt-[10px] 2xl:px-6' style={{
+                    <div className='lg:rounded-full px-6 2xl:px-8' style={{ backgroundColor: '#050505' }}>
+                        <div className='flex bg-gray-800 lg:rounded-full px-4 mt-[10px] 2xl:px-6' style={{
                             backgroundColor: '#050505',
                             boxShadow: '0px 7px 28px 0px #FFFFFF26 inset',
                         }}>
