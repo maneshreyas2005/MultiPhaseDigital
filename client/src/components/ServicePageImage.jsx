@@ -42,7 +42,7 @@ const ServicePageImage = () => {
   return (
       <div
           ref={imagesRef}
-          className={`relative w-full z-1 mt-[-20px] xs:mt-[-30px] sm:mt-[-40px] md:mt-[-60px] lg:mt-[-130px] 
+          className={`relative w-full z-1 mt-[-20px] xs:mt-[-30px] sm:mt-[-40px] md:mt-[-60px] lg:mt-[-150px] 
     ${isImagesVisible ? 'animate-slide-up' : 'opacity-0'}`}
       >
           <img

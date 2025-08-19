@@ -91,19 +91,20 @@ import useInView from './UseInView'; // <-- path to hook
 
 const OurServicesPage = () => {
     const services = [
-        { number: "01", title: "Website Development" },
-        { number: "02", title: "Digital PR" },
-        { number: "03", title: "Cinema AD" },
-        { number: "04", title: "Award Shows" },
-        { number: "05", title: "Magazines" },
-        { number: "06", title: "Newspaper PR" },
-        { number: "07", title: "Blue Verification" },
-        { number: "08", title: "Digital Marketing" },
+        { number: "01", title: "Digital PR" },
+        { number: "02", title: "Podcast PR" },
+        { number: "03", title: "Newspaper PR" },
+        { number: "04", title: "Magazines" },
+        { number: "05", title: "Offline Branding" },
+        { number: "06", title: "Cinema AD" },
+        { number: "07", title: "TV Ads" },
+        { number: "08", title: "Influencer Marketing" },
         { number: "09", title: "Social Media Management" },
-        { number: "10", title: "Tv Advertisement" },
-        { number: "11", title: "Press Conference" },
-        { number: "12", title: "Podcast" },
-        { number: "13", title: "Biography Of Wikipedia/ IMDB" }
+        { number: "10", title: "Digital Marketing" },
+        { number: "11", title: "End To End Production" },
+        { number: "12", title: "Social Media Management" },
+        { number: "13", title: "Website Development" },
+        { number: "14", title: "Biography Of Wikipedia/ IMDB" }
     ];
 
     const [sectionRef, sectionInView] = useInView({ threshold: 0.1 });
@@ -146,7 +147,7 @@ const OurServicesPage = () => {
 
             {/* Services Grid */}
             <div
-                className="w-full max-w-none"
+                className="w-full max-w-none mx-auto lg:ml-[2rem]"
                 style={{ maxWidth: 'clamp(800px, 90vw, 1400px)' }}
             >
                 <div
@@ -159,14 +160,23 @@ const OurServicesPage = () => {
                         <div
                             key={index}
                             className="group cursor-pointer transition-all duration-300 ease-out flex flex-col"
+                            
                         >
-                            <div className="space-y-3">
+                            <div className="space-y-3"
+                                onMouseEnter={(e) => {
+                                    const numberEl = e.currentTarget.querySelector('.number');
+                                    if (numberEl) numberEl.style.WebkitTextStroke = "0px transparent";
+                                }}
+                                onMouseLeave={(e) => {
+                                    const numberEl = e.currentTarget.querySelector('.number');
+                                    if (numberEl) numberEl.style.WebkitTextStroke = "0.5px #ffffff";
+                                }}>
                                 {/* Number */}
                                 <div
-                                    className={`font-light tracking-wider transition-all duration-400
+                                    className={`number font-light tracking-wider transition-all duration-400 overflow-hidden
                                         ${service.highlighted
                                             ? 'bg-gradient-to-r from-[#FF738B] via-[#9116E7] to-[#1B192E] bg-clip-text text-transparent'
-                                            : 'text-gray-600 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent'
+                                            : 'text-gray-600   group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text'
                                         }
                                         ${sectionInView ? "animate-slide-up" : "opacity-0"}
                                     `}
@@ -174,18 +184,22 @@ const OurServicesPage = () => {
                                         fontFamily: 'Constantine',
                                         fontSize: 'clamp(3rem, 6vw, 5rem)',
                                         animationDelay: `${index * 0.1}s`,
-                                        animationFillMode: "both"
+                                        animationFillMode: "both",
+                                        color: "transparent", /* Make inside transparent */
+                                        WebkitTextStroke: "0.5px #ffffff", /* White outline */
                                     }}
+                                    
                                 >
                                     {service.number}
                                 </div>
 
                                 {/* Title */}
+                                
                                 <h3
-                                    className={`font-lg  leading-tight transition-all duration-300 sm:mt-[-10px] md:mt-[-30px] lg:mt-[-38px]   
+                                    className={` font-lg  leading-tight transition-all duration-300 sm:mt-[-10px] md:mt-[-40px] lg:mt-[-42px] xl:mt-[-50px]   
                                         ${service.highlighted
                                             ? 'bg-gradient-to-r from-[#FF738B] via-[#9116E7] to-[#1B192E] bg-clip-text text-transparent'
-                                            : 'text-gray-600 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent'
+                                            : 'text-white/80 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent'
                                         }
                                         ${sectionInView ? "animate-slide-up" : "opacity-0"}
                                     `}
@@ -197,6 +211,7 @@ const OurServicesPage = () => {
                                 >
                                     {service.title}
                                 </h3>
+                                
                             </div>
                         </div>
                     ))}

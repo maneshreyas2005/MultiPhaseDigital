@@ -221,7 +221,10 @@ const PartnersPage = () => {
                 {/* Box 1 */}
                 <div
                     className={`group relative inline-block overflow-hidden rounded-3xl p-[2px] sm:p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 z-[0] ${sectionInView ? 'animate-slide-up' : 'opacity-0'} [@media(min-width:1304px)]:w-[280.91px] [@media(min-width:1304px)]:h-[280.91px] [@media(min-width:1164px)]:w-[240px] [@media(min-width:1164px)]:h-[240px] [@media(min-width:1190px)]:w-[260px] [@media(min-width:1190px)]:h-[260px] [@media(max-width:1023px)]:w-[260px] [@media(max-width:1023px)]:h-[260px] [@media(max-width:650px)]:w-[220px] [@media(max-width:650px)]:h-[220px] w-[200px] h-[200px]`}
-                    style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
+                    style={{ animationDelay: '0.2s', animationFillMode: 'both' ,
+                        backgroundColor: '#000000',
+                        boxShadow: '0px 3px 20px 0px #07070726 inset',
+                     }}
                 >
                     <div className="rounded-3xl bg-black flex flex-col justify-center items-center text-white text-center w-full h-full">
                         <h2
@@ -231,7 +234,7 @@ const PartnersPage = () => {
                             {sectionInView ? <CountUp end={7} duration={3} suffix="K+" /> : '0'}
                         </h2>
                         <p
-                            className="font-light text-lg sm:text-xl md:text-1xl mt-2 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent"
+                            className="font-light text-lg sm:text-2xl md:text-3xl mt-2 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent"
                         >
                             PR Works<br />Completed
                         </p>
@@ -251,7 +254,7 @@ const PartnersPage = () => {
                             {sectionInView ? <CountUp end={800} duration={2} suffix="+" /> : '0'}
                         </h2>
                         <p
-                            className="font-light text-lg sm:text-xl md:text-1xl mt-2 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent"
+                            className="font-light text-lg sm:text-2xl md:text-3xl mt-2 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent"
                         >
                             Customers<br />Worldwide
                         </p>

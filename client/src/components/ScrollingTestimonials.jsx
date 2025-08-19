@@ -293,20 +293,22 @@ const testimonials = [
 
 const TestimonialCard = ({ testimonial }) => {
     return (
-        <div className="relative bg-green backdrop-blur-sm rounded-[2rem] p-6 mb-6 border border-gray-700/30 shadow-2xl transition-all duration-300 hover:scale-95 hover:rounded-[3rem] hover:shadow-blue-500/20 hover:bg-gradient-to-br hover:from-gray-800/90 hover:to-gray-700/70 group ">
-            <div className="absolute -top-2 -left-2 text-6xl text-blue-500/20 font-serif">"</div>
-            <div className="absolute -bottom-4 -right-2 text-6xl text-blue-500/20 font-serif rotate-180">"</div>
+        <div className="relative bg-transparent rounded-[2rem] p-6 mb-6 border border-gray-700/30 shadow-2xl transition-all duration-300 hover:scale-95 hover:rounded-[3rem] hover:shadow-purple-500/20 hover:bg-gradient-to-br hover:from-gray-800/90 hover:to-gray-700/70 group ">
+            
+            <div className="absolute -bottom-9 -right-1 text-[10rem] text-blue-500/20 font-serif font-bold tracking-tighter" >
+                ,,
+            </div>
 
-            <div className="relative z-10 w-[201.04px] h-[253.7px] rounded-[4rem]">
-                <p className="text-gray-300 mt-[2rem]  text-sm leading-relaxed mb-6 group-hover:text-white transition-colors duration-300">
+            <div className="relative z-10 w-[151.04px] lg:w-[200.04px] h-[253.7px] rounded-[4rem]">
+                <p className="text-gray-300 mt-[2rem] w-[230px] xl:w-[351.04px] text-sm lg:text-lg leading-relaxed mb-6 group-hover:text-white transition-colors duration-300">
                     {testimonial.text}
                 </p>
 
-                <div className="flex justify-center items-center gap-3">
+                <div className="flex justify-center items-center gap-3 ">
                     <img
                         src={testimonial.avatar}
                         alt={testimonial.name}
-                        className="w-20 h-20 rounded-full object-cover ring-2 ring-blue-500/30 group-hover:ring-blue-400/50 transition-all duration-300"
+                        className="w-20 h-20 rounded-full object-cover ring-2 ring-purple-500/30 group-hover:ring-purple-400/50 transition-all duration-300"
                     />
                     <div className="flex-1">
                         <h4 className="text-white font-semibold text-sm group-hover:text-blue-100 transition-colors duration-300">
@@ -370,17 +372,23 @@ const ScrollingTestimonials = () => {
     const rightColumn = testimonials.slice(4, 8);
 
     return (
-        <div className="relative min-h-screen bg-[#000000] py-20 px-30 mt-[-7rem]"
+        <div className="relative min-h-screen bg-black py-20 px-30 mt-[-7rem] overflow-hidden"
         style={{}}>
             <div className="max-w-7xl mx-auto">
                 <div
-                    className="absolute inset-0 bg-cover bg-center opacity-60"
+                    className="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-screen"
                     style={{
                         backgroundImage: `url(${whiteGridBackGround})`,
                         mixBlendMode: "screen", // keeps white visible, removes black
-                        opacity: 0.1,
+                        opacity: 0.2,
                     }}
                 />
+
+                Purple vignette effect
+                <div className="absolute inset-0 pointer-events-none">
+                    {/* Big centered radial purple glow */}
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(140,35,180,0.25)_0%,_rgba(0,0,0,1)_70%)]"></div>
+                </div>
 
                 <div className="relative z-10 flex flex-col gap-[10px] items-center">
                     <h1
@@ -420,9 +428,7 @@ const ScrollingTestimonials = () => {
             </div>
 
             <div className="fixed inset-0 pointer-events-none">
-                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-                <div className="absolute top-3/4 left-1/2 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl"></div>
             </div>
         </div>
     );

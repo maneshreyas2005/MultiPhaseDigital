@@ -97,34 +97,29 @@ const ServicePage = () => {
                 ].map((stat, i) => (
                     <div
                         key={i}
-                        className={`group relative inline-block rounded-[2rem] p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 ${isStatsVisible ? 'animate-slide-up' : 'opacity-0'}
+                        className={`group relative inline-block rounded-[3rem] p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 ${isStatsVisible ? 'animate-slide-up' : 'opacity-0'}
                         `}
-                        style={{ animationDelay: `${i * 0.2}s` }}
+                        style={{
+                            animationDelay: `${i * 0.2}s`
+}}
                     >
-                        <div className="rounded-[2rem] bg-black w-[140px] xs:w-[160px] sm:w-[180px] md:w-[200px]  lg:w-[250px] xl:w-[280px] 2xl:w-[300px] aspect-square flex flex-col justify-center items-center text-white text-center overflow-hidden">
+                        <div className="rounded-[3rem] bg-black w-[140px] xs:w-[160px] sm:w-[180px] md:w-[200px]  lg:w-[250px] xl:w-[280px] 2xl:w-[300px] aspect-square flex flex-col justify-center items-center text-white text-center overflow-hidden " style={{
+                            backgroundColor: '#000000',
+                            boxShadow: '0px 3px 15px 0px #FFFFFF26 inset',
+                        }}>
                             <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold" style={{ fontFamily: 'Constantine' }}>
                                 {isStatsVisible ? <CountUp end={stat.value} duration={2} separator={stat.separator} suffix={stat.suffix} /> : '0'}
                             </h2>
-                            <p className="font-light text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl whitespace-pre-line mt-1 sm:mt-2">
+                            <p className="font-light text-xs xs:text-sm sm:text-base md:text-lg lg:text-3xl xl:text-3xl whitespace-pre-line mt-1 sm:mt-2">
                                 {stat.label}
                             </p>
                         </div>
                     </div>
+                    
+
                 ))}
             </div>
 
-            {/* Image */}
-            {/* <div
-                ref={imagesRef}
-                className={`relative w-full z-1 mt-[-20px] xs:mt-[-30px] sm:mt-[-40px] md:mt-[-60px] lg:mt-[-130px] 
-        ${isImagesVisible ? 'animate-slide-up' : 'opacity-0'}`}
-            >
-                <img
-                    src={Pandavasss}
-                    alt=""
-                    className="w-full h-auto mx-auto sm:px-0"
-                />
-            </div> */}
             
 
         </div>
