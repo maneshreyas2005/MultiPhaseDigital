@@ -206,7 +206,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="flex items-center relative">
                                     <a href="#"
-                                        className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'Services' ? 'text-pink-400' : ''}`}
+                                        className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'Services' ? 'text-white' : ''}`}
                                         onClick={() => handleTabClick('Services')}>
                                         Services
                                     </a>
@@ -220,7 +220,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="flex items-center relative">
                                     <a href="#"
-                                        className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'Testimonial' ? 'text-pink-400' : ''}`}
+                                        className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'Testimonial' ? 'text-white' : ''}`}
                                         onClick={() => handleTabClick('Testimonial')}>
                                         Testimonial
                                     </a>
@@ -234,7 +234,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="flex items-center relative">
                                     <a href="#"
-                                        className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'Our Presence' ? 'text-pink-400' : ''}`}
+                                        className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'Our Presence' ? 'text-white' : ''}`}
                                         onClick={() => handleTabClick('Our Presence')}>
                                         Our Presence
                                     </a>
@@ -248,7 +248,7 @@ const Navbar = () => {
                                 </li>
                                 <li className="flex items-center relative">
                                     <a href="#"
-                                        className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'About Us' ? 'text-pink-400' : ''}`}
+                                        className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'About Us' ? 'text-white' : ''}`}
                                         onClick={() => handleTabClick('About Us')}>
                                         About Us
                                     </a>
