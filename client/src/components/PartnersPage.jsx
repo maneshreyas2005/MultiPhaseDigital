@@ -85,7 +85,7 @@
 //                 className="
 //           flex flex-col md:flex-row justify-center items-center bg-black overflow-hidden z-[0]
 //           gap-4 sm:gap-6 md:gap-[200px] lg:gap-[590px] xl:gap-[640px]
-          
+
 //         "
 //             >
 //                 {/* Box 1 */}
@@ -122,7 +122,7 @@
 //             [@media(min-width:1090px)]:w-[240px] [@media(min-width:1090px)]:h-[240px]
 //             [@media(max-width:1023px)]:w-[260px] [@media(max-width:1023px)]:h-[260px]
 //             [@media(max-width:650px)]:w-[220px] [@media(max-width:650px)]:h-[220px]
-            
+
 //             w-[200px] h-[200px]
 //           `}
 //                     style={{ animationDelay: '0.2s' }}
@@ -157,7 +157,7 @@
 //             [@media(min-width:1304px)]:mt-[-370px]
 //            [@media(min-width:1190px)]:mt-[-335px] 
 //             [@media(min-width:1024px)]:mt-[-300px]
-            
+
 //             mx-auto
 //           "
 //                 />
@@ -220,11 +220,12 @@ const PartnersPage = () => {
             >
                 {/* Box 1 */}
                 <div
-                    className={`group relative inline-block overflow-hidden rounded-3xl p-[2px] sm:p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 z-[0] ${sectionInView ? 'animate-slide-up' : 'opacity-0'} [@media(min-width:1304px)]:w-[280.91px] [@media(min-width:1304px)]:h-[280.91px] [@media(min-width:1164px)]:w-[240px] [@media(min-width:1164px)]:h-[240px] [@media(min-width:1190px)]:w-[260px] [@media(min-width:1190px)]:h-[260px] [@media(max-width:1023px)]:w-[260px] [@media(max-width:1023px)]:h-[260px] [@media(max-width:650px)]:w-[220px] [@media(max-width:650px)]:h-[220px] w-[200px] h-[200px]`}
-                    style={{ animationDelay: '0.2s', animationFillMode: 'both' ,
+                    className={`group relative inline-block overflow-hidden rounded-3xl p-[2px] sm:p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 z-[0] ${sectionInView ? 'animate-slide-up' : 'opacity-0'} [@media(min-width:1304px)]:w-[280.91px] [@media(min-width:1304px)]:h-[280.91px] [@media(min-width:1164px)]:w-[240px] [@media(min-width:1164px)]:h-[240px] [@media(min-width:1190px)]:w-[260px] [@media(min-width:1190px)]:h-[260px] [@media(max-width:1023px)]:w-[260px] [@media(max-width:1023px)]:h-[260px] [@media(max-width:650px)]:w-[200px] [@media(max-width:650px)]:h-[200px] w-[200px] h-[200px]`}
+                    style={{
+                        animationDelay: '0.2s', animationFillMode: 'both',
                         backgroundColor: '#000000',
                         boxShadow: '0px 3px 20px 0px #07070726 inset',
-                     }}
+                    }}
                 >
                     <div className="rounded-3xl bg-black flex flex-col justify-center items-center text-white text-center w-full h-full">
                         <h2
@@ -243,7 +244,7 @@ const PartnersPage = () => {
 
                 {/* Box 2 */}
                 <div
-                    className={`group relative inline-block overflow-hidden rounded-3xl p-[2px] sm:p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 z-[0] ${sectionInView ? 'animate-slide-up' : 'opacity-0'} [@media(min-width:1304px)]:w-[280.91px] [@media(min-width:1304px)]:h-[280.91px] [@media(min-width:1190px)]:w-[260px] [@media(min-width:1190px)]:h-[260px] [@media(min-width:1090px)]:w-[240px] [@media(min-width:1090px)]:h-[240px] [@media(max-width:1023px)]:w-[260px] [@media(max-width:1023px)]:h-[260px] [@media(max-width:650px)]:w-[220px] [@media(max-width:650px)]:h-[220px] w-[200px] h-[200px]`}
+                    className={`group relative inline-block overflow-hidden rounded-3xl p-[2px] sm:p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 z-[0] ${sectionInView ? 'animate-slide-up' : 'opacity-0'} [@media(min-width:1304px)]:w-[280.91px] [@media(min-width:1304px)]:h-[280.91px] [@media(min-width:1190px)]:w-[260px] [@media(min-width:1190px)]:h-[260px] [@media(min-width:1090px)]:w-[240px] [@media(min-width:1090px)]:h-[240px] [@media(max-width:1023px)]:w-[260px] [@media(max-width:1023px)]:h-[260px] [@media(max-width:650px)]:w-[200px] [@media(max-width:650px)]:h-[200px] w-[200px] h-[200px]`}
                     style={{ animationDelay: '0.3s', animationFillMode: 'both' }}
                 >
                     <div className="rounded-3xl bg-black flex flex-col justify-center items-center text-white text-center w-full h-full">
@@ -264,23 +265,24 @@ const PartnersPage = () => {
 
             {/* Partner Image */}
             <div
-                className={`group relative inline-block rounded-3xl md:ml-[30px] p-[2px] sm:p-[3.58px] z-[1] transform transition-transform duration-500 hover:scale-105 ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
+                className={`group  relative inline-block rounded-3xl md:ml-[30px] p-[2px] sm:p-[3.58px] z-[1] transform transition-transform duration-500 hover:scale-105 ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
                 style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
             >
                 <img
                     src={Pandav}
                     alt="Pandav Partner"
                     className="
-            [@media(min-width:1304px)]:w-[1279.5px]
+            [@media(min-width:1304px)]:w-[1276.5px]
            [@media(min-width:1190px)]:w-[1187px]
             [@media(min-width:1024px)]:w-[940px]
             [@media(max-width:1023px)]:w-[990px] mt-[-10rem]
-            [@media(max-width:500px)]:ml-[17px]
+            [@media(max-width:767px)]:ml-[14px] mt-[-100px]
             w-[90%]
             h-auto
             [@media(min-width:1304px)]:mt-[-370px]
            [@media(min-width:1190px)]:mt-[-335px] 
             [@media(min-width:1024px)]:mt-[-300px]
+             [@media(max-width:616px)]:mt-[-40px]
             mx-auto
           "
                 />

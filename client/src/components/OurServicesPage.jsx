@@ -195,8 +195,8 @@ const OurServicesPage = () => {
 
                                 {/* Title */}
                                 
-                                <h3
-                                    className={` font-lg  leading-tight transition-all duration-300 sm:mt-[-10px] md:mt-[-40px] lg:mt-[-42px] xl:mt-[-50px]   
+                                {/* <h3
+                                    className={`font-base md:font-lg  leading-tight transition-all duration-300 sm:mt-[-10px] md:mt-[-40px] lg:mt-[-42px] xl:mt-[-50px]   
                                         ${service.highlighted
                                             ? 'bg-gradient-to-r from-[#FF738B] via-[#9116E7] to-[#1B192E] bg-clip-text text-transparent'
                                             : 'text-white/80 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent'
@@ -210,7 +210,26 @@ const OurServicesPage = () => {
                                     }}
                                 >
                                     {service.title}
+                                </h3> */}
+                                <h3
+                                    className={`
+    text-xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl
+    font-base md:font-lg leading-tight transition-all duration-300 
+    sm:mt-[-10px] md:mt-[-40px] lg:mt-[-42px] xl:mt-[-50px]   
+    ${service.highlighted
+                                            ? 'bg-gradient-to-r from-[#FF738B] via-[#9116E7] to-[#1B192E] bg-clip-text text-transparent'
+                                            : 'text-white/80 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent'
+                                        }
+    ${sectionInView ? "animate-slide-up" : "opacity-0"}
+  `}
+                                    style={{
+                                        animationDelay: `${index * 0.1 + 0.05}s`,
+                                        animationFillMode: "both"
+                                    }}
+                                >
+                                    {service.title}
                                 </h3>
+
                                 
                             </div>
                         </div>

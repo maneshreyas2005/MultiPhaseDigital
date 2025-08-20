@@ -71,16 +71,66 @@ const testimonials = [
     }
 ];
 
+// const TestimonialCard = ({ testimonial }) => {
+//     return (
+//         <div className="relative bg-transparent rounded-[2rem] p-6 mb-6 border border-gray-700/30 shadow-2xl transition-all duration-300 hover:scale-95 hover:rounded-[3rem] hover:shadow-purple-500/20 hover:bg-gradient-to-br hover:from-gray-800/90 hover:to-gray-700/70 group ">
+
+//             <div className="absolute -bottom-4 -right-[0.1rem] md:-bottom-9 md:-right-1 text-[5rem] md:text-[10rem] text-blue-500/20 font-serif font-bold tracking-tighter" >
+//                 ,,
+//             </div>
+
+//             <div className="relative z-10 xs:w-[210px] xs:h-[150px] md:w-[191.04px]  xl:w-[200.04px]  md:h-[210px] xl:h-[253.7px] rounded-[4rem]">
+//                 <p className="text-gray-300 xl:mt-[2rem] xs:w-[160px] md:w-[240px] xl:w-[351.04px] sm:text-sm md:text-base xl:text-xl leading-relaxed md:mb-3 xl:mb-6 group-hover:text-white transition-colors duration-300">
+//                     {testimonial.text}
+//                 </p>
+
+//                 <div className="flex justify-center items-center gap-3 ">
+//                     <img
+//                         src={testimonial.avatar}
+//                         alt={testimonial.name}
+//                         className="w-12 h-12 md:w-14 md:h-14 xl:w-20 xl:h-20 rounded-full object-cover ring-2 ring-purple-500/30 group-hover:ring-purple-400/50 transition-all duration-300"
+//                     />
+//                     <div className="flex-1">
+//                         <h4 className="text-white font-semibold text-sm group-hover:text-blue-100 transition-colors duration-300">
+//                             {testimonial.name}
+//                         </h4>
+//                         <p className="text-gray-400 text-xs group-hover:text-gray-300 transition-colors duration-300">
+//                             {testimonial.role}
+//                         </p>
+//                     </div>
+//                 </div>
+
+//                 <div className="flex gap-1 mt-3">
+//                     {Array.from({ length: testimonial.rating }).map((_, i) => (
+//                         <Star
+//                             key={i}
+//                             size={14}
+//                             className="fill-yellow-400 text-yellow-400 group-hover:scale-95  transition-transform duration-300"
+//                         />
+//                     ))}
+//                 </div>
+//             </div>
+
+//             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-600/0 via-blue-600/0 to-purple-600/0 group-hover:from-blue-600/10 group-hover:via-blue-600/5 group-hover:to-purple-600/10 transition-all duration-500"></div>
+//         </div>
+//     );
+// };
 const TestimonialCard = ({ testimonial }) => {
     return (
-        <div className="relative bg-transparent rounded-[2rem] p-6 mb-6 border border-gray-700/30 shadow-2xl transition-all duration-300 hover:scale-95 hover:rounded-[3rem] hover:shadow-purple-500/20 hover:bg-gradient-to-br hover:from-gray-800/90 hover:to-gray-700/70 group ">
-            
-            <div className="absolute -bottom-4 -right-[0.1rem] md:-bottom-9 md:-right-1 text-[5rem] md:text-[10rem] text-blue-500/20 font-serif font-bold tracking-tighter" >
+        <div className="relative bg-transparent rounded-[2rem] p-6 mb-6 border border-gray-700/30 shadow-2xl 
+                        transition-all duration-300 hover:scale-95 hover:rounded-[3rem] hover:shadow-purple-500/20 
+                        hover:bg-gradient-to-br hover:from-gray-800/90 hover:to-gray-700/70 group 
+                        w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl">
+
+            <div className="absolute -bottom-4 -right-[0.1rem] md:-bottom-9 md:-right-1 
+                            text-[5rem] md:text-[10rem] text-blue-500/20 font-serif font-bold tracking-tighter">
                 ,,
             </div>
 
-            <div className="relative z-10 xs:w-[210px] md:w-[191.04px]  xl:w-[200.04px]  md:h-[210px] xl:h-[253.7px] rounded-[4rem]">
-                <p className="text-gray-300 xl:mt-[2rem] xs:w-[160px] md:w-[240px] xl:w-[351.04px] sm:text-sm md:text-base xl:text-xl leading-relaxed md:mb-3 xl:mb-6 group-hover:text-white transition-colors duration-300">
+            <div className="relative z-10 rounded-[4rem] ">
+                <p className="text-gray-300 xl:mt-[2rem] w-full sm:w-[90%] md:w-[95%] 
+                               sm:text-sm md:text-base xl:text-xl leading-relaxed 
+                               md:mb-3 xl:mb-6 group-hover:text-white transition-colors duration-300">
                     {testimonial.text}
                 </p>
 
@@ -88,7 +138,8 @@ const TestimonialCard = ({ testimonial }) => {
                     <img
                         src={testimonial.avatar}
                         alt={testimonial.name}
-                        className="w-12 h-12 md:w-14 md:h-14 xl:w-20 xl:h-20 rounded-full object-cover ring-2 ring-purple-500/30 group-hover:ring-purple-400/50 transition-all duration-300"
+                        className="w-12 h-12 md:w-14 md:h-14 xl:w-20 xl:h-20 rounded-full object-cover 
+                                   ring-2 ring-purple-500/30 group-hover:ring-purple-400/50 transition-all duration-300"
                     />
                     <div className="flex-1">
                         <h4 className="text-white font-semibold text-sm group-hover:text-blue-100 transition-colors duration-300">
@@ -105,13 +156,15 @@ const TestimonialCard = ({ testimonial }) => {
                         <Star
                             key={i}
                             size={14}
-                            className="fill-yellow-400 text-yellow-400 group-hover:scale-95  transition-transform duration-300"
+                            className="fill-yellow-400 text-yellow-400 group-hover:scale-95 transition-transform duration-300"
                         />
                     ))}
                 </div>
             </div>
 
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-600/0 via-blue-600/0 to-purple-600/0 group-hover:from-blue-600/10 group-hover:via-blue-600/5 group-hover:to-purple-600/10 transition-all duration-500"></div>
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-600/0 via-blue-600/0 to-purple-600/0 
+                            group-hover:from-blue-600/10 group-hover:via-blue-600/5 group-hover:to-purple-600/10 
+                            transition-all duration-500"></div>
         </div>
     );
 };
@@ -123,7 +176,7 @@ const ScrollingColumn = ({ testimonials, direction, speed }) => {
 
     return (
         <div
-            className="relative h-screen overflow-hidden"
+            className="relative overflow-hidden"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -152,8 +205,8 @@ const ScrollingTestimonials = () => {
     const rightColumn = testimonials.slice(4, 8);
 
     return (
-        <div className="relative min-h-screen bg-black py-20 px-30 lg:mt-[-7rem] overflow-hidden"
-        style={{}}>
+        <div className="relative min-h-screen bg-black py-10 px-8 md:py-20 md:px-30 lg:mt-[-7rem] overflow-hidden"
+            style={{}}>
             <div className="max-w-7xl mx-auto">
                 <div
                     className="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-screen"
@@ -188,7 +241,7 @@ const ScrollingTestimonials = () => {
                     />
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 h-screen">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 z-[1] h-screen">
                     {/* Column 1 → always visible */}
                     <ScrollingColumn
                         testimonials={leftColumn}
