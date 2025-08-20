@@ -107,6 +107,7 @@ import FiatPayLogo2 from '../assets/FiatPayLogo2.png';
 import PatanjaliLogo from '../assets/PatanjaliLogo.png';
 import RajasthanRoyalsLogo from '../assets/RajasthanRoyalsLogo.png';
 import MumbaiIndians   from '../assets/MumbaiIndians.png';
+import MaddockLogo from '../assets/MaddockLogo.png';
 import Navbar from './Navbar';
 
 const HeroSection = () => {
@@ -124,6 +125,7 @@ const HeroSection = () => {
         StarSports,
         RigiLogo,
         G20IndiaLogo,
+        MaddockLogo,
         MumbaiIndians,
         RajasthanRoyalsLogo,
         PatanjaliLogo,

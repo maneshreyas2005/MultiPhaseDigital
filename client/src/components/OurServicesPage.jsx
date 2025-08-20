@@ -151,7 +151,7 @@ const OurServicesPage = () => {
                 style={{ maxWidth: 'clamp(800px, 90vw, 1400px)' }}
             >
                 <div
-                    className="grid grid-cols-3 md:grid-cols-4 w-full"
+                    className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 px-4 sm:px-0 ml-[1.5rem] sm:ml-0 w-full"
                     style={{
                         gap: 'clamp(2rem, 4vw, 4rem) clamp(1.5rem, 3vw, 3rem)'
                     }}
@@ -213,8 +213,8 @@ const OurServicesPage = () => {
                                 </h3> */}
                                 <h3
                                     className={`
-    text-xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl
-    font-base md:font-lg leading-tight transition-all duration-300 
+    text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
+    font-sm md:font-lg leading-tight transition-all duration-300 
     sm:mt-[-10px] md:mt-[-40px] lg:mt-[-42px] xl:mt-[-50px]   
     ${service.highlighted
                                             ? 'bg-gradient-to-r from-[#FF738B] via-[#9116E7] to-[#1B192E] bg-clip-text text-transparent'
