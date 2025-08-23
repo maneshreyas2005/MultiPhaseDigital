@@ -110,10 +110,10 @@ export default function MultiphaseFooter() {
 
                 {/* Main Heading */}
                 <div className="mb-14 md:mb-12 px-2">
-                    <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight mb-2">
+                    <h2 className="min-[377px]:text-[1.1rem] sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight mb-2">
                         Drop us a line or two, we are open for
                     </h2>
-                    <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight">
+                    <h2 className="min-[377px]:text-[1.1rem] sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight">
                         creative minds and collaborations!
                     </h2>
                 </div>
