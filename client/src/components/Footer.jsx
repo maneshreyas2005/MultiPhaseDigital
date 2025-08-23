@@ -89,6 +89,9 @@
 // }
 import React from 'react';
 import Logo from '../assets/Logo.svg';
+import logo1 from '../assets/logo1.svg';
+import logo2 from '../assets/logo2.svg';
+import logo3 from '../assets/logo3.svg';
 
 export default function MultiphaseFooter() {
     return (
@@ -101,22 +104,22 @@ export default function MultiphaseFooter() {
                     <img
                         src={Logo}
                         alt="Company Logo"
-                        className="w-48 sm:w-56 md:w-[230px] h-auto"
+                        className="w-40 sm:w-56 md:w-[230px] h-auto"
                     />
                 </div>
 
                 {/* Main Heading */}
-                <div className="mb-12 px-2">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight mb-2">
+                <div className="mb-14 md:mb-12 px-2">
+                    <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight mb-2">
                         Drop us a line or two, we are open for
                     </h2>
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight">
+                    <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight">
                         creative minds and collaborations!
                     </h2>
                 </div>
 
                 {/* Navigation Links */}
-                <nav className="mb-12">
+                <nav className="mb-6">
                     <ul className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 lg:space-x-12 text-sm sm:text-base md:text-lg">
                         <li>
                             <a href="#" className="hover:text-orange-400 transition-colors duration-200">
@@ -150,7 +153,7 @@ export default function MultiphaseFooter() {
                     </div>
 
                     {/* Social Icons */}
-                    <div className="flex items-center justify-center space-x-3 sm:space-x-4">
+                    {/* <div className="flex items-center justify-center space-x-3 sm:space-x-4">
                         {['M0 0h24v24H0z', 'M0 0h24v24H0z', 'M0 0h24v24H0z'].map((_, i) => (
                             <a
                                 key={i}
@@ -158,13 +161,28 @@ export default function MultiphaseFooter() {
                                 className="w-8 h-8 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-200"
                             >
                                 <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
-                                    {/* Replace path with actual icon */}
+                                    
                                     <path d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M..." />
+                                 <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+
                                 </svg>
                             </a>
                         ))}
-                    </div>
+                    </div> */}
+
+                     <div className="flex justify-center space-x-4 mb-4 md:mb-0">
+                         <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-200">
+                             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                 <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                             </svg>
+                         </a>
+                         <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-200">
+                            <img src={logo2} alt="" />
+                         </a>
+                         <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-200">
+                             <img src={logo3} alt="" />
+                         </a>
+                     </div>
 
                     {/* Legal Links */}
                     <div className="flex flex-wrap justify-center gap-4 text-xs sm:text-sm text-gray-400">

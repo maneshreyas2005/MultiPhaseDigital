@@ -377,7 +377,7 @@ const MediaFeature = () => {
 
             {/* Logo Grid 1 */}
             <div
-                className="grid grid-cols-1 [@media(max-width:920px)]:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-6 sm:mb-8"
+                className="max-[920px]:hidden grid grid-cols-1 [@media(max-width:920px)]:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-6 sm:mb-8"
             >
                 <div
                     className={`bg-white w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px] flex items-center justify-center rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
@@ -411,9 +411,92 @@ const MediaFeature = () => {
                 </div>
             </div>
 
+            {/* Logo Grid for mobile */}
+            <div
+                className="min-[920px]:hidden grid grid-cols-1 [@media(max-width:920px)]:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-6 sm:mb-8"
+            >
+                <div
+                    className={`bg-white w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px] flex items-center justify-center rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
+                    style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
+                >
+                    <img
+                        src={ZeeNews}
+                        alt="Zee News"
+                        className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
+                    />
+                </div>
+                <div
+                    className={`bg-white w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px] flex items-center justify-center rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
+                    style={{ animationDelay: '0.3s', animationFillMode: 'both' }}
+                >
+                    <img
+                        src={AAjTak}
+                        alt="Aaj Tak"
+                        className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
+                    />
+                </div>
+                <div
+                    className={`bg-white w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px] flex items-center justify-center rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
+                    style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
+                >
+                    <img
+                        src={CNBCnewsTV}
+                        alt="CNBC"
+                        className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
+                    />
+                </div>
+                <div
+                    className={`bg-white w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px] flex items-center justify-center rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
+                    style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
+                >
+                    <img
+                        src={IndiaNews}
+                        alt="India TV"
+                        className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
+                    />
+                </div>
+                <div
+                    className={`bg-white w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px] flex items-center justify-center rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
+                    style={{ animationDelay: '0.6s', animationFillMode: 'both' }}
+                >
+                    <img
+                        src={NewsIndia}
+                        alt="News 18 India"
+                        className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
+                    />
+                </div>
+                <div
+                    className={`bg-white w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px] flex items-center justify-center rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
+                    style={{ animationDelay: '0.7s', animationFillMode: 'both' }}
+                >
+                    <img
+                        src={TimesNow}
+                        alt="Times Now"
+                        className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
+                    />
+                </div>
+                <div
+                    className={`bg-white w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px] flex items-center justify-center rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
+                    style={{ animationDelay: '0.8s', animationFillMode: 'both' }}
+                >
+                    <img
+                        src={ABP}
+                        alt="ABP"
+                        className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
+                    />
+                </div>
+                <div
+                    className={`gradient-border flex items-center justify-center bg-white w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px] flex items-center justify-center rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
+                    style={{ animationDelay: '0.8s', animationFillMode: 'both' }}
+                >
+                    <p className='text-black font-semibold text-sm sm:text-xl'>
+                        +20 News Channels
+                    </p>
+                </div>
+            </div>
             {/* Logo Grid 2 */}
             <div
-                className="grid grid-cols-1 [@media(max-width:920px)]:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-8 sm:mb-10 md:mb-12"
+                className="max-[920px]:hidden grid grid-cols-1 [@media(max-width:920px)]:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 mb-8 sm:mb-10 md:mb-12"
             >
                 <div
                     className={`bg-white w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px] flex items-center justify-center rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
@@ -459,7 +542,7 @@ const MediaFeature = () => {
 
             {/* Button */}
             <div
-                className={`flex items-center justify-center ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
+                className={`max-[920px]:hidden flex items-center justify-center ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
                 style={{ animationDelay: '0.9s', animationFillMode: 'both' }}
             >
                 <button

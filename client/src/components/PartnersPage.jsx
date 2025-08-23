@@ -172,6 +172,7 @@ import React from 'react';
 import vector6 from '../assets/Vector6.png';
 import CountUp from 'react-countup';
 import Pandav from '../assets/Pandav.png';
+import Pandav2 from '../assets/Pandav2.png';
 import useInView from './UseInView'; // <-- path to hook
 
 const PartnersPage = () => {
@@ -271,12 +272,30 @@ const PartnersPage = () => {
                 <img
                     src={Pandav}
                     alt="Pandav Partner"
-                    className="
+                    className=" max-[769px]:hidden
             [@media(min-width:1304px)]:w-[1276.5px]
            [@media(min-width:1190px)]:w-[1187px]
             [@media(min-width:1024px)]:w-[940px]
             [@media(max-width:1023px)]:w-[990px] mt-[-10rem]
             [@media(max-width:767px)]:ml-[14px] mt-[-100px]
+            w-[90%]
+            h-auto
+            [@media(min-width:1304px)]:mt-[-370px]
+           [@media(min-width:1190px)]:mt-[-335px] 
+            [@media(min-width:1024px)]:mt-[-300px]
+             [@media(max-width:616px)]:mt-[-40px]
+            mx-auto
+          "
+                />
+                <img
+                    src={Pandav2}
+                    alt="Pandav Partner"
+                    className=" min-[769px]:hidden 
+            [@media(min-width:1304px)]:w-[1276.5px]
+           [@media(min-width:1190px)]:w-[1187px]
+            [@media(min-width:1024px)]:w-[940px]
+            [@media(max-width:1023px)]:w-[990px] mt-[-10rem]
+            [@media(max-width:767px)]: mt-[-100px]
             w-[90%]
             h-auto
             [@media(min-width:1304px)]:mt-[-370px]

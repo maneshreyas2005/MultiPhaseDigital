@@ -7,6 +7,10 @@ import Airplane3 from '../assets/Airplane3.png';
 import AirMagazine from '../assets/AirMagazine.png';
 import Indigo from '../assets/Indigoandmore.png';
 import useInView from './UseInView';
+import helloMyanmar from '../assets/helloMyanmar.png';
+import namaste from '../assets/namaste.png';
+import Vistara from '../assets/Vistara.jpg';
+import spiceRoute from '../assets/spiceRoute.jpg';
 
 const AirLineMagazines = () => {
     const [sectionRef, inView] = useInView({ threshold: 0.1 });
@@ -62,21 +66,9 @@ const AirLineMagazines = () => {
             <div className="w-full flex flex-col lg:flex-row lg:items-center lg:min-h-screen">
                 {/* Mobile/Tablet Layout - Stacked */}
                 <div className="lg:hidden flex flex-col items-center space-y-6 sm:space-y-8">
-                    {/* Airplane */}
-                    <div
-                        className={`${inView ? "animate-slide-up" : "opacity-0"}`}
-                        style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
-                    >
-                        <img
-                            src={Aeroplane1}
-                            alt=""
-                            className="w-[300px] sm:w-[400px] md:w-[500px] grayscale ml-[-30px]"
-                        />
-                    </div>
-
                     {/* Text section */}
                     <div
-                        className={`text-center ${inView ? "animate-slide-up" : "opacity-0"}`}
+                        className={`text-center ${inView ? "animate-slide-up" : "opacity-0"} z-[1] ml-34 `}
                         style={{ animationDelay: '0.8s', animationFillMode: 'both' }}
                     >
                         <h1
@@ -97,17 +89,67 @@ const AirLineMagazines = () => {
                             </span>
                         </h2>
                     </div>
+                    {/* Airplane */}
+                    <div
+                        className={`${inView ? "animate-slide-up" : "opacity-0"} `}
+                        style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
+                    >
+                        <img
+                            src={Airplane3}
+                            alt=""
+                            className=" -ml-10 mt-[-9rem] "
+                        />
+                    </div>
+
+
 
                     {/* Air Magazine */}
                     <div
-                        className={`${inView ? "animate-slide-up" : "opacity-0"}`}
+                        className={`${inView ? "animate-slide-up" : "opacity-0"}  grid grid-cols-2  gap-4 mt-4`}
                         style={{ animationDelay: '1.1s', animationFillMode: 'both' }}
                     >
-                        <img
+                        {/* <img
                             src={AirMagazine}
                             alt=""
                             className="w-[120px] sm:w-[150px] md:w-[200px]"
-                        />
+                        /> */}
+
+                        <div 
+                            style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
+                        >
+                            <img
+                                src={helloMyanmar}
+                                alt="India TV"
+                                className="object-contain w-[120px]"
+                            />
+                        </div>
+                        <div
+                            style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
+                        >
+                            <img
+                                src={namaste}
+                                alt="News 18 India"
+                                className="object-contain w-[120px] "
+                            />
+                        </div>
+                        <div
+                            style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
+                        >
+                            <img
+                                src={Vistara}
+                                alt="Times Now"
+                                className="object-contain w-[120px]"
+                            />
+                        </div>
+                        <div
+                            style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
+                        >
+                            <img
+                                src={spiceRoute}
+                                alt="ABP"
+                                className="object-contain w-[120px]"
+                            />
+                        </div>
                     </div>
                 </div>
 
@@ -152,7 +194,7 @@ const AirLineMagazines = () => {
                 </div>
             </div>
 
-            
+
         </div>
     );
 };

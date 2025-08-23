@@ -1,6 +1,7 @@
 import React from 'react'
 import Pandavasss from '../assets/Pandavasss.png'
 import { useRef, useState, useEffect } from 'react'
+import Pandavasss3 from '../assets/Pandavasss2.png'
 
 const ServicePageImage = () => {
     const statsRef = useRef(null);
@@ -48,7 +49,12 @@ const ServicePageImage = () => {
           <img
               src={Pandavasss}
               alt=""
-              className="w-screen h-auto"
+              className="max-[500px]:hidden w-screen h-auto"
+          />
+          <img
+              src={Pandavasss3}
+              alt=""
+              className="min-[500px]:hidden w-screen h-auto"
           />
       </div>
   )
