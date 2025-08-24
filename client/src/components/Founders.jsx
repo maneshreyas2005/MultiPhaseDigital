@@ -131,7 +131,7 @@ const Founders = () => {
                 </div>
                 {/* Founder 2 */}
                 <div
-                    className={`flex flex-col justify-center sm:flex-row h-[100vh] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
+                    className={`flex flex-col justify-center sm:flex-row  items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
                 >
                     <img
                         src={Founder1}
@@ -146,7 +146,7 @@ const Founders = () => {
                 </div>
                 {/* Founder 3 */}
                 <div
-                    className={`flex flex-col justify-center sm:flex-row h-[70vh] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
+                    className={`flex flex-col justify-center sm:flex-row items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
                 >
                     <img
                         src={Staff4}
@@ -162,7 +162,7 @@ const Founders = () => {
                 
                 {/* Founder 4 */}
                 <div
-                    className={`flex flex-col justify-center sm:flex-row h-[80vh] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
+                    className={`flex flex-col justify-center sm:flex-row  items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
                 >
                     <img
                         src={Founder1}
@@ -177,7 +177,7 @@ const Founders = () => {
                 </div>
                 {/* Founder 5 */}
                 <div
-                    className={`flex flex-col justify-center sm:flex-row h-[80vh] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
+                    className={`flex flex-col justify-center sm:flex-row items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
                 >
                     <img
                         src={Founder1}
