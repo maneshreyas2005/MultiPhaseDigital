@@ -64,7 +64,7 @@ const MemePage = () => {
                     <img
                         src={vector6}
                         alt="Decorative line"
-                        className="w-[190px] md:w-[250px] lg:w-[350px] mb-8 md:ml-[29px]"
+                        className="w-[190px] md:w-[250px] lg:w-[350px] mb-8 ml-6 md:ml-[29px]"
                     />
                 </div>
                 {/* Phone Images Grid */}

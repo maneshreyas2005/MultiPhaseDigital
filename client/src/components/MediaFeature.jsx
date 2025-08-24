@@ -357,13 +357,13 @@ const MediaFeature = () => {
                 style={{ animationDelay: '0s', animationFillMode: 'both' }}
             >
                 <h1
-                    className={`text-white/40 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-wide transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent`}
+                    className={`text-white/40 text-sm sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-wide transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent`}
                     style={{ fontFamily: 'Constantine' }}
                 >
                     BE A <span className="text-white" style={{ fontFamily: 'Constantine' }}>BRAND AND GET FEATURED IN</span>
                 </h1>
                 <h2
-                    className={`text-white/40 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-wide mt-2 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
+                    className={`text-white/40 text-sm sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-wide mt-2 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
                     style={{ fontFamily: 'Constantine', animationDelay: '0.1s', animationFillMode: 'both' }}
                 >
                     TOP BRANDED NEWS, TV, PR MEDIA

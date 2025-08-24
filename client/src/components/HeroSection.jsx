@@ -185,7 +185,7 @@ const HeroSection = () => {
                                 key={index}
                                 src={logo}
                                 alt={`logo-${index}`}
-                                className={`h-6 sm:h-8 md:h-10 lg:h-12 xl:h-14 object-contain grayscale opacity-70 transition-all duration-300 hover:scale-110 sm:hover:scale-125 hover:opacity-100 hover:grayscale-0 cursor-pointer
+                                className={`h-9 sm:h-8 md:h-10 lg:h-12 xl:h-14 object-contain grayscale opacity-70 transition-all duration-300 hover:scale-110 sm:hover:scale-125 hover:opacity-100 hover:grayscale-0 cursor-pointer
                                 ${[MensCricket, IPL].includes(logo) ? 'w-[50px] sm:w-[60px] md:w-[70px] lg:w-[60px]' : 'w-auto'}`}
                                 onClick={() => alert(`You clicked logo #${index + 1}`)}
                             />

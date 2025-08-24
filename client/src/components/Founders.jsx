@@ -34,7 +34,7 @@ const Founders = () => {
                 <img
                     src={vector6}
                     alt="Decorative line"
-                    className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-[400px] mt-4 sm:mt-5 mx-auto mb-4 sm:mb-5"
+                    className="w-[160px] sm:w-[250px] md:w-[300px] lg:w-[400px] mt-2 sm:mt-5 mx-auto mb-4 sm:mb-5"
                 />
             </div>
 
