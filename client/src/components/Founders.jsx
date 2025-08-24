@@ -116,7 +116,7 @@ const Founders = () => {
             <div className="flex lg:hidden flex-col justify-center  items-center gap-8 sm:gap-10 md:gap-12 mt-[-20px] bg-black px-2 sm:px-4 overflow-hidden z-[0]">
                 
                 <div
-                    className={`flex flex-col-reverse h-[70vh] sm:flex-row items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-left' : ''}`}
+                    className={`flex flex-col-reverse h-[67vh] sm:flex-row items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-left' : ''}`}
                 >
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
                         MEHUL PUROHIT
