@@ -217,7 +217,7 @@ const ScrollingTestimonials = () => {
                     }}
                 />
 
-                Purple vignette effect
+                {/* Purple vignette effect */}
                 <div className="absolute inset-0 pointer-events-none">
                     {/* Big centered radial purple glow */}
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(140,35,180,0.25)_0%,_rgba(0,0,0,1)_70%)]"></div>
@@ -225,7 +225,7 @@ const ScrollingTestimonials = () => {
 
                 <div className="relative z-10 flex flex-col gap-[10px] items-center">
                     <h1
-                        className="flex flex-col items-center text-white text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl font-bold"
+                        className="flex flex-col items-center text-white text-xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl font-bold"
                         style={{ fontFamily: 'Constantine' }}
                     >
                         <span className="text-center xl:mt-[-50px]">CLIENT REVIEWS</span>

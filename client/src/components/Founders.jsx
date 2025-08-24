@@ -3,6 +3,7 @@ import React from 'react';
 import vector6 from '../assets/Vector6.png';
 import Founder1 from '../assets/Founder1.png';
 import Founder2 from '../assets/Founder2.png';
+import Staff4 from '../assets/StaffImages/Staff4.png';
 import useInView from './UseInView';
 
 const Founders = () => {
@@ -64,6 +65,51 @@ const Founders = () => {
                     </div>
                 </div>
                 
+                
+            </div>
+            <div className="hidden lg:flex flex-col relative justify-center items-center mt-6 bg-black px-4 sm:px-6 lg:px-8 overflow-hidden z-[0]">
+                <div className='flex mt-[-3rem] gap-6 lg:gap-10 absolute'>
+                    <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal">
+                        ANUBHAV DUBEY
+                        <br />
+                        MENTOR
+                    </span>
+
+                    <span className="text-white/40 text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center md:ml-[20px] whitespace-normal z-[1]">
+                        Manish Pandey
+                        <br />
+                        Mentor
+                    </span>
+                </div>
+                <div className='flex gap-6 lg:gap-[16rem] xl:gap-[27rem] relative'>
+                    <div className={`flex items-center gap-4 lg:gap-6 ${isInView ? 'animate-slide-in-right' : ''}`}>
+                        <img src={Founder1} alt="Anubhav Dubey" className="w-[280px] lg:w-[340px] xl:w-[400px] h-auto rounded-lg object-contain" />
+
+                    </div>
+                    <div className={`flex items-center xl:gap-6 ${isInView ? 'animate-slide-in-left' : ''}`}>
+
+                        <img src={Staff4} alt="Manish Pandey" className="w-[300px] lg:w-[400px] xl:w-[440px]  h-auto rounded-lg object-contain" />
+                    </div>
+                </div>
+                
+
+
+            </div>
+            <div className="hidden w-full lg:flex relative justify-center items-center mt-6 bg-black px-4 sm:px-6 lg:px-8  z-[0]">
+                <div className='flex mt-[-3rem] lg:ml-20 gap-6 lg:gap-10 absolute'>
+                    <span className="text-white/40 text-lg lg:text-xl xl:text-2xl lg:ml-100 font-semibold tracking-wide  whitespace-normal">
+                        ANUBHAV DUBEY
+                        <br />
+                        MENTOR
+                    </span>
+                </div>
+                <div className='flex gap-6 lg:gap-[16rem] xl:gap-[27rem] relative'>
+                    <div className={`flex items-center gap-4 lg:gap-6 ${isInView ? 'animate-slide-in-right' : ''}`}>
+                        <img src={Founder1} alt="Anubhav Dubey" className="w-[280px] lg:w-[340px] xl:w-[400px] h-auto rounded-lg object-contain" />
+
+                    </div>
+                </div>
+
             </div>
 
             {/* Tablet & Mobile Layout (<1024px) */}
@@ -83,7 +129,7 @@ const Founders = () => {
                         className="w-[300px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
                     />
                 </div>
-                {/* Founder 1 */}
+                {/* Founder 2 */}
                 <div
                     className={`flex flex-col justify-center sm:flex-row h-[100vh] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
                 >
@@ -98,8 +144,52 @@ const Founders = () => {
                         MENTOR
                     </span>
                 </div>
-
-                {/* Founder 2 */}
+                {/* Founder 3 */}
+                <div
+                    className={`flex flex-col justify-center sm:flex-row h-[70vh] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
+                >
+                    <img
+                        src={Staff4}
+                        alt="Manish Pandey"
+                        className="w-[270px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
+                    />
+                    <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
+                        MANISH PANDEY
+                        <br />
+                        MENTOR
+                    </span>
+                </div>
+                
+                {/* Founder 4 */}
+                <div
+                    className={`flex flex-col justify-center sm:flex-row h-[100vh] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
+                >
+                    <img
+                        src={Founder1}
+                        alt="Anubhav Dubey"
+                        className="w-[270px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
+                    />
+                    <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
+                        ANUBHAV DUBEY
+                        <br />
+                        MENTOR
+                    </span>
+                </div>
+                {/* Founder 5 */}
+                <div
+                    className={`flex flex-col justify-center sm:flex-row h-[100vh] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
+                >
+                    <img
+                        src={Founder1}
+                        alt="Anubhav Dubey"
+                        className="w-[270px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
+                    />
+                    <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
+                        ANUBHAV DUBEY
+                        <br />
+                        MENTOR
+                    </span>
+                </div>
                 
             </div>
         </div>

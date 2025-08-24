@@ -18,7 +18,7 @@ const Achievements = () => {
         <div className='bg-black w-full flex flex-col items-center justify-center'>
             {/* Heading */}
             <div
-                className={` text-center mb-8 sm:mb-12 lg:mb-16 max-w-full ${isInView ? 'animate-slide-up' : ''}`}
+                className={`mt-5 text-center mb-8 sm:mb-12 lg:mb-16 max-w-full ${isInView ? 'animate-slide-up' : ''}`}
             >
                 <h1
                     className="text-white/40 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wide"

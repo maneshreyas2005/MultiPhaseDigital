@@ -31,7 +31,7 @@ const AirLineMagazines = () => {
                         animationFillMode: 'both',
                     }}
                 >
-                    <span className="text-white" style={{ fontFamily: 'Constantine' }}>
+                    <span className="text-xl md:text-3xl text-white" style={{ fontFamily: 'Constantine' }}>
                         GET FEATURED
                     </span>
                 </h1>
@@ -68,18 +68,18 @@ const AirLineMagazines = () => {
                 <div className="lg:hidden flex flex-col items-center space-y-6 sm:space-y-8">
                     {/* Text section */}
                     <div
-                        className={`text-center ${inView ? "animate-slide-up" : "opacity-0"} z-[1] ml-34 `}
+                        className={`relative  ${inView ? "animate-slide-up" : "opacity-0"} z-[1] ml-60 md:ml-120 -mt-2 md:mt-20`}
                         style={{ animationDelay: '0.8s', animationFillMode: 'both' }}
                     >
                         <h1
-                            className="text-white/40 text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wide"
+                            className="text-white/40 text-3xl sm:text-3xl md:text-4xl font-semibold tracking-wide"
                             style={{ fontFamily: 'Constantine' }}
                         >
                             <span className="text-white/40" style={{ fontFamily: 'Constantine' }}>
                                 OVER
                             </span>
                         </h1>
-                        <h2 className="text-white/40 text-2xl sm:text-3xl md:text-5xl font-semibold tracking-wide">
+                        <h2 className="text-white/40 text-3xl sm:text-3xl md:text-5xl font-semibold tracking-wide">
                             <span className="text-white" style={{ fontFamily: 'Constantine' }}>
                                 3.5 CR
                             </span>
@@ -91,13 +91,13 @@ const AirLineMagazines = () => {
                     </div>
                     {/* Airplane */}
                     <div
-                        className={`${inView ? "animate-slide-up" : "opacity-0"} `}
+                        className={`absolute ${inView ? "animate-slide-up" : "opacity-0"} `}
                         style={{ animationDelay: '0.5s', animationFillMode: 'both' }}
                     >
                         <img
                             src={Airplane3}
                             alt=""
-                            className=" -ml-10 mt-[-9rem] "
+                            className=" -ml-10 -mt-9"
                         />
                     </div>
 
@@ -105,7 +105,7 @@ const AirLineMagazines = () => {
 
                     {/* Air Magazine */}
                     <div
-                        className={`${inView ? "animate-slide-up" : "opacity-0"}  grid grid-cols-2  gap-4 mt-4`}
+                        className={`${inView ? "animate-slide-up" : "opacity-0"}  grid grid-cols-2  gap-4 mt-60 md:mt-110`}
                         style={{ animationDelay: '1.1s', animationFillMode: 'both' }}
                     >
                         {/* <img
@@ -120,7 +120,7 @@ const AirLineMagazines = () => {
                             <img
                                 src={helloMyanmar}
                                 alt="India TV"
-                                className="object-contain w-[120px]"
+                                className="object-contain w-[120px] md:w-[150px] "
                             />
                         </div>
                         <div
@@ -129,7 +129,7 @@ const AirLineMagazines = () => {
                             <img
                                 src={namaste}
                                 alt="News 18 India"
-                                className="object-contain w-[120px] "
+                                className="object-contain w-[120px] md:w-[150px]"
                             />
                         </div>
                         <div
@@ -138,7 +138,7 @@ const AirLineMagazines = () => {
                             <img
                                 src={Vistara}
                                 alt="Times Now"
-                                className="object-contain w-[120px]"
+                                className="object-contain w-[120px] md:w-[150px]"
                             />
                         </div>
                         <div
@@ -147,7 +147,7 @@ const AirLineMagazines = () => {
                             <img
                                 src={spiceRoute}
                                 alt="ABP"
-                                className="object-contain w-[120px]"
+                                className="object-contain w-[120px] md:w-[145px]"
                             />
                         </div>
                     </div>
