@@ -155,19 +155,23 @@ const MediaFeature = () => {
                         className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
                     />
                 </div>
-                <div className={`group relative inline-block w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px]  rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'} p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 
-                        `}>
+                <div className={`group relative inline-block w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px] rounded-2xl mx-auto 
+    ${sectionInView ? 'animate-slide-up' : 'opacity-0'} p-[3.5px] gradient-border transform transition-transform duration-500 hover:scale-105`}>
+
                     <div
-                        className={` flex items-center justify-center bg-white w-[144px] sm:w-[174px] md:w-[205.4px] h-[114px] sm:h-[132px] md:h-[157.5px]  rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
+                        className={`flex items-center justify-center bg-black w-full h-full rounded-2xl ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
                         style={{
-                            animationDelay: '0.8s', animationFillMode: 'both', backgroundColor: '#000000',
-                            boxShadow: '0px 3px 15px 0px #FFFFFF26 inset'}}
+                            animationDelay: '0.8s',
+                            animationFillMode: 'both',
+                            boxShadow: '0px 3px 15px 0px #FFFFFF26 inset'
+                        }}
                     >
                         <p className='text-white font-semibold text-sm sm:text-lg md:text-xl'>
                             +20 News Channels
                         </p>
                     </div>
                 </div>
+
                 
                 {/* <div className={`group relative inline-block w-[150px] sm:w-[180px] md:w-[211.4px] h-[120px] sm:h-[140px] md:h-[163.5px]  rounded-2xl mx-auto ${sectionInView ? 'animate-slide-up' : 'opacity-0'} p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 
                         `}>
