@@ -81,7 +81,7 @@ const AirLineMagazines = () => {
                         </h1>
                         <h2 className="text-white/40 text-2xl sm:text-3xl md:text-5xl font-semibold tracking-wide">
                             <span className="text-white" style={{ fontFamily: 'Constantine' }}>
-                                2.5 CR
+                                3.5 CR
                             </span>
                             <br />
                             <span className="text-white" style={{ fontFamily: 'Constantine' }}>

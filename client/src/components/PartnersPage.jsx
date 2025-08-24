@@ -230,15 +230,15 @@ const PartnersPage = () => {
                 >
                     <div className="rounded-3xl bg-black flex flex-col justify-center items-center text-white text-center w-full h-full">
                         <h2
-                            className="text-4xl sm:text-5xl md:text-6xl font-bold transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent"
+                            className="text-4xl sm:text-5xl md:text-7xl font-bold transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent"
                             style={{ fontFamily: 'Constantine' }}
                         >
                             {sectionInView ? <CountUp end={7} duration={3} suffix="K+" /> : '0'}
                         </h2>
                         <p
-                            className="font-light text-lg sm:text-2xl md:text-3xl mt-2 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent"
+                            className="font-light text-white/60 text-lg sm:text-2xl md:text-3xl mt-2 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent"
                         >
-                            PR Works<br />Completed
+                            Personal<br/> Branding <br />Completed
                         </p>
                     </div>
                 </div>
@@ -250,13 +250,13 @@ const PartnersPage = () => {
                 >
                     <div className="rounded-3xl bg-black flex flex-col justify-center items-center text-white text-center w-full h-full">
                         <h2
-                            className="text-4xl sm:text-5xl md:text-6xl font-bold transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent"
+                            className="text-4xl sm:text-5xl md:text-7xl font-bold transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent"
                             style={{ fontFamily: 'Constantine' }}
                         >
                             {sectionInView ? <CountUp end={800} duration={2} suffix="+" /> : '0'}
                         </h2>
                         <p
-                            className="font-light text-lg sm:text-2xl md:text-3xl mt-2 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent"
+                            className="font-light text-white/60 text-lg sm:text-2xl md:text-3xl mt-2 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#FF738B] group-hover:via-[#9116E7] group-hover:to-[#1B192E] group-hover:bg-clip-text group-hover:text-transparent"
                         >
                             Customers<br />Worldwide
                         </p>

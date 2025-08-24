@@ -15,6 +15,7 @@ import Founders from '../components/Founders'
 import ScrollingTestimonials from '../components/ScrollingTestimonials'
 import ServicePageImage from '../components/ServicePageImage'
 import HorizontalLine from '../components/HorizontalLine'
+import Achievements from '../components/Achievements'
 
 const LandingPage = () => {
     return (
@@ -31,6 +32,7 @@ const LandingPage = () => {
             <AirLineMagazines />
             <ScrollingTestimonials/>
             <PartnersPage />
+            <Achievements />
             <Founders/>
             <FaqsPage/>
             <HorizontalLine/>
