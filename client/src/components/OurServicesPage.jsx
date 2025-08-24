@@ -66,7 +66,7 @@ const OurServicesPage = () => {
                 style={{ maxWidth: 'clamp(800px, 90vw, 1400px)' }}
             >
                 <div
-                    className="grid grid-cols-2  sm:grid-cols-3 md:grid-cols-4 px-4 sm:px-0 ml-[1.5rem] sm:ml-0 w-full"
+                    className="grid grid-cols-2  sm:grid-cols-3 md:grid-cols-4 px-4 sm:px-0 ml-[1rem] md:ml-[1.5rem]  w-full"
                     style={{
                         gap: 'clamp(2rem, 4vw, 4rem) clamp(1.5rem, 3vw, 3rem)'
                     }}
