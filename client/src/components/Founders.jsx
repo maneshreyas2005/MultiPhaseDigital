@@ -10,7 +10,7 @@ const Founders = () => {
     const [ref, isInView] = useInView({ threshold: 0.3 });
 
     return (
-        <div
+        <div id="OurTeam"
             ref={ref}
             className="relative w-full bg-black flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 z-[1]"
         >

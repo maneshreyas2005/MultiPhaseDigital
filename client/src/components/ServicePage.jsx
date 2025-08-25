@@ -45,7 +45,7 @@ const ServicePage = () => {
     const headingText = ['WE', 'GAIN', 'TRUST', 'BY', 'WORKING', 'EFFICIENTLY'];
 
     return (
-        <div className="relative w-full mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
+        <div id='Services' className="relative w-full mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
             {/* Background */}
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-60"

@@ -133,7 +133,7 @@ const HeroSection = () => {
     ];
 
     return (
-        <div className=" flex flex-col">
+        <div id="homePage" className=" flex flex-col">
             <video
                 autoPlay
                 muted
@@ -142,7 +142,7 @@ const HeroSection = () => {
             >
                 <source src={BackGroundVideo1} type="video/mp4" />
             </video>
-            <Navbar className='w-full' />
+            <Navbar className="w-full" />
             {/* Hero Content Section */}
             <div className="relative flex flex-col items-center justify-center text-white px-4 sm:px-6 lg:px-8 text-center flex-1">
                 {/* Top Subtitle */}

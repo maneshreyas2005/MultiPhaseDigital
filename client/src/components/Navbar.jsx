@@ -68,7 +68,7 @@ const Navbar = () => {
                         }}>
                             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:items-center lg:space-x-0 lg:mt-0">
                                 <li className="flex items-center relative">
-                                    <a href="#"
+                                    <a href="#homePage"
                                         className={`block py-2 pl-3 pr-4 text-white hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'Home Page' ? 'text-pink-400' : ''}`}
                                         onClick={() => handleTabClick('Home Page')}
                                         aria-current={activeTab === 'Home Page' ? 'page' : undefined}>
@@ -83,7 +83,7 @@ const Navbar = () => {
                                     <span className="hidden lg:block text-gray-500 mx-2">•</span>
                                 </li>
                                 <li className="flex items-center relative">
-                                    <a href="#"
+                                    <a href="#Services"
                                         className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'Services' ? 'text-white' : ''}`}
                                         onClick={() => handleTabClick('Services')}>
                                         Services
@@ -97,7 +97,7 @@ const Navbar = () => {
                                     <span className="hidden lg:block text-gray-500 mx-2">•</span>
                                 </li>
                                 <li className="flex items-center relative">
-                                    <a href="#"
+                                    <a href="#Testimonial"
                                         className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'Testimonial' ? 'text-white' : ''}`}
                                         onClick={() => handleTabClick('Testimonial')}>
                                         Testimonial
@@ -111,7 +111,7 @@ const Navbar = () => {
                                     <span className="hidden lg:block text-gray-500 mx-2">•</span>
                                 </li>
                                 <li className="flex items-center relative">
-                                    <a href="#"
+                                    <a href="#OurPresence"
                                         className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'Our Presence' ? 'text-white' : ''}`}
                                         onClick={() => handleTabClick('Our Presence')}>
                                         Our Presence
@@ -125,12 +125,12 @@ const Navbar = () => {
                                     <span className="hidden lg:block text-gray-500 mx-2">•</span>
                                 </li>
                                 <li className="flex items-center relative">
-                                    <a href="#"
+                                    <a href="#OurTeam"
                                         className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'About Us' ? 'text-white' : ''}`}
-                                        onClick={() => handleTabClick('About Us')}>
-                                        About Us
+                                        onClick={() => handleTabClick('Our Team')}>
+                                        Our Team
                                     </a>
-                                    {activeTab === 'About Us' && (
+                                    {activeTab === 'Our Team' && (
                                         <div className="absolute bottom-0 left-2 right-0 h-[2px] rounded-t-lg"
                                             style={{
                                                 background: 'linear-gradient(270deg, #1B192E 0%, #9116E7 39.7%, #FF738B 100%)'
@@ -138,7 +138,7 @@ const Navbar = () => {
                                     )}
                                 </li>
                                 <li className="min-[500px]:hidden flex items-center relative">
-                                    <a href="#"
+                                    <a href="#ContactUs"
                                         className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'About Us' ? 'text-white' : ''}`}
                                         onClick={() => handleTabClick('Contact Us')}>
                                         Contact Us

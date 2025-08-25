@@ -20,11 +20,9 @@ import Achievements from '../components/Achievements'
 const LandingPage = () => {
     return (
         <div className='relative w-full  bg-black overflow-hidden'>
-            
-            
-            <HeroSection />
+            <HeroSection id='homePage'/>
             {/* <LogoScroller className=''/> */}
-            <ServicePage/>
+            <ServicePage />
             <ServicePageImage />
             <MediaFeature />
             <MemePage/>

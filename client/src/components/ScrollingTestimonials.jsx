@@ -205,7 +205,7 @@ const ScrollingTestimonials = () => {
     const rightColumn = testimonials.slice(4, 8);
 
     return (
-        <div className="relative min-h-screen bg-black py-10 px-8 md:py-20 md:px-30 lg:mt-[-7rem] overflow-hidden"
+        <div id="Testimonial" className="relative min-h-screen bg-black py-10 px-8 md:py-20 md:px-30 lg:mt-[-7rem] overflow-hidden"
             style={{}}>
             <div className="max-w-7xl mx-auto">
                 <div

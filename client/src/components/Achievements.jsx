@@ -15,7 +15,7 @@ const Achievements = () => {
     const [ref, isInView] = useInView({ threshold: 0.3 });
 
     return (
-        <div className='bg-black w-full flex flex-col items-center justify-center'>
+        <div id='OurPresence' className='bg-black w-full flex flex-col items-center justify-center'>
             {/* Heading */}
             <div
                 className={`mt-5 text-center mb-8 sm:mb-12 lg:mb-16 max-w-full ${isInView ? 'animate-slide-up' : ''}`}
