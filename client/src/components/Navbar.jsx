@@ -140,10 +140,10 @@ const Navbar = () => {
                                 <li className="min-[500px]:hidden flex items-center relative">
                                     <a href="#"
                                         className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'About Us' ? 'text-white' : ''}`}
-                                        onClick={() => handleTabClick('About Us')}>
+                                        onClick={() => handleTabClick('Contact Us')}>
                                         Contact Us
                                     </a>
-                                    {activeTab === 'About Us' && (
+                                    {activeTab === 'Contact Us' && (
                                         <div className="absolute bottom-0 left-2 right-0 h-[2px] rounded-t-lg"
                                             style={{
                                                 background: 'linear-gradient(270deg, #1B192E 0%, #9116E7 39.7%, #FF738B 100%)'
