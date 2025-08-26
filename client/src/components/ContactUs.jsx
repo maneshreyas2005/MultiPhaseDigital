@@ -268,7 +268,7 @@ import { Phone, Mail, MapPin, Send } from 'lucide-react';
 import useInView from './UseInView'; // <-- path to hook
 
 export default function ContactUs() {
-    const formUrl = process.env.GOOGLE_SCRIPTS_LINK;
+    const formUrl = import.meta.env.VITE_GOOGLE_SCRIPTS_LINK;
     const [sectionRef, sectionInView] = useInView({ threshold: 0.1 });
     const [formData, setFormData] = useState({
         firstName: '',
