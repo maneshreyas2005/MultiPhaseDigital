@@ -143,7 +143,7 @@ const Navbar = () => {
                                 <li className="min-[500px]:hidden flex items-center relative">
                                     <a href="#ContactUs"
                                         className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === 'About Us' ? 'text-white' : ''}`}
-                                        onClick={() => handleTabClick('Contact Us')}>
+                                        onClick={() => Navigate('/ContactUs')}>
                                         Contact Us
                                     </a>
                                     {activeTab === 'Contact Us' && (
