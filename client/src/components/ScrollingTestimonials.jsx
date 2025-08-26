@@ -3,118 +3,171 @@ import React, { useState } from 'react';
 import { Star } from 'lucide-react';
 import vector6 from '../assets/Vector6.png';
 import whiteGridBackGround from '../assets/whiteGridBackground.png';
+import AstroArunPandit from '../assets/AstroArunPandit.png';
+import TRS from '../assets/TRS.png';
+import yvslogop from '../assets/yvslogop.png';
+import ALogo from '../assets/ALogo.jpg';
+import JLogo from '../assets/JLogo.jpg';
+import JLogo2 from '../assets/JLogo2.png';
+import folk_media_group from '../assets/fork_media_logo.jpg';
 
+// const testimonials = [
+//     {
+//         id: 1,
+//         text: "Their editing gave my brand a fresh, professional look. My audience noticed the difference immediately!",
+//         name: "Chris Evans",
+//         role: "Fitness Coach",
+//         avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+//         rating: 5
+//     },
+//     {
+//         id: 2,
+//         text: "The attention to detail and creative vision transformed our content completely. Outstanding results!",
+//         name: "Sarah Johnson",
+//         role: "Content Creator",
+//         avatar: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+//         rating: 5
+//     },
+//     {
+//         id: 3,
+//         text: "Professional service with incredible turnaround time. They understood exactly what we needed.",
+//         name: "Michael Chen",
+//         role: "Marketing Director",
+//         avatar: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+//         rating: 5
+//     },
+//     {
+//         id: 4,
+//         text: "Game-changing quality that elevated our brand presence across all platforms. Highly recommended!",
+//         name: "Emma Davis",
+//         role: "Brand Manager",
+//         avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+//         rating: 5
+//     },
+//     {
+//         id: 5,
+//         text: "Their creative expertise brought our vision to life beyond our expectations. Simply amazing work!",
+//         name: "David Wilson",
+//         role: "YouTuber",
+//         avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+//         rating: 5
+//     },
+//     {
+//         id: 6,
+//         text: "Exceptional attention to detail and lightning-fast delivery. They've become our go-to team!",
+//         name: "Lisa Anderson",
+//         role: "Podcast Host",
+//         avatar: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+//         rating: 5
+//     },
+//     {
+//         id: 7,
+//         text: "The quality and creativity exceeded all our expectations. Our engagement rates soared!",
+//         name: "Ryan Martinez",
+//         role: "Social Media Manager",
+//         avatar: "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+//         rating: 5
+//     },
+//     {
+//         id: 8,
+//         text: "Professional, reliable, and incredibly talented. They transformed our entire content strategy.",
+//         name: "Jennifer Taylor",
+//         role: "Business Owner",
+//         avatar: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+//         rating: 5
+//     }
+// ];
 const testimonials = [
     {
         id: 1,
-        text: "Their editing gave my brand a fresh, professional look. My audience noticed the difference immediately!",
-        name: "Chris Evans",
-        role: "Fitness Coach",
-        avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+        text: "Our spiritual community has grown authentically, reaching souls we never thought possible. Truly grateful.",
+        name: "Arun Tiwari ",
+        role: "Astro Arun Pandit",
+        avatar: AstroArunPandit, // replace with real avatar
         rating: 5
     },
     {
         id: 2,
-        text: "The attention to detail and creative vision transformed our content completely. Outstanding results!",
-        name: "Sarah Johnson",
-        role: "Content Creator",
-        avatar: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+        text: "They understood our vision, and the organic growth of our podcast has been phenomenal.",
+        name: "Ranveer Allahbadia",
+        role: "TRS & Beerbiceps",
+        avatar: TRS,
         rating: 5
     },
     {
         id: 3,
-        text: "Professional service with incredible turnaround time. They understood exactly what we needed.",
-        name: "Michael Chen",
-        role: "Marketing Director",
-        avatar: "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+        text: "Our fitness family has expanded beyond our wildest dreams. The growth feels so real.",
+        name: "Yash Vardhan Swami",
+        role: "Trained by YVS",
+        avatar: yvslogop,
         rating: 5
     },
     {
         id: 4,
-        text: "Game-changing quality that elevated our brand presence across all platforms. Highly recommended!",
-        name: "Emma Davis",
-        role: "Brand Manager",
-        avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+        text: "My content is now reaching a much wider audience, and the engagement is incredible.",
+        name: "Aanchal Agarwal",
+        role: "Content Creator",
+        avatar: ALogo,
         rating: 5
     },
     {
         id: 5,
-        text: "Their creative expertise brought our vision to life beyond our expectations. Simply amazing work!",
-        name: "David Wilson",
-        role: "YouTuber",
-        avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+        text: "My audience has grown so much, and it's amazing to see the #AGfam expanding.",
+        name: "Agasthya Shah",
+        role: "Actor & Content Creator",
+        avatar: ALogo,
         rating: 5
     },
     {
         id: 6,
-        text: "Exceptional attention to detail and lightning-fast delivery. They've become our go-to team!",
-        name: "Lisa Anderson",
-        role: "Podcast Host",
-        avatar: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+        text: "From small rooms to sold-out auditoriums, our stories are now reaching thousands more.",
+        name: "Jai Singh",
+        role: "Storyteller",
+        avatar: JLogo,
         rating: 5
     },
     {
         id: 7,
-        text: "The quality and creativity exceeded all our expectations. Our engagement rates soared!",
-        name: "Ryan Martinez",
-        role: "Social Media Manager",
-        avatar: "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+        text: "Folk Media's reach and impact have grown tremendously, all thanks to their incredible work.",
+        name: "Sammar Verma",
+        role: "Folk Media",
+        avatar: folk_media_group,
         rating: 5
     },
     {
         id: 8,
-        text: "Professional, reliable, and incredibly talented. They transformed our entire content strategy.",
-        name: "Jennifer Taylor",
-        role: "Business Owner",
-        avatar: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop",
+        text: "My ability to help others grow their Instagram presence has scaled immensely.",
+        name: "Jitendra Choudhary",
+        role: "Instagram Coach",
+        avatar: JLogo ,
+        rating: 5
+    },
+    {
+        id: 9,
+        text: "My voice in the crypto space is now reaching a much larger, engaged audience.",
+        name: "Jeet Shah ",
+        role: "Crypto Influencer",
+        avatar: JLogo2,
+        rating: 5
+    },
+    {
+        id: 10,
+        text: "The Crypto Talks community has seen incredible organic growth, and I couldn't be happier.",
+        name: "Budhil Vyas (Crypto & Wealth)",
+        role: "Crypto Educator",
+        avatar: "https://yt3.googleusercontent.com/WnlWunw9T-GDfXkOJmdrHPZ03BwQqULf6hJrd_VQ8kadTimm5Y34-8Cz6a27I5yAWN0_3iYSQ4M=s120-c-k-c0x00ffffff-no-rj",
+        rating: 5
+    },
+    {
+        id: 11,
+        text: "Their insights have been invaluable in driving authentic and sustainable brand growth for us.",
+        name: "Aditya Gupta",
+        role: "GM Patanjali Foods",
+        avatar: "https://yt3.googleusercontent.com/9GYCn_PuL97R-A0OjzO7ykK5rX_KCm7lXLJ7cA6i3rvBvlpszIo-oFe3xp-UJ2eNUqVZEHXgbw=s120-c-k-c0x00ffffff-no-rj",
         rating: 5
     }
 ];
 
-// const TestimonialCard = ({ testimonial }) => {
-//     return (
-//         <div className="relative bg-transparent rounded-[2rem] p-6 mb-6 border border-gray-700/30 shadow-2xl transition-all duration-300 hover:scale-95 hover:rounded-[3rem] hover:shadow-purple-500/20 hover:bg-gradient-to-br hover:from-gray-800/90 hover:to-gray-700/70 group ">
-
-//             <div className="absolute -bottom-4 -right-[0.1rem] md:-bottom-9 md:-right-1 text-[5rem] md:text-[10rem] text-blue-500/20 font-serif font-bold tracking-tighter" >
-//                 ,,
-//             </div>
-
-//             <div className="relative z-10 xs:w-[210px] xs:h-[150px] md:w-[191.04px]  xl:w-[200.04px]  md:h-[210px] xl:h-[253.7px] rounded-[4rem]">
-//                 <p className="text-gray-300 xl:mt-[2rem] xs:w-[160px] md:w-[240px] xl:w-[351.04px] sm:text-sm md:text-base xl:text-xl leading-relaxed md:mb-3 xl:mb-6 group-hover:text-white transition-colors duration-300">
-//                     {testimonial.text}
-//                 </p>
-
-//                 <div className="flex justify-center items-center gap-3 ">
-//                     <img
-//                         src={testimonial.avatar}
-//                         alt={testimonial.name}
-//                         className="w-12 h-12 md:w-14 md:h-14 xl:w-20 xl:h-20 rounded-full object-cover ring-2 ring-purple-500/30 group-hover:ring-purple-400/50 transition-all duration-300"
-//                     />
-//                     <div className="flex-1">
-//                         <h4 className="text-white font-semibold text-sm group-hover:text-blue-100 transition-colors duration-300">
-//                             {testimonial.name}
-//                         </h4>
-//                         <p className="text-gray-400 text-xs group-hover:text-gray-300 transition-colors duration-300">
-//                             {testimonial.role}
-//                         </p>
-//                     </div>
-//                 </div>
-
-//                 <div className="flex gap-1 mt-3">
-//                     {Array.from({ length: testimonial.rating }).map((_, i) => (
-//                         <Star
-//                             key={i}
-//                             size={14}
-//                             className="fill-yellow-400 text-yellow-400 group-hover:scale-95  transition-transform duration-300"
-//                         />
-//                     ))}
-//                 </div>
-//             </div>
-
-//             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-600/0 via-blue-600/0 to-purple-600/0 group-hover:from-blue-600/10 group-hover:via-blue-600/5 group-hover:to-purple-600/10 transition-all duration-500"></div>
-//         </div>
-//     );
-// };
 const TestimonialCard = ({ testimonial }) => {
     return (
         <div className="relative bg-transparent rounded-[2rem] p-6 mb-6 border border-gray-700/30 shadow-2xl 
@@ -200,9 +253,9 @@ const ScrollingColumn = ({ testimonials, direction, speed }) => {
 };
 
 const ScrollingTestimonials = () => {
-    const leftColumn = testimonials.slice(0, 3);
-    const middleColumn = testimonials.slice(2, 6);
-    const rightColumn = testimonials.slice(4, 8);
+    const leftColumn = testimonials.slice(0, 11);
+    const middleColumn = testimonials.slice(4, 9);
+    const rightColumn = testimonials.slice(8, 11);
 
     return (
         <div id="Testimonial" className="relative min-h-screen bg-black py-10 px-8 md:py-20 md:px-30 lg:mt-[-7rem] overflow-hidden"
@@ -246,7 +299,7 @@ const ScrollingTestimonials = () => {
                     <ScrollingColumn
                         testimonials={leftColumn}
                         direction="up"
-                        speed={20}
+                        speed={30}
                     />
 
                     {/* Column 2 → hidden on 1-col, visible from sm: (≥640px) */}
@@ -263,7 +316,7 @@ const ScrollingTestimonials = () => {
                         <ScrollingColumn
                             testimonials={rightColumn}
                             direction="up"
-                            speed={22}
+                            speed={10}
                         />
                     </div>
                 </div>
