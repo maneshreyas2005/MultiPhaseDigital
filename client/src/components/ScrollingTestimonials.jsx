@@ -3,13 +3,15 @@ import React, { useState } from 'react';
 import { Star } from 'lucide-react';
 import vector6 from '../assets/Vector6.png';
 import whiteGridBackGround from '../assets/whiteGridBackground.png';
-import AstroArunPandit from '../assets/AstroArunPandit.png';
-import TRS from '../assets/TRS.png';
-import yvslogop from '../assets/yvslogop.png';
-import ALogo from '../assets/ALogo.jpg';
+import astroarunpandit2 from '../assets/astroarunpandit2.jpg';
 import JLogo from '../assets/JLogo.jpg';
-import JLogo2 from '../assets/JLogo2.png';
-import folk_media_group from '../assets/fork_media_logo.jpg';
+import AgatsyaShah from '../assets/AgatsyaShah.jpg';
+import SammarVerma from '../assets/SammarVerma.jpg';
+import JaiSingh from '../assets/JaiSingh.jpg';
+import JeetShah from '../assets/JeetShah.jpg';
+import AanchalAgarwal from '../assets/AanchalAgarwal.jpg';
+import RanveerAllahbadia from '../assets/RanveerAllahbadia.jpg';
+import YashVardhanSwami from '../assets/YashVardhanSwami.jpg';
 
 // const testimonials = [
 //     {
@@ -83,7 +85,7 @@ const testimonials = [
         text: "Our spiritual community has grown authentically, reaching souls we never thought possible. Truly grateful.",
         name: "Arun Tiwari ",
         role: "Astro Arun Pandit",
-        avatar: AstroArunPandit, // replace with real avatar
+        avatar: astroarunpandit2, // replace with real avatar
         rating: 5
     },
     {
@@ -91,7 +93,7 @@ const testimonials = [
         text: "They understood our vision, and the organic growth of our podcast has been phenomenal.",
         name: "Ranveer Allahbadia",
         role: "TRS & Beerbiceps",
-        avatar: TRS,
+        avatar: RanveerAllahbadia,
         rating: 5
     },
     {
@@ -99,7 +101,7 @@ const testimonials = [
         text: "Our fitness family has expanded beyond our wildest dreams. The growth feels so real.",
         name: "Yash Vardhan Swami",
         role: "Trained by YVS",
-        avatar: yvslogop,
+        avatar: YashVardhanSwami,
         rating: 5
     },
     {
@@ -107,7 +109,7 @@ const testimonials = [
         text: "My content is now reaching a much wider audience, and the engagement is incredible.",
         name: "Aanchal Agarwal",
         role: "Content Creator",
-        avatar: ALogo,
+        avatar: AanchalAgarwal,
         rating: 5
     },
     {
@@ -115,7 +117,7 @@ const testimonials = [
         text: "My audience has grown so much, and it's amazing to see the #AGfam expanding.",
         name: "Agasthya Shah",
         role: "Actor & Content Creator",
-        avatar: ALogo,
+        avatar: AgatsyaShah,
         rating: 5
     },
     {
@@ -123,7 +125,7 @@ const testimonials = [
         text: "From small rooms to sold-out auditoriums, our stories are now reaching thousands more.",
         name: "Jai Singh",
         role: "Storyteller",
-        avatar: JLogo,
+        avatar: JaiSingh,
         rating: 5
     },
     {
@@ -131,7 +133,7 @@ const testimonials = [
         text: "Folk Media's reach and impact have grown tremendously, all thanks to their incredible work.",
         name: "Sammar Verma",
         role: "Folk Media",
-        avatar: folk_media_group,
+        avatar: SammarVerma,
         rating: 5
     },
     {
@@ -147,7 +149,7 @@ const testimonials = [
         text: "My voice in the crypto space is now reaching a much larger, engaged audience.",
         name: "Jeet Shah ",
         role: "Crypto Influencer",
-        avatar: JLogo2,
+        avatar: JeetShah,
         rating: 5
     },
     {
@@ -254,7 +256,7 @@ const ScrollingColumn = ({ testimonials, direction, speed }) => {
 
 const ScrollingTestimonials = () => {
     const leftColumn = testimonials.slice(0, 11);
-    const middleColumn = testimonials.slice(4, 9);
+    const middleColumn = testimonials.slice(4, 8);
     const rightColumn = testimonials.slice(8, 11);
 
     return (
@@ -307,7 +309,7 @@ const ScrollingTestimonials = () => {
                         <ScrollingColumn
                             testimonials={middleColumn}
                             direction="down"
-                            speed={25}
+                            speed={20}
                         />
                     </div>
 
@@ -316,7 +318,7 @@ const ScrollingTestimonials = () => {
                         <ScrollingColumn
                             testimonials={rightColumn}
                             direction="up"
-                            speed={10}
+                            speed={8}
                         />
                     </div>
                 </div>
