@@ -3,7 +3,8 @@ import React from 'react';
 import vector6 from '../assets/Vector6.png';
 import Founder1 from '../assets/Founder1.png';
 import Founder2 from '../assets/Founder2.png';
-import Founder3 from '../assets/Founder3.png'
+import Founder3 from '../assets/Founder3.png';
+import Founder4 from '../assets/Founder4.png';
 import Staff4 from '../assets/StaffImages/Staff4.png';
 import useInView from './UseInView';
 
@@ -44,9 +45,9 @@ const Founders = () => {
             <div className="hidden lg:flex flex-col relative justify-center items-center  mt-[-4rem] bg-black px-4 sm:px-6 lg:px-8 overflow-hidden z-[0]">
                 <div className='flex mt-[-3rem] gap-6 lg:gap-10 absolute'>
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal">
-                        ANUBHAV DUBEY
+                        DEVENDRA PUROHIT
                         <br />
-                        MENTOR
+                        CO FOUNDER
                     </span>
 
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center md:ml-[20px] whitespace-normal">
@@ -68,35 +69,35 @@ const Founders = () => {
                 
                 
             </div>
-            <div className="hidden lg:flex flex-col relative justify-center items-center mt-6 bg-black px-4 sm:px-6 lg:px-8 overflow-hidden z-[0]">
-                <div className='flex mt-[-3rem] gap-6 lg:gap-10 absolute'>
-                    <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal">
-                        Kartik Verma
+            <div className="hidden lg:flex flex-col relative justify-center items-center mt-6 bg-black px-4 sm:px-6 lg:px-8 overflow-hidden  z-[0]">
+                <div className='flex mt-[-3rem] gap-6 lg:gap-8 absolute'>
+                    <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal ml-28">
+                        SAMEER SATYARTH
                         <br />
-                        Content PR Head
+                        VICE PRESIDENT
                     </span>
 
-                    <span className="text-white/40 text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center md:ml-[20px] whitespace-normal z-[1]">
-                        Manish Pandey
+                    <span className="text-white/40 text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center ml-[80px] whitespace-normal z-[1]">
+                        KARTHIK VERMA
                         <br />
-                        Mentor
+                        CONTENT PR HEAD
                     </span>
                 </div>
-                <div className='flex gap-6 lg:gap-[16rem] xl:gap-[27rem] relative'>
+                <div className='flex gap-6 lg:gap-[17rem] xl:gap-[23rem] relative'>
                     <div className={`flex items-center gap-4 lg:gap-6 ${isInView ? 'animate-slide-in-right' : ''}`}>
-                        <img src={Founder3} alt="Kartik Verma" className="w-[280px] lg:w-[340px] xl:w-[400px] h-auto rounded-lg object-contain" />
+                        <img src={Founder4} alt="Sameer Satyarth" className="w-[280px] lg:w-[500px] xl:w-[600px] h-auto rounded-lg  object-contain " />
 
                     </div>
                     <div className={`flex items-center xl:gap-6 ${isInView ? 'animate-slide-in-left' : ''}`}>
 
-                        <img src={Staff4} alt="Manish Pandey" className="w-[300px] lg:w-[400px] xl:w-[440px]  h-auto rounded-lg object-contain" />
+                        <img src={Founder3} alt="Kartik Verma" className="w-[280px] lg:w-[340px] xl:w-[400px] h-auto rounded-lg object-contain" />
                     </div>
                 </div>
                 
 
 
             </div>
-            <div className="hidden w-full lg:flex relative justify-center items-center mt-6 bg-black px-4 sm:px-6 lg:px-8  z-[0]">
+            {/* <div className="hidden w-full lg:flex relative justify-center items-center mt-6 bg-black px-4 sm:px-6 lg:px-8  z-[0]">
                 <div className='flex mt-[-3rem] lg:ml-20 gap-6 lg:gap-10 absolute'>
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl lg:ml-100 font-semibold tracking-wide  whitespace-normal">
                         ANUBHAV DUBEY
@@ -110,6 +111,37 @@ const Founders = () => {
 
                     </div>
                 </div>
+
+            </div> */}
+
+            <div className="hidden lg:flex flex-col relative justify-center items-center mt-6 bg-black px-4 sm:px-6 lg:px-8 overflow-hidden z-[0]">
+                <div className='flex mt-[-3rem] gap-6 lg:gap-10 absolute'>
+                    <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal z-[1]">
+                        MANISH PANDEY
+                        <br />
+                        MENTOR
+                    </span>
+
+                    <span className="text-white/40 text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center md:ml-[20px] whitespace-normal z-[1]">
+                       ANUBHAV DUBEY
+                        <br />
+                        MENTOR
+                    </span>
+                </div>
+                <div className='flex gap-6 lg:gap-[16rem] xl:gap-[27rem] relative'>
+                    
+                    <div className={`flex items-center gap-4 lg:gap-6 ${isInView ? 'animate-slide-in-right' : ''}`}>
+                        <img src={Staff4} alt="Kartik Verma" className="w-[300px] lg:w-[400px] xl:w-[440px] mt-10 h-auto rounded-lg object-contain" />
+
+                    </div>
+                    <div className={`flex items-center xl:gap-6 ${isInView ? 'animate-slide-in-left' : ''}`}>
+
+                        <img src={Founder1} alt="Anubhav Dubey" className="w-[350px] md:w-[350px] lg:w-[350px] xl:w-[400px]  h-auto rounded-lg object-contain" />
+                    </div>
+                    
+                </div>
+
+
 
             </div>
 
@@ -135,14 +167,14 @@ const Founders = () => {
                     className={`flex flex-col justify-center sm:flex-row mt-[2rem] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
                 >
                     <img
-                        src={Founder1}
-                        alt="Anubhav Dubey"
-                        className="w-[270px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
+                        src={Founder3}
+                        alt="Kartik Verma"
+                        className="w-[250px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
-                        ANUBHAV DUBEY
+                        Devendra Purohit
                         <br />
-                        MENTOR
+                        Co Founder
                     </span>
                 </div>
                 {/* Founder 3 */}
@@ -150,9 +182,24 @@ const Founders = () => {
                     className={`flex flex-col justify-center sm:flex-row mt-[2rem] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
                 >
                     <img
+                        src={Founder4}
+                        alt="Anubhav Dubey"
+                        className="w-[320px] sm:w-[320px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
+                    />
+                    <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
+                        Sameer Satyarth
+                        <br />
+                        Vice President
+                    </span>
+                </div>
+                {/* Founder 4 */}
+                <div
+                    className={`flex flex-col justify-center sm:flex-row mt-[2rem] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
+                >
+                    <img
                         src={Founder3}
                         alt="Kartik Verma"
-                        className="w-[270px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
+                        className="w-[250px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
                         Kartik Verma
@@ -160,7 +207,7 @@ const Founders = () => {
                         Content PR Head
                     </span>
                 </div>
-                {/* Founder 4 */}
+                {/* Founder 5 */}
                 <div
                     className={`flex flex-col justify-center sm:flex-row mt-[2rem] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
                 >
@@ -177,14 +224,14 @@ const Founders = () => {
                 </div>
                 
                 
-                {/* Founder 5 */}
+                {/* Founder 6 */}
                 <div
                     className={`flex flex-col justify-center sm:flex-row mt-[2rem] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
                 >
                     <img
                         src={Founder1}
                         alt="Anubhav Dubey"
-                        className="w-[270px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
+                        className="w-[250px] sm:w-[250px] md:w-[250px] h-auto rounded-lg object-contain flex-shrink-0"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
                         ANUBHAV DUBEY
