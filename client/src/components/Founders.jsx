@@ -183,7 +183,7 @@ const Founders = () => {
                         <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">Devendra Purohit</span>
 
                         <br />
-                        Co Founder & CMO
+                        CO FOUNDER & CMO
                     </span>
                 </div>
                 {/* Founder 3 */}
@@ -199,7 +199,7 @@ const Founders = () => {
                         <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">Sameer Satyarth</span>
 
                         <br />
-                        Vice President
+                        VICE PRESIDENT
                     </span>
                 </div>
                 {/* Founder 4 */}
@@ -215,7 +215,7 @@ const Founders = () => {
                         <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">Kartik Verma</span>
 
                         <br />
-                        Content PR Head
+                        CONTENT PR HEAD
                     </span>
                 </div>
                 {/* Founder 5 */}
