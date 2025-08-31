@@ -16,6 +16,7 @@ import ScrollingTestimonials from '../components/ScrollingTestimonials'
 import ServicePageImage from '../components/ServicePageImage'
 import HorizontalLine from '../components/HorizontalLine'
 import Achievements from '../components/Achievements'
+import Location from '../components/Locations'
 import ContactUs from '../components/ContactUs'
 
 const LandingPage = () => {
@@ -34,6 +35,7 @@ const LandingPage = () => {
             <Achievements />
             <Founders/>
             <FaqsPage/>
+            <Location/>
             <HorizontalLine/>
             <Footer /> 
         </div>

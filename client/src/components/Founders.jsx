@@ -32,15 +32,15 @@ const Founders = () => {
                     className="text-white/40 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wide"
                     style={{ fontFamily: 'Constantine' }}
                 >
-                    <span className="text-white" style={{ fontFamily: 'Constantine' }}>
+                    <span className="text-white/40" style={{ fontFamily: 'Constantine' }}>
                         OUR
                     </span>
                 </h1>
                 <h2
-                    className="text-white/40 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wide mt-2"
+                    className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wide mt-2"
                     style={{ fontFamily: 'Constantine' }}
                 >
-                    FOUNDERS
+                    BACKBONE
                 </h2>
                 <img
                     src={vector6}
@@ -51,7 +51,7 @@ const Founders = () => {
 
             {/* Desktop Layout (≥1024px) */}
             <div className="hidden lg:flex flex-col relative justify-center items-center  mt-[-4rem] bg-black px-4 sm:px-6 lg:px-8 overflow-hidden z-[0]">
-                <div className='flex mt-[-3rem] gap-6 lg:gap-16 ml-7 absolute'>
+                <div className='flex mt-[-3rem] gap-6 lg:gap-10 xl:gap-15 ml-7 absolute z-[1]'>
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal">
                         <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">MEHUL PUROHIT</span>
                         <br />
@@ -61,7 +61,7 @@ const Founders = () => {
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-right md:ml-[20px] whitespace-normal">
                         <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">DEVENDRA PUROHIT</span>
                         <br />
-                        CO FOUNDER
+                        CO FOUNDER & CMO
                     </span>
                 </div>
                 <div className='flex gap-6 lg:gap-[14rem] xl:gap-[25rem] relative'>
@@ -159,7 +159,8 @@ const Founders = () => {
                     className={`flex flex-col-reverse sm:flex-row items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-left' : ''}`}
                 >
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
-                        MEHUL PUROHIT
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">MEHUL PUROHIT</span>
+                        
                         <br />
                         FOUNDER & CEO
                     </span>
@@ -179,9 +180,10 @@ const Founders = () => {
                         className="w-[300px] sm:w-[300px] md:w-[380px] h-auto rounded-lg object-contain flex-shrink-0"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
-                        Devendra Purohit
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">Devendra Purohit</span>
+
                         <br />
-                        Co Founder
+                        Co Founder & CMO
                     </span>
                 </div>
                 {/* Founder 3 */}
@@ -194,7 +196,8 @@ const Founders = () => {
                         className="w-[320px] sm:w-[320px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0 grayscale"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
-                        Sameer Satyarth
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">Sameer Satyarth</span>
+
                         <br />
                         Vice President
                     </span>
@@ -209,7 +212,8 @@ const Founders = () => {
                         className="w-[250px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0 grayscale"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
-                        Kartik Verma
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">Kartik Verma</span>
+
                         <br />
                         Content PR Head
                     </span>
@@ -224,7 +228,7 @@ const Founders = () => {
                         className="w-[270px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
-                        MANISH PANDEY
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">MANISH PANDEY</span>
                         <br />
                         MENTOR
                     </span>
@@ -241,7 +245,7 @@ const Founders = () => {
                         className="w-[250px] sm:w-[250px] md:w-[250px] h-auto rounded-lg object-contain flex-shrink-0 grayscale"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
-                        ANUBHAV DUBEY
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">ANUBHAV DUBEY</span>
                         <br />
                         MENTOR
                     </span>
