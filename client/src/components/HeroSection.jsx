@@ -58,10 +58,8 @@ const HeroSection = () => {
             {/* Hero Content Section */}
             <div className="relative flex flex-col items-center justify-center text-white px-4 sm:px-6 lg:px-8 text-center flex-1">
                 {/* Top Subtitle */}
-                <div className="mt-4 max-[500px]:mt-[180px] sm:mt-12 md:mt-19 lg:mt-25 xl:mt-40 ">
-                    <p className="font-light sm:text-lg md:text-xl lg:text-xl xl:text-2xl text-white/60 capitalize tracking-wide  lg:mb-[6px]">
-                        We Have Profile Client Base
-                    </p>
+                <div className="mt-4 max-[500px]:mt-[180px] sm:mt-12 md:mt-24 lg:mt-28 xl:mt-48 ">
+                    
                 </div>
 
                 {/* Main Title */}
