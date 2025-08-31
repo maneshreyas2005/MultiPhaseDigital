@@ -1,13 +1,19 @@
 
 import React from 'react';
 import vector6 from '../assets/Vector6.png';
-import Founder1 from '../assets/Founder1.png';
-import Founder2 from '../assets/Founder2.png';
-import Founder3 from '../assets/Founder3.png';
-import Founder4 from '../assets/Founder4.png';
+// import Founder1 from '../assets/Founder1.png';
+import Founder1 from '../assets/Founders/AnubhavDubey.png';
+
+// import Founder2 from '../assets/Founder2.png';
+import Founder2 from '../assets/Founders/Mehul.png';
+
+// import Founder3 from '../assets/Founder3.png';
+// import Founder4 from '../assets/Founder4.png';
+import Founder3 from '../assets/Founders/KartikVerma.png';
+import Founder4 from '../assets/Founders/SameerSatyarth2.png';
 import Staff4 from '../assets/StaffImages/Staff4.png';
 import ManishPandey from '../assets/ManishPandey.png';
-import DevendraPurohit from '../assets/DevendraPurohit.png'
+import DevendraPurohit from '../assets/Founders/DevendraPurohit.png';
 import useInView from './UseInView';
 
 const Founders = () => {
@@ -45,27 +51,26 @@ const Founders = () => {
 
             {/* Desktop Layout (≥1024px) */}
             <div className="hidden lg:flex flex-col relative justify-center items-center  mt-[-4rem] bg-black px-4 sm:px-6 lg:px-8 overflow-hidden z-[0]">
-                <div className='flex mt-[-3rem] gap-6 lg:gap-10 absolute'>
+                <div className='flex mt-[-3rem] gap-6 lg:gap-16 ml-7 absolute'>
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal">
-                        DEVENDRA PUROHIT
-                        <br />
-                        CO FOUNDER
-                    </span>
-
-                    <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center md:ml-[20px] whitespace-normal">
-                        MEHUL PUROHIT
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">MEHUL PUROHIT</span>
                         <br />
                         FOUNDER & CEO
                     </span>
+
+                    <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-right md:ml-[20px] whitespace-normal">
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">DEVENDRA PUROHIT</span>
+                        <br />
+                        CO FOUNDER
+                    </span>
                 </div>
-                <div className='flex gap-6 lg:gap-[14rem] xl:gap-[22rem] relative'>
+                <div className='flex gap-6 lg:gap-[14rem] xl:gap-[25rem] relative'>
                     <div className={`flex items-center gap-4 lg:gap-6 ${isInView ? 'animate-slide-in-right' : ''}`}>
-                        <img src={DevendraPurohit} alt="Anubhav Dubey" className="w-[280px] lg:w-[340px] xl:w-[480px] h-auto rounded-lg object-contain" />
+                        <img src={Founder2} alt="Mehul Purohit" className="w-[320px] lg:w-[380px] xl:w-[420px]  h-auto rounded-lg object-contain grayscale" />
 
                     </div>
                     <div className={`flex items-center xl:gap-6 ${isInView ? 'animate-slide-in-left' : ''}`}>
-
-                        <img src={Founder2} alt="Mehul Purohit" className="w-[320px] lg:w-[400px] xl:w-[460px] h-auto rounded-lg object-contain grayscale" />
+                        <img src={DevendraPurohit} alt="Anubhav Dubey" className="w-[280px] lg:w-[340px] xl:w-[420px] h-auto rounded-lg object-contain" />
                     </div>
                 </div>
                 
@@ -74,13 +79,13 @@ const Founders = () => {
             <div className="hidden lg:flex flex-col relative justify-center items-center mt-6 bg-black px-4 sm:px-6 lg:px-8 overflow-hidden  z-[0]">
                 <div className='flex mt-[-3rem] gap-6 lg:gap-8 absolute'>
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal ml-28">
-                        SAMEER SATYARTH
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">SAMEER SATYARTH</span>
                         <br />
                         VICE PRESIDENT
                     </span>
 
                     <span className="text-white/40 text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center ml-[80px] whitespace-normal z-[1]">
-                        KARTHIK VERMA
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">KARTIK VERMA</span>
                         <br />
                         CONTENT PR HEAD
                     </span>
@@ -92,7 +97,7 @@ const Founders = () => {
                     </div>
                     <div className={`flex items-center xl:gap-6 ${isInView ? 'animate-slide-in-left' : ''}`}>
 
-                        <img src={Founder3} alt="Kartik Verma" className="w-[280px] lg:w-[340px] xl:w-[400px] h-auto rounded-lg object-contain grayscale" />
+                        <img src={Founder3} alt="Kartik Verma" className="w-[280px] lg:w-[340px] xl:w-[520px] h-auto rounded-lg object-contain grayscale" />
                     </div>
                 </div>
                 
@@ -117,15 +122,15 @@ const Founders = () => {
             </div> */}
 
             <div className="hidden lg:flex flex-col relative justify-center items-center mt-6 bg-black px-4 sm:px-6 lg:px-8 overflow-hidden z-[0]">
-                <div className='flex mt-[-3rem] gap-6 lg:gap-10 absolute'>
+                <div className='flex mt-[-3rem] gap-6 lg:gap-18 ml-7 absolute'>
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal z-[1]">
-                        MANISH PANDEY
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">MANISH PANDEY</span>
                         <br />
                         MENTOR
                     </span>
 
                     <span className="text-white/40 text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center md:ml-[20px] whitespace-normal z-[1]">
-                       ANUBHAV DUBEY
+                        <span className="text-white text-center">ANUBHAV DUBEY</span>
                         <br />
                         MENTOR
                     </span>
