@@ -10,7 +10,7 @@ import Founder2 from '../assets/Founders/Mehul.png';
 // import Founder3 from '../assets/Founder3.png';
 // import Founder4 from '../assets/Founder4.png';
 import Founder3 from '../assets/Founders/KartikVerma.png';
-import Founder4 from '../assets/Founders/SameerSatyarth2.png';
+import Founder4 from '../assets/SameerSatyarth2.png';
 import Staff4 from '../assets/StaffImages/Staff4.png';
 import ManishPandey from '../assets/ManishPandey.png';
 import DevendraPurohit from '../assets/Founders/DevendraPurohit.png';
@@ -55,13 +55,13 @@ const Founders = () => {
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal">
                         <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">MEHUL PUROHIT</span>
                         <br />
-                        FOUNDER & CEO
+                        Founder & CEO
                     </span>
 
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-right md:ml-[20px] whitespace-normal">
                         <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">DEVENDRA PUROHIT</span>
                         <br />
-                        CO FOUNDER & CMO
+                        Co Founder & CMO
                     </span>
                 </div>
                 <div className='flex gap-6 lg:gap-[14rem] xl:gap-[25rem] relative'>
@@ -78,16 +78,16 @@ const Founders = () => {
             </div>
             <div className="hidden lg:flex flex-col relative justify-center items-center mt-6 bg-black px-4 sm:px-6 lg:px-8 overflow-hidden  z-[0]">
                 <div className='flex mt-[-3rem] gap-6 lg:gap-8 absolute'>
-                    <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal ml-28">
+                    <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal ml-10">
                         <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">SAMEER SATYARTH</span>
                         <br />
-                        VICE PRESIDENT
+                        Vice President
                     </span>
 
                     <span className="text-white/40 text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center ml-[80px] whitespace-normal z-[1]">
                         <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">KARTIK VERMA</span>
                         <br />
-                        CONTENT PR HEAD
+                        Content PR Head
                     </span>
                 </div>
                 <div className='flex gap-6 lg:gap-[17rem] xl:gap-[23rem] relative'>
@@ -126,13 +126,13 @@ const Founders = () => {
                     <span className="text-white/40 text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide  whitespace-normal z-[1]">
                         <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">MANISH PANDEY</span>
                         <br />
-                        MENTOR
+                        Mentor
                     </span>
 
                     <span className="text-white/40 text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center md:ml-[20px] whitespace-normal z-[1]">
                         <span className="text-white text-center">ANUBHAV DUBEY</span>
                         <br />
-                        MENTOR
+                        Mentor
                     </span>
                 </div>
                 <div className='flex gap-6 lg:gap-[16rem] xl:gap-[27rem] relative'>
@@ -156,19 +156,20 @@ const Founders = () => {
             <div className="flex lg:hidden flex-col justify-center  items-center gap-8 sm:gap-10 md:gap-12 mt-[-20px] bg-black px-2 sm:px-4 overflow-hidden z-[0]">
                 
                 <div
-                    className={`flex flex-col-reverse sm:flex-row items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-left' : ''}`}
+                    className={`flex flex-col sm:flex-row items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-left' : ''}`}
                 >
-                    <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
-                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">MEHUL PUROHIT</span>
-                        
-                        <br />
-                        FOUNDER & CEO
-                    </span>
+                    
                     <img
                         src={Founder2}
                         alt="Mehul Purohit"
                         className="w-[300px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0 grayscale"
                     />
+                    <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">MEHUL PUROHIT</span>
+
+                        <br />
+                        Founder & CEO
+                    </span>
                 </div>
                 {/* Founder 2 */}
                 <div
@@ -180,10 +181,10 @@ const Founders = () => {
                         className="w-[300px] sm:w-[300px] md:w-[380px] h-auto rounded-lg object-contain flex-shrink-0"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
-                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">Devendra Purohit</span>
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">DEVENDRA PUROHIT</span>
 
                         <br />
-                        CO FOUNDER & CMO
+                        Co Founder & CMO
                     </span>
                 </div>
                 {/* Founder 3 */}
@@ -196,10 +197,10 @@ const Founders = () => {
                         className="w-[320px] sm:w-[320px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0 grayscale"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
-                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">Sameer Satyarth</span>
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">SAMEER SATYARTH</span>
 
                         <br />
-                        VICE PRESIDENT
+                        Vice President
                     </span>
                 </div>
                 {/* Founder 4 */}
@@ -212,10 +213,10 @@ const Founders = () => {
                         className="w-[250px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0 grayscale"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
-                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">Kartik Verma</span>
+                        <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">KARTIK VERMA</span>
 
                         <br />
-                        CONTENT PR HEAD
+                        Content PR Head
                     </span>
                 </div>
                 {/* Founder 5 */}
@@ -230,7 +231,7 @@ const Founders = () => {
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
                         <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">MANISH PANDEY</span>
                         <br />
-                        MENTOR
+                        Mentor
                     </span>
                 </div>
                 
@@ -247,7 +248,7 @@ const Founders = () => {
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
                         <span className="text-white text-right text-lg lg:text-xl xl:text-2xl font-semibold tracking-wide text-center">ANUBHAV DUBEY</span>
                         <br />
-                        MENTOR
+                        Mentor
                     </span>
                 </div>
                 
