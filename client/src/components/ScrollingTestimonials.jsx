@@ -8,7 +8,9 @@ import JLogo from '../assets/JLogo.jpg';
 import AgatsyaShah from '../assets/AgatsyaShah.jpg';
 import SammarVerma from '../assets/SammarVerma.jpg';
 import JaiSingh from '../assets/JaiSingh.jpg';
-import JeetShah from '../assets/JeetShah.jpg';
+import JitendraChaudhary from '../assets/JitendraChaudhary.jpg';
+import JeetShah from '../assets/JeetShah2.jpg';
+import BudhilVyas from '../assets/BudhilVyas.jpg';
 import AanchalAgarwal from '../assets/AanchalAgarwal.jpg';
 import RanveerAllahbadia from '../assets/RanveerAllahbadia.jpg';
 import YashVardhanSwami from '../assets/YashVardhanSwami.jpg';
@@ -141,7 +143,7 @@ const testimonials = [
         text: "My ability to help others grow their Instagram presence has scaled immensely.",
         name: "Jitendra Choudhary",
         role: "Instagram Coach",
-        avatar: JLogo ,
+        avatar: JitendraChaudhary ,
         rating: 5
     },
     {
@@ -157,7 +159,8 @@ const testimonials = [
         text: "The Crypto Talks community has seen incredible organic growth, and I couldn't be happier.",
         name: "Budhil Vyas (Crypto & Wealth)",
         role: "Crypto Educator",
-        avatar: "https://yt3.googleusercontent.com/WnlWunw9T-GDfXkOJmdrHPZ03BwQqULf6hJrd_VQ8kadTimm5Y34-8Cz6a27I5yAWN0_3iYSQ4M=s120-c-k-c0x00ffffff-no-rj",
+        avatar: BudhilVyas,
+        // avatar: "https://yt3.googleusercontent.com/WnlWunw9T-GDfXkOJmdrHPZ03BwQqULf6hJrd_VQ8kadTimm5Y34-8Cz6a27I5yAWN0_3iYSQ4M=s120-c-k-c0x00ffffff-no-rj",
         rating: 5
     },
     {
