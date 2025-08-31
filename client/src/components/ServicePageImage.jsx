@@ -1,7 +1,7 @@
 import React from 'react'
-import Pandavasss from '../assets/Pandavasss.png'
+import Pandavasss from '../assets/Pandav7.png'
 import { useRef, useState, useEffect } from 'react'
-import Pandavasss3 from '../assets/Pandavasss2.png'
+import Pandavasss3 from '../assets/MobilePandav.png'
 
 const ServicePageImage = () => {
     const statsRef = useRef(null);

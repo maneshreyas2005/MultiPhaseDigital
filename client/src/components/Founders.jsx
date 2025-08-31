@@ -6,6 +6,8 @@ import Founder2 from '../assets/Founder2.png';
 import Founder3 from '../assets/Founder3.png';
 import Founder4 from '../assets/Founder4.png';
 import Staff4 from '../assets/StaffImages/Staff4.png';
+import ManishPandey from '../assets/ManishPandey.png';
+import DevendraPurohit from '../assets/DevendraPurohit.png'
 import useInView from './UseInView';
 
 const Founders = () => {
@@ -58,12 +60,12 @@ const Founders = () => {
                 </div>
                 <div className='flex gap-6 lg:gap-[14rem] xl:gap-[22rem] relative'>
                     <div className={`flex items-center gap-4 lg:gap-6 ${isInView ? 'animate-slide-in-right' : ''}`}>
-                        <img src={Founder1} alt="Anubhav Dubey" className="w-[280px] lg:w-[340px] xl:w-[400px] h-auto rounded-lg object-contain" />
+                        <img src={DevendraPurohit} alt="Anubhav Dubey" className="w-[280px] lg:w-[340px] xl:w-[480px] h-auto rounded-lg object-contain" />
 
                     </div>
                     <div className={`flex items-center xl:gap-6 ${isInView ? 'animate-slide-in-left' : ''}`}>
 
-                        <img src={Founder2} alt="Mehul Purohit" className="w-[320px] lg:w-[400px] xl:w-[460px] h-auto rounded-lg object-contain" />
+                        <img src={Founder2} alt="Mehul Purohit" className="w-[320px] lg:w-[400px] xl:w-[460px] h-auto rounded-lg object-contain grayscale" />
                     </div>
                 </div>
                 
@@ -90,7 +92,7 @@ const Founders = () => {
                     </div>
                     <div className={`flex items-center xl:gap-6 ${isInView ? 'animate-slide-in-left' : ''}`}>
 
-                        <img src={Founder3} alt="Kartik Verma" className="w-[280px] lg:w-[340px] xl:w-[400px] h-auto rounded-lg object-contain" />
+                        <img src={Founder3} alt="Kartik Verma" className="w-[280px] lg:w-[340px] xl:w-[400px] h-auto rounded-lg object-contain grayscale" />
                     </div>
                 </div>
                 
@@ -131,12 +133,12 @@ const Founders = () => {
                 <div className='flex gap-6 lg:gap-[16rem] xl:gap-[27rem] relative'>
                     
                     <div className={`flex items-center gap-4 lg:gap-6 ${isInView ? 'animate-slide-in-right' : ''}`}>
-                        <img src={Staff4} alt="Kartik Verma" className="w-[300px] lg:w-[400px] xl:w-[440px] mt-10 h-auto rounded-lg object-contain" />
+                        <img src={ManishPandey} alt="Kartik Verma" className="w-[300px] lg:w-[400px] xl:w-[460px] mt-10 h-auto rounded-lg object-contain" />
 
                     </div>
                     <div className={`flex items-center xl:gap-6 ${isInView ? 'animate-slide-in-left' : ''}`}>
 
-                        <img src={Founder1} alt="Anubhav Dubey" className="w-[350px] md:w-[350px] lg:w-[350px] xl:w-[400px]  h-auto rounded-lg object-contain" />
+                        <img src={Founder1} alt="Anubhav Dubey" className="w-[350px] grayscale md:w-[350px] lg:w-[350px] xl:w-[410px]  h-auto rounded-lg object-contain" />
                     </div>
                     
                 </div>
@@ -159,7 +161,7 @@ const Founders = () => {
                     <img
                         src={Founder2}
                         alt="Mehul Purohit"
-                        className="w-[300px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
+                        className="w-[300px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0 grayscale"
                     />
                 </div>
                 {/* Founder 2 */}
@@ -167,9 +169,9 @@ const Founders = () => {
                     className={`flex flex-col justify-center sm:flex-row mt-[2rem] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
                 >
                     <img
-                        src={Founder3}
+                        src={DevendraPurohit}
                         alt="Kartik Verma"
-                        className="w-[250px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
+                        className="w-[300px] sm:w-[300px] md:w-[380px] h-auto rounded-lg object-contain flex-shrink-0"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
                         Devendra Purohit
@@ -184,7 +186,7 @@ const Founders = () => {
                     <img
                         src={Founder4}
                         alt="Anubhav Dubey"
-                        className="w-[320px] sm:w-[320px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
+                        className="w-[320px] sm:w-[320px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0 grayscale"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
                         Sameer Satyarth
@@ -199,7 +201,7 @@ const Founders = () => {
                     <img
                         src={Founder3}
                         alt="Kartik Verma"
-                        className="w-[250px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
+                        className="w-[250px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0 grayscale"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
                         Kartik Verma
@@ -212,7 +214,7 @@ const Founders = () => {
                     className={`flex flex-col justify-center sm:flex-row mt-[2rem] items-center gap-4 sm:gap-6 flex-wrap text-center sm:text-left ${isInView ? 'animate-slide-in-right' : ''}`}
                 >
                     <img
-                        src={Staff4}
+                        src={ManishPandey}
                         alt="Manish Pandey"
                         className="w-[270px] sm:w-[250px] md:w-[350px] h-auto rounded-lg object-contain flex-shrink-0"
                     />
@@ -231,7 +233,7 @@ const Founders = () => {
                     <img
                         src={Founder1}
                         alt="Anubhav Dubey"
-                        className="w-[250px] sm:w-[250px] md:w-[250px] h-auto rounded-lg object-contain flex-shrink-0"
+                        className="w-[250px] sm:w-[250px] md:w-[250px] h-auto rounded-lg object-contain flex-shrink-0 grayscale"
                     />
                     <span className="text-white/40 text-base sm:text-lg md:text-xl font-semibold tracking-wide whitespace-normal">
                         ANUBHAV DUBEY
