@@ -1,5 +1,6 @@
 import React from 'react'
-import Pandavasss from '../assets/Pandav7.png'
+// import Pandavasss from '../assets/Pandav7.png'
+import Pandavasss from '../assets/MainImage.png'
 import { useRef, useState, useEffect } from 'react'
 import Pandavasss3 from '../assets/MobilePandav.png'
 

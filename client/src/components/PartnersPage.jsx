@@ -11,7 +11,7 @@ const PartnersPage = () => {
     const [sectionRef, sectionInView] = useInView({ threshold: 0.1 });
 
     return (
-        <div
+        <div id='OurPartners'
             ref={sectionRef}
             className="relative w-full bg-black flex flex-col items-center justify-center p-4 sm:p-6"
         >
