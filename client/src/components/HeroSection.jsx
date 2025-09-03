@@ -58,7 +58,7 @@ const HeroSection = () => {
             {/* Hero Content Section */}
             <div className="relative flex flex-col items-center justify-center text-white px-4 sm:px-6 lg:px-8 text-center flex-1">
                 {/* Top Subtitle */}
-                <div className="mt-4 max-[500px]:mt-[180px] sm:mt-12 md:mt-24 lg:mt-28 xl:mt-48 ">
+                <div className="mt-4 max-[500px]:mt-[200px] sm:mt-12 md:mt-24 lg:mt-28 xl:mt-48 ">
                     
                 </div>
 
