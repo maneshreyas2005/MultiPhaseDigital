@@ -2,7 +2,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import LandingPage from "./Pages/LandingPage";
 import Navbar from "./components/Navbar";
-import ContactUs from "./components/contactus";
+import ContactUs from "./components/ContactUs";
 import HeroSection from "./components/HeroSection";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
       </Routes>
     </>
 

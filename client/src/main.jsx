@@ -7,7 +7,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import HeroSection from "./components/HeroSection.jsx";
-import ContactUs from "./components/contactus.jsx";
+import ContactUs from "./components/ContactUs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <HeroSection />,
   },
   {
-    path: "/contactus",
+    path: "/ContactUs",
     element: <ContactUs />,
   },
 ]);

@@ -17,7 +17,7 @@ import ServicePageImage from "../components/ServicePageImage";
 import HorizontalLine from "../components/HorizontalLine";
 import Achievements from "../components/Achievements";
 import Location from "../components/Locations";
-import ContactUs from "../components/contactus";
+import ContactUs from "../components/ContactUs";
 
 const LandingPage = () => {
   return (

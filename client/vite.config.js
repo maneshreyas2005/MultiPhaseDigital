@@ -18,7 +18,7 @@ export default defineConfig({
         "/#Testimonial",
         "/#OurPresence",
         "/#OurTeam",
-        "/contactus",
+        "/ContactUs",
         "/#OurPartners",
       ],
     }),

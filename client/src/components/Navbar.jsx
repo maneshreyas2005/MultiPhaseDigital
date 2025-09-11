@@ -27,7 +27,7 @@ const Navbar = () => {
           </div>
 
           <a
-            onClick={() => Navigate("/contactus")}
+            onClick={() => Navigate("/ContactUs")}
             className="hidden min-[500px]:inline-block text-white xl:w-[110px] hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
             style={{
               background:
@@ -189,7 +189,7 @@ const Navbar = () => {
                   <a
                     href="#ContactUs"
                     className={`block py-2 pl-3 pr-4 text-gray-300 hover:text-pink-400 lg:p-3 transition-colors duration-200 ${activeTab === "About Us" ? "text-white" : ""}`}
-                    onClick={() => Navigate("/contactus")}
+                    onClick={() => Navigate("/ContactUs")}
                   >
                     Contact Us
                   </a>
