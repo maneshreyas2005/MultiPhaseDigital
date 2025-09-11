@@ -10,7 +10,7 @@ export default defineConfig({
     tailwindcss(),
     vitePluginSitemap({
       hostname: "https://multiphasedigital.com",
-      generateRobotsTxt: true,
+      generateRobotsTxt: false,
       routes: [
         "/",
         "/#homePage",
