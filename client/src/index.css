@@ -1,12 +1,11 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Constantine';
-  src: url('../public/constantine/Constantine.ttf') format('truetype');
+  font-family: "Constantine";
+  src: url("/constantine/Constantine.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 
 @keyframes scroll {
   0% {
@@ -19,12 +18,13 @@
 }
 
 .gradient-border {
-  background: linear-gradient(360deg, #1B192E, #9116E7, #FF738B);
+  background: linear-gradient(360deg, #1b192e, #9116e7, #ff738b);
   background-size: 300% 300%;
   transition: background-position 1s ease;
 }
+
 .gradient-text {
-  background: linear-gradient(360deg, #1B192E, #9116E7, #FF738B);
+  background: linear-gradient(360deg, #1b192e, #9116e7, #ff738b);
   background-size: 300% 300%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -34,6 +34,7 @@
   /* for Safari/Chrome */
   transition: background-position 1s ease;
 }
+
 /* .gradient-border {
    background: linear-gradient(270deg,
        #1C1930,
@@ -45,15 +46,13 @@
    transition: background-position 1s ease;
  } */
 
- /* .gradient-border {
+/* .gradient-border {
    position: relative;
    background: linear-gradient(270deg, #1C1930, rgba(31, 2, 52, 0.4), #8a18dc, #FF738B);
    background-size: 300% 300%;
    transition: background-position 1s ease;
    border-radius: 3rem;
  } */
-
-
 
 .animate-scroll {
   animation: scroll 20s linear infinite;

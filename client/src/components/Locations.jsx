@@ -13,7 +13,7 @@
 //         const [isStatsVisible, setIsStatsVisible] = useState(false);
 //         const [isHeadingVisible, setIsHeadingVisible] = useState(false);
 //         const [isImagesVisible, setIsImagesVisible] = useState(false);
-    
+
 //         useEffect(() => {
 //             const createObserver = (ref, setVisible) => {
 //                 const observer = new IntersectionObserver(
@@ -25,17 +25,17 @@
 //                     },
 //                     { threshold: 0.3 }
 //                 );
-    
+
 //                 if (ref.current) {
 //                     observer.observe(ref.current);
 //                 }
 //                 return () => observer.disconnect();
 //             };
-    
+
 //             const cleanupStats = createObserver(statsRef, setIsStatsVisible);
 //             const cleanupHeading = createObserver(headingRef, setIsHeadingVisible);
 //             const cleanupImages = createObserver(imagesRef, setIsImagesVisible);
-    
+
 //             return () => {
 //                 cleanupStats();
 //                 cleanupHeading();
@@ -74,7 +74,7 @@
 //                     </div>
 //           <div
 //               ref={statsRef}
-//               className={`flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-[80px]  justify-center items-center bg-black px-2 sm:px-4 py-4 sm:py-6 overflow-hidden 
+//               className={`flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-[80px]  justify-center items-center bg-black px-2 sm:px-4 py-4 sm:py-6 overflow-hidden
 //                     `}
 //           >
 //               {[
@@ -93,13 +93,12 @@
 //                           backgroundColor: '#000000',
 //                           boxShadow: '0px 3px 15px 0px #FFFFFF26 inset',
 //                       }}>
-                          
+
 //                           <p className="font-bold text-md xs:text-sm sm:text-base md:text-lg lg:text-3xl xl:text-3xl whitespace-pre-line mt-1 sm:mt-2" style={{ fontFamily: 'Constantine' }}>
 //                               {stat.label}
 //                           </p>
 //                       </div>
 //                   </div>
-
 
 //               ))}
 //           </div>
@@ -125,14 +124,13 @@
 //                           backgroundColor: '#000000',
 //                           boxShadow: '0px 3px 15px 0px #FFFFFF26 inset',
 //                       }}>
-                          
+
 //                           <p className="font-light text-md xs:text-sm sm:text-base md:text-lg lg:text-3xl xl:text-3xl whitespace-pre-line mt-1 sm:mt-2" style={{ fontFamily: 'Constantine' }}>
-                              
+
 //                               {stat.label}
 //                           </p>
 //                       </div>
 //                   </div>
-
 
 //               ))}
 //           </div>
@@ -310,139 +308,138 @@
 
 // export default Locations;
 
-import React, { useEffect, useRef, useState } from 'react';
-import vector6 from '../assets/Vector6.png';
-import useInView from './UseInView';
+import React, { useEffect, useRef, useState } from "react";
+import vector6 from "../assets/Vector6.png";
+import useInView from "./UseInView";
 
 const Locations = () => {
-    const [sectionRef, sectionInView] = useInView({ threshold: 0.1 });
-    const statsRef = useRef(null);
-    const headingRef = useRef(null);
-    const [isStatsVisible, setIsStatsVisible] = useState(false);
-    const [isHeadingVisible, setIsHeadingVisible] = useState(false);
+  const [sectionRef, sectionInView] = useInView({ threshold: 0.1 });
+  const statsRef = useRef(null);
+  const headingRef = useRef(null);
+  const [isStatsVisible, setIsStatsVisible] = useState(false);
+  const [isHeadingVisible, setIsHeadingVisible] = useState(false);
 
-    useEffect(() => {
-        const createObserver = (ref, setVisible) => {
-            const observer = new IntersectionObserver(
-                ([entry]) => {
-                    if (entry.isIntersecting) {
-                        setVisible(true);
-                        observer.disconnect();
-                    }
-                },
-                { threshold: 0.3 }
-            );
+  useEffect(() => {
+    const createObserver = (ref, setVisible) => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.disconnect();
+          }
+        },
+        { threshold: 0.3 },
+      );
 
-            if (ref.current) {
-                observer.observe(ref.current);
-            }
-            return () => observer.disconnect();
-        };
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+      return () => observer.disconnect();
+    };
 
-        const cleanupStats = createObserver(statsRef, setIsStatsVisible);
-        const cleanupHeading = createObserver(headingRef, setIsHeadingVisible);
+    const cleanupStats = createObserver(statsRef, setIsStatsVisible);
+    const cleanupHeading = createObserver(headingRef, setIsHeadingVisible);
 
-        return () => {
-            cleanupStats();
-            cleanupHeading();
-        };
-    }, []);
+    return () => {
+      cleanupStats();
+      cleanupHeading();
+    };
+  }, []);
 
-    return (
-        <div
-            ref={sectionRef}
-            className="relative w-full bg-black grid grid-cols-1 items-center justify-items-center p-4 sm:p-6"
+  return (
+    <div
+      ref={sectionRef}
+      className="relative w-full bg-black grid grid-cols-1 items-center justify-items-center p-4 sm:p-6"
+    >
+      {/* Heading Section */}
+      <div
+        ref={headingRef}
+        className={`w-full max-w-[556.07px] text-center mb-8 sm:mb-10 md:mb-12 ${sectionInView ? "animate-slide-up" : "opacity-0"}`}
+        style={{ animationDelay: "0s", animationFillMode: "both" }}
+      >
+        <h1
+          className="text-white/40 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[2.75rem] font-semibold tracking-wide"
+          style={{ fontFamily: "Constantine" }}
         >
-            {/* Heading Section */}
-            <div
-                ref={headingRef}
-                className={`w-full max-w-[556.07px] text-center mb-8 sm:mb-10 md:mb-12 ${sectionInView ? 'animate-slide-up' : 'opacity-0'}`}
-                style={{ animationDelay: '0s', animationFillMode: 'both' }}
-            >
-                <h1
-                    className="text-white/40 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[2.75rem] font-semibold tracking-wide"
-                    style={{ fontFamily: 'Constantine' }}
-                >
-                    <span className="text-white/40">OUR</span>
-                </h1>
-                <h2
-                    className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[2.75rem] font-semibold tracking-wide mt-2"
-                    style={{ fontFamily: 'Constantine', animationDelay: '0.05s', animationFillMode: 'both' }}
-                >
-                    LOCATIONS
-                </h2>
-                <img
-                    src={vector6}
-                    alt="Decorative line"
-                    className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[300px] xl:w-[339px] mt-4 sm:mt-5 md:mt-6 mx-auto mb-4 sm:mb-5 md:mb-6"
-                />
-            </div>
+          <span className="text-white/40">OUR</span>
+        </h1>
+        <h2
+          className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[2.75rem] font-semibold tracking-wide mt-2"
+          style={{
+            fontFamily: "Constantine",
+            animationDelay: "0.05s",
+            animationFillMode: "both",
+          }}
+        >
+          LOCATIONS
+        </h2>
+        <img
+          src={vector6}
+          alt="Decorative line"
+          className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[300px] xl:w-[339px] mt-4 sm:mt-5 md:mt-6 mx-auto mb-4 sm:mb-5 md:mb-6"
+        />
+      </div>
 
-            {/* Locations Grid - First Row */}
+      {/* Locations Grid - First Row */}
+      <div
+        ref={statsRef}
+        className={`grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 justify-items-center w-full max-w-[1200px] px-2 sm:px-4 py-4 sm:py-6`}
+      >
+        {[{ label: "Mumbai" }, { label: "Noida" }].map((stat, i) => (
+          <div
+            key={i}
+            className={`group relative inline-block rounded-[1rem] sm:rounded-[2rem] lg:rounded-[3rem] p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 ${isStatsVisible ? "animate-slide-up" : "opacity-0"}`}
+            style={{ animationDelay: `${i * 0.2}s` }}
+          >
             <div
-                ref={statsRef}
-                className={`grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 justify-items-center w-full max-w-[1200px] px-2 sm:px-4 py-4 sm:py-6`}
+              className="rounded-[1rem] sm:rounded-[2rem] lg:rounded-[3rem] bg-black w-[160px] xs:w-[180px] sm:w-[200px] md:w-[220px] lg:w-[260px] xl:w-[300px] aspect-square grid place-items-center text-white text-center"
+              style={{
+                backgroundColor: "#000000",
+                boxShadow: "0px 3px 15px 0px #FFFFFF26 inset",
+              }}
             >
-                {[
-                    { label: "Mumbai" },
-                    { label: "Noida" }
-                ].map((stat, i) => (
-                    <div
-                        key={i}
-                        className={`group relative inline-block rounded-[1rem] sm:rounded-[2rem] lg:rounded-[3rem] p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 ${isStatsVisible ? 'animate-slide-up' : 'opacity-0'}`}
-                        style={{ animationDelay: `${i * 0.2}s` }}
-                    >
-                        <div
-                            className="rounded-[1rem] sm:rounded-[2rem] lg:rounded-[3rem] bg-black w-[160px] xs:w-[180px] sm:w-[200px] md:w-[220px] lg:w-[260px] xl:w-[300px] aspect-square grid place-items-center text-white text-center"
-                            style={{
-                                backgroundColor: '#000000',
-                                boxShadow: '0px 3px 15px 0px #FFFFFF26 inset',
-                            }}
-                        >
-                            <p
-                                className="font-bold text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl whitespace-pre-line px-4"
-                                style={{ fontFamily: 'Constantine' }}
-                            >
-                                {stat.label}
-                            </p>
-                        </div>
-                    </div>
-                ))}
+              <p
+                className="font-bold text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl whitespace-pre-line px-4"
+                style={{ fontFamily: "Constantine" }}
+              >
+                {stat.label}
+              </p>
             </div>
+          </div>
+        ))}
+      </div>
 
-            {/* Locations Grid - Second Row */}
+      {/* Locations Grid - Second Row */}
+      <div
+        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 justify-items-center w-full max-w-[1200px] px-2 sm:px-4 py-4 sm:py-6 mb-4 sm:mb-6 lg:mb-8`}
+      >
+        {[{ label: "Jaipur" }, { label: "Chandigarh" }, { label: "Surat" }].map(
+          (stat, i) => (
             <div
-                className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 justify-items-center w-full max-w-[1200px] px-2 sm:px-4 py-4 sm:py-6 mb-4 sm:mb-6 lg:mb-8`}
+              key={i}
+              className={`group relative inline-block rounded-[1rem] sm:rounded-[2rem] lg:rounded-[3rem] p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 ${isStatsVisible ? "animate-slide-up" : "opacity-0"}`}
+              style={{ animationDelay: `${i * 0.2}s` }}
             >
-                {[
-                    { label: 'Jaipur' },
-                    { label: 'Chandigarh' },
-                    { label: 'Surat' }
-                ].map((stat, i) => (
-                    <div
-                        key={i}
-                        className={`group relative inline-block rounded-[1rem] sm:rounded-[2rem] lg:rounded-[3rem] p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 ${isStatsVisible ? 'animate-slide-up' : 'opacity-0'}`}
-                        style={{ animationDelay: `${i * 0.2}s` }}
-                    >
-                        <div
-                            className="rounded-[1rem] sm:rounded-[2rem] lg:rounded-[3rem] bg-black w-[160px] xs:w-[180px] sm:w-[200px] md:w-[220px] lg:w-[260px] xl:w-[300px] aspect-square grid place-items-center text-white text-center"
-                            style={{
-                                backgroundColor: '#000000',
-                                boxShadow: '0px 3px 15px 0px #FFFFFF26 inset',
-                            }}
-                        >
-                            <p
-                                className="font-bold text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl whitespace-pre-line px-4"
-                                style={{ fontFamily: 'Constantine' }}
-                            >
-                                {stat.label}
-                            </p>
-                        </div>
-                    </div>
-                ))}
+              <div
+                className="rounded-[1rem] sm:rounded-[2rem] lg:rounded-[3rem] bg-black w-[160px] xs:w-[180px] sm:w-[200px] md:w-[220px] lg:w-[260px] xl:w-[300px] aspect-square grid place-items-center text-white text-center"
+                style={{
+                  backgroundColor: "#000000",
+                  boxShadow: "0px 3px 15px 0px #FFFFFF26 inset",
+                }}
+              >
+                <p
+                  className="font-bold text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl whitespace-pre-line px-4"
+                  style={{ fontFamily: "Constantine" }}
+                >
+                  {stat.label}
+                </p>
+              </div>
             </div>
-        </div>
-    );
+          ),
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Locations;

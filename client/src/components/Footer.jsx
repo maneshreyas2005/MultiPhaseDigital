@@ -1,4 +1,3 @@
-
 // import React from 'react';
 // import Logo from '../assets/Logo.svg';
 // import logo1 from '../assets/logo1.svg';
@@ -8,7 +7,7 @@
 // export default function MultiphaseFooter() {
 //     return (
 //         <footer className="w-full bg-black text-white py-12 px-6">
-            
+
 //             <div className="max-w-6xl mx-auto text-center">
 
 //                 {/* Logo */}
@@ -129,27 +128,27 @@
 //     );
 // }
 
-import React, { useState } from 'react';
-import Logo from '../assets/Logo.svg';
-import logo1 from '../assets/logo1.svg';
-import logo2 from '../assets/logo2.svg';
-import logo3 from '../assets/logo3.svg';
+import React, { useState } from "react";
+import Logo from "../assets/Logo.svg";
+import logo1 from "../assets/logo1.svg";
+import logo2 from "../assets/logo2.svg";
+import logo3 from "../assets/logo3.svg";
 
 export default function MultiphaseFooter() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [modalContent, setModalContent] = useState('');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState("");
 
-    const openModal = (content) => {
-        setModalContent(content);
-        setIsModalOpen(true);
-    };
+  const openModal = (content) => {
+    setModalContent(content);
+    setIsModalOpen(true);
+  };
 
-    const closeModal = () => {
-        setIsModalOpen(false);
-        setModalContent('');
-    };
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalContent("");
+  };
 
-    const privacyPolicyContent = `
+  const privacyPolicyContent = `
 # Privacy Policy
 
 **Last Updated: 31 August 2025**
@@ -242,7 +241,7 @@ For questions, requests, or to exercise your privacy rights, please contact:
 **Address**: Multiphase Digital, Mumbai, Maharashtra, India
 `;
 
-    const termsConditionsContent = `
+  const termsConditionsContent = `
 # Terms & Conditions
 
 **Last Updated: 31 August 2025**
@@ -321,190 +320,202 @@ For questions regarding these Terms, please contact:
 **Address**: Multiphase Digital, Mumbai, Maharashtra, India  
 `;
 
-    return (
-        <>
-            <footer className="w-full bg-black text-white py-12 px-6">
-                <div className="max-w-6xl mx-auto text-center">
-                    {/* Logo */}
-                    <div className="mb-7 flex justify-center items-center">
-                        <img
-                            src={Logo}
-                            alt="Company Logo"
-                            className="w-40 sm:w-56 md:w-[230px] h-auto"
-                        />
-                    </div>
+  return (
+    <>
+      <footer className="w-full bg-black text-white py-12 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          {/* Logo */}
+          <div className="mb-7 flex justify-center items-center">
+            <img
+              src={Logo}
+              alt="Company Logo"
+              className="w-40 sm:w-56 md:w-[230px] h-auto"
+            />
+          </div>
 
-                    {/* Main Heading */}
-                    <div className="mb-14 md:mb-12 px-2">
-                        <h2 className="min-[377px]:text-[1.1rem] sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight mb-2">
-                            Drop us a line or two, we are open for
-                        </h2>
-                        <h2 className="min-[377px]:text-[1.1rem] sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight">
-                            creative minds and collaborations!
-                        </h2>
-                    </div>
+          {/* Main Heading */}
+          <div className="mb-14 md:mb-12 px-2">
+            <h2 className="min-[377px]:text-[1.1rem] sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight mb-2">
+              Drop us a line or two, we are open for
+            </h2>
+            <h2 className="min-[377px]:text-[1.1rem] sm:text-3xl md:text-4xl lg:text-[2.2rem] font-bold leading-snug md:leading-tight">
+              creative minds and collaborations!
+            </h2>
+          </div>
 
-                    {/* Navigation Links */}
-                    <nav className="mb-6">
-                        <ul className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 lg:space-x-12 text-sm sm:text-base md:text-lg">
-                            <li>
-                                <a href="#Testimonial" className="hover:text-gray-400 transition-colors duration-200">
-                                    Review
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#Services" className="hover:text-gray-400 transition-colors duration-200">
-                                    Services
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#OurPartners" className="hover:text-gray-400 transition-colors duration-200">
-                                    Our Partner
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#OurPresence" className="hover:text-gray-400 transition-colors duration-200">
-                                    Our Achievements
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    {/* Bottom Section */}
-                    <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center pt-8 border-t border-gray-800 space-y-6 lg:space-y-0">
-                        {/* Copyright */}
-                        <div className="text-gray-400 text-xs sm:text-sm">
-                            © Copyright 2022, All Rights Reserved
-                        </div>
-
-                        {/* Social Media Icons */}
-                        <div className="flex justify-center space-x-4 mb-4 md:mb-0">
-                            <a
-                                href="https://in.linkedin.com/company/multiphase-digital-india"
-                                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-200"
-                            >
-                                <svg
-                                    className="w-4 h-4"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path d="M4.98 3.5C4.98 5.43 3.43 7 1.5 7S-1 5.43-1 3.5 0.57 0 2.5 0s2.48 1.57 2.48 3.5zM.02 8.98H5V24H.02V8.98zM8.54 8.98H13v2.05h.07c.62-1.18 2.13-2.42 4.39-2.42 4.69 0 5.56 3.08 5.56 7.09V24H18V16.5c0-1.78-.03-4.08-2.49-4.08-2.5 0-2.89 1.92-2.89 3.95V24H8.54V8.98z" />
-                                </svg>
-                            </a>
-                            <a
-                                href="https://www.facebook.com/MultphaseDigital/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-200"
-                            >
-                                <svg
-                                    className="w-5 h-5"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24H12.82v-9.294H9.692V11.41h3.128V8.414c0-3.1 1.893-4.788 4.657-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.92.001c-1.507 0-1.8.717-1.8 1.765v2.314h3.6l-.468 3.296h-3.132V24h6.144C23.406 24 24 23.406 24 22.676V1.325C24 .593 23.406 0 22.675 0z" />
-                                </svg>
-                            </a>
-                            <a
-                                href="https://www.instagram.com/multiphase_digital/?hl=en"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-200 text-white"
-                            >
-                                <svg
-                                    className="w-5 h-5"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0z" />
-                                </svg>
-                            </a>
-                        </div>
-
-                        {/* Legal Links */}
-                        <div className="flex flex-wrap justify-center gap-4 text-xs sm:text-sm text-gray-400">
-                            <button
-                                onClick={() => openModal(privacyPolicyContent)}
-                                className="hover:text-white transition-colors duration-200"
-                            >
-                                Privacy Policy
-                            </button>
-                            <button
-                                onClick={() => openModal(termsConditionsContent)}
-                                className="hover:text-white transition-colors duration-200"
-                            >
-                                Terms & Conditions
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
-            {/* Modal */}
-            {isModalOpen && (
-                <div
-                    className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-                    onClick={closeModal}
+          {/* Navigation Links */}
+          <nav className="mb-6">
+            <ul className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 lg:space-x-12 text-sm sm:text-base md:text-lg">
+              <li>
+                <a
+                  href="#Testimonial"
+                  className="hover:text-gray-400 transition-colors duration-200"
                 >
-                    <div
-                        className="bg-gray-600 text-white max-w-3xl w-full max-h-[80vh] overflow-y-auto rounded-lg p-6 relative"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <button
-                            className="absolute top-4 right-4 text-white hover:text-gray-800"
-                            onClick={closeModal}
-                        >
-                            <svg
-                                className="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M6 18L18 6M6 6l12 12"
-                                />
-                            </svg>
-                        </button>
-                        <div className="prose prose-sm sm:prose-base max-w-none">
-                            {modalContent.split('\n').map((line, index) => {
-                                if (line.startsWith('# ')) {
-                                    return (
-                                        <h1 key={index} className="text-2xl font-bold mt-4 mb-2">
-                                            {line.replace('# ', '')}
-                                        </h1>
-                                    );
-                                } else if (line.startsWith('## ')) {
-                                    return (
-                                        <h2 key={index} className="text-xl font-semibold mt-3 mb-1">
-                                            {line.replace('## ', '')}
-                                        </h2>
-                                    );
-                                } else if (line.startsWith('- ')) {
-                                    return (
-                                        <li key={index} className="ml-4">
-                                            {line.replace('- ', '')}
-                                        </li>
-                                    );
-                                } else if (line.trim() !== '') {
-                                    return (
-                                        <p key={index} className="mb-2">
-                                            {line}
-                                        </p>
-                                    );
-                                }
-                                return null;
-                            })}
-                        </div>
-                    </div>
-                </div>
-            )}
-        </>
-    );
+                  Review
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#Services"
+                  className="hover:text-gray-400 transition-colors duration-200"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#OurPartners"
+                  className="hover:text-gray-400 transition-colors duration-200"
+                >
+                  Our Partner
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#OurPresence"
+                  className="hover:text-gray-400 transition-colors duration-200"
+                >
+                  Our Achievements
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          {/* Bottom Section */}
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center pt-8 border-t border-gray-800 space-y-6 lg:space-y-0">
+            {/* Copyright */}
+            <div className="text-gray-400 text-xs sm:text-sm">
+              © Copyright 2022, All Rights Reserved
+            </div>
+
+            {/* Social Media Icons */}
+            <div className="flex justify-center space-x-4 mb-4 md:mb-0">
+              <a
+                href="https://in.linkedin.com/company/multiphase-digital-india"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-200"
+              >
+                <svg
+                  className="w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M4.98 3.5C4.98 5.43 3.43 7 1.5 7S-1 5.43-1 3.5 0.57 0 2.5 0s2.48 1.57 2.48 3.5zM.02 8.98H5V24H.02V8.98zM8.54 8.98H13v2.05h.07c.62-1.18 2.13-2.42 4.39-2.42 4.69 0 5.56 3.08 5.56 7.09V24H18V16.5c0-1.78-.03-4.08-2.49-4.08-2.5 0-2.89 1.92-2.89 3.95V24H8.54V8.98z" />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/MultphaseDigital/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-200"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24H12.82v-9.294H9.692V11.41h3.128V8.414c0-3.1 1.893-4.788 4.657-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.92.001c-1.507 0-1.8.717-1.8 1.765v2.314h3.6l-.468 3.296h-3.132V24h6.144C23.406 24 24 23.406 24 22.676V1.325C24 .593 23.406 0 22.675 0z" />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/multiphase_digital/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors duration-200 text-white"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0z" />
+                </svg>
+              </a>
+            </div>
+
+            {/* Legal Links */}
+            <div className="flex flex-wrap justify-center gap-4 text-xs sm:text-sm text-gray-400">
+              <button
+                onClick={() => openModal(privacyPolicyContent)}
+                className="hover:text-white transition-colors duration-200"
+              >
+                Privacy Policy
+              </button>
+              <button
+                onClick={() => openModal(termsConditionsContent)}
+                className="hover:text-white transition-colors duration-200"
+              >
+                Terms & Conditions
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+          onClick={closeModal}
+        >
+          <div
+            className="bg-gray-600 text-white max-w-3xl w-full max-h-[80vh] overflow-y-auto rounded-lg p-6 relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="absolute top-4 right-4 text-white hover:text-gray-800"
+              onClick={closeModal}
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <div className="prose prose-sm sm:prose-base max-w-none">
+              {modalContent.split("\n").map((line, index) => {
+                if (line.startsWith("# ")) {
+                  return (
+                    <h1 key={index} className="text-2xl font-bold mt-4 mb-2">
+                      {line.replace("# ", "")}
+                    </h1>
+                  );
+                } else if (line.startsWith("## ")) {
+                  return (
+                    <h2 key={index} className="text-xl font-semibold mt-3 mb-1">
+                      {line.replace("## ", "")}
+                    </h2>
+                  );
+                } else if (line.startsWith("- ")) {
+                  return (
+                    <li key={index} className="ml-4">
+                      {line.replace("- ", "")}
+                    </li>
+                  );
+                } else if (line.trim() !== "") {
+                  return (
+                    <p key={index} className="mb-2">
+                      {line}
+                    </p>
+                  );
+                }
+                return null;
+              })}
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
 }
