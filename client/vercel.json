@@ -1,0 +1,47 @@
+{
+    "version": 2,
+    "routes": [
+        {
+            "src": "/favicon.ico",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, immutable"
+            }
+        },
+        {
+            "src": "/favicon-16x16.png",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, immutable"
+            }
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, immutable"
+            }
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, immutable"
+            }
+        },
+        {
+            "src": "/android-chrome-192x192.png",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, immutable"
+            }
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, immutable"
+            }
+        },
+        {
+            "src": "/site.webmanifest",
+            "headers": {
+                "Cache-Control": "public, max-age=31536000, immutable"
+            }
+        }
+    ]
+}

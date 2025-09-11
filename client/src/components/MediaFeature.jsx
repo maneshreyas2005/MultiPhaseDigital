@@ -44,6 +44,7 @@ const MediaFeature = () => {
           TOP BRANDED NEWS, TV, PR MEDIA
         </h2>
         <img
+          loading="eager"
           src={vector6}
           alt="Decorative line"
           className="w-[250px] sm:w-[350px] md:w-[400px] lg:w-[600px] mt-4 mx-auto"
@@ -57,6 +58,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.2s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={ZeeNews}
             alt="Zee News"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -67,6 +69,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.3s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={AAjTak}
             alt="Aaj Tak"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -77,6 +80,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.4s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={CNBCnewsTV}
             alt="CNBC"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -91,6 +95,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.2s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={ZeeNews}
             alt="Zee News"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -101,6 +106,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.3s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={AAjTak}
             alt="Aaj Tak"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -111,6 +117,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.4s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={CNBCnewsTV}
             alt="CNBC"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -121,6 +128,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.5s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={IndiaNews}
             alt="India TV"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -131,6 +139,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.6s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={NewsIndia}
             alt="News 18 India"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -141,6 +150,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.7s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={TimesNow}
             alt="Times Now"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -151,6 +161,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.8s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={ABP}
             alt="ABP"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -194,6 +205,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.5s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={IndiaNews}
             alt="India TV"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -204,6 +216,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.6s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={NewsIndia}
             alt="News 18 India"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -214,6 +227,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.7s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={TimesNow}
             alt="Times Now"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -224,6 +238,7 @@ const MediaFeature = () => {
           style={{ animationDelay: "0.8s", animationFillMode: "both" }}
         >
           <img
+            loading="eager"
             src={ABP}
             alt="ABP"
             className="object-contain w-[80px] sm:w-[100px] md:w-[120.34px] h-[120px] sm:h-[140px] md:h-[180.34px]"
@@ -237,7 +252,8 @@ const MediaFeature = () => {
         style={{ animationDelay: "0.9s", animationFillMode: "both" }}
       >
         <button className="relative px-6 sm:px-8 py-3 sm:py-4 w-[200px] sm:w-[250px] md:w-[300px] rounded-full mb-4 sm:mb-5 bg-black text-white font-medium text-base sm:text-lg tracking-wide hover:scale-105 transition-transform duration-200">
-          <img src={NEWSchannelButton} alt="" className="absolute mt-[-10px]" />
+          <img
+            loading="eager" src={NEWSchannelButton} alt="" className="absolute mt-[-10px]" />
         </button>
       </div>
     </div>
