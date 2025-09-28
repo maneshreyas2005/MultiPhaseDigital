@@ -1,8 +1,8 @@
 import React from "react";
 import vector6 from "../assets/Vector6.png";
 import CountUp from "react-countup";
-import Pandav from "../assets/Pandav30.png";
-import Pandav2 from "../assets/Pandav30.png";
+import Pandav from "../assets/PandavLast.png";
+import Pandav2 from "../assets/PandavLast.png";
 import useInView from "./UseInView"; // <-- path to hook
 
 const PartnersPage = () => {
