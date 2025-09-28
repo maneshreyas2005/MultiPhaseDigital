@@ -388,7 +388,7 @@ const Locations = () => {
           (stat, i) => (
             <div
               key={i}
-              className={`group relative inline-block rounded-[1rem] sm:rounded-[2rem] lg:rounded-[3rem] p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 ${isStatsVisible ? "animate-slide-up" : "opacity-0"}`}
+              className={`group relative inline-block rounded-[1rem] sm:rounded-[2rem] lg:rounded-[3rem] p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 `}
               style={{ animationDelay: `${i * 0.2}s` }}
             >
               <div
@@ -418,7 +418,7 @@ const Locations = () => {
           (stat, i) => (
             <div
               key={i}
-              className={`group relative inline-block rounded-[1rem] sm:rounded-[2rem] lg:rounded-[3rem] p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105 ${isStatsVisible ? "animate-slide-up" : "opacity-0"}`}
+              className={`group relative inline-block rounded-[1rem] sm:rounded-[2rem] lg:rounded-[3rem] p-[3.58px] gradient-border transform transition-transform duration-500 hover:scale-105}`}
               style={{ animationDelay: `${i * 0.2}s` }}
             >
               <div
